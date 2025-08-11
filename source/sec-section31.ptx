@@ -7,7 +7,7 @@
   <p>
     Automatic door is an intelligent system to open and close the door without any human intervention. When an object is in front of the door It will open the door automatically with the help of servo motor. It is also used in shopping malls, offices and so on. Working of automatic door is similar to the previous experiment automatic sanitizer using IR sensor (chapter 3.3). Table 3.1.1, explains requirement of hardware components. Below image displays the automatic door which is used in many places. 
   </p>
-  <image source="/images/door.JPG" width="40%"/>
+  <image source="/images/DOOR.jpg" width="40%"/>
 </subsection>
 <subsection xml:id="subsec-Components-required-door">
   <title>Components required </title>
@@ -50,19 +50,24 @@
 <subsection xml:id="subsec-Experimental-Approach-servo">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/servo_experiment.JPG" width="40%"/>
+    <image source="/images/servoexperiment.jpg" width="80%"/>
     <caption>Schematic diagram for Automatic Door</caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click her to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp6.html"/>
   <term>Connection Process</term>
   <ol>
     <li>
       <p>
-        IR sensor has three pins OUT pin is connected 3rd pin of Arduino (Blue Wire). 
+        IR sensor has three pins OUT pin is connected 3rd pin of Arduino. 
       </p>
     </li>
     <li>
       <p>
-        VCC of IR sensor is connected to 5V of the Arduino (Red Wire). 
+        VCC of IR sensor is connected to 5V of the Arduino. 
       </p>
     </li>
     <li>
@@ -72,12 +77,12 @@
     </li>
     <li>
       <p>
-        Servo motor signal pin is connected to 9th pin of the Arduino (Violet wire). 
+        Servo motor signal pin is connected to 9th pin of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        VCC of servo motor is connected to 3.3V of the Arduino (Red Wire). 
+        VCC of servo motor is connected to 3.3V of the Arduino. 
       </p>
     </li>
     <li>
@@ -187,11 +192,11 @@
 <subsection xml:id="subsec-Experimental-Result-servo">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/door_closed.JPG" width="40%"/>
+    <image source="/images/dooropen.jpg" width="60%"/>
     <caption>The door remains in closed state</caption>
   </figure>
   <figure>
-    <image source="/images/door_open.JPG" width="40%"/>
+    <image source="/images/doorclosed.jpg" width="60%"/>
     <caption>The door is in open state</caption>
   </figure>
   <p>

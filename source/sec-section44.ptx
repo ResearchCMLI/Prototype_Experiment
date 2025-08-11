@@ -49,8 +49,9 @@
       <image source="/images/RFID_Sensor.jpg" width="40%"/>
       <caption>RFID Sensor</caption>
     </figure>
+    <interactive iframe ="https://p.interacty.me/c1dff5ffc3f3048f/iframe.html"/>
     <p>
-      The table 4.4.2.2 explains each pin and its usage. Fig 4.4.2.2 displays the RFID.
+      The table 4.4.3 explains each pin and its usage. Fig 4.4.2 displays the RFID.
     </p>
     <table>
       <title>Pin configuration for RC522</title>
@@ -107,24 +108,29 @@
 <subsection xml:id="subsec-Experimental-Approach-attendance">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/attendance_experiment.JPG" width="40%"/>
+    <image source="/images/attendanceexperiment.jpg" width="80%"/>
     <caption>Schematic diagram for the smart attendance system</caption>
   </figure>
+    <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp14.html"/>
   <term>Connection Process</term>
   <ol> 
     <li>
       <p>
-        SDA of the RFID is connected to 10th pin Arduino (Sky Blue Wire). 
+        SDA of the RFID is connected to 10th pin Arduino. 
       </p>
     </li>
     <li>
       <p>
-        RST of the RFID is connected to 9th  pin of the Arduino (Sky Blue Wire) 
+        RST of the RFID is connected to 9th  pin of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        SCK is connected to 13th pin of the Arduino (Green Wire). 
+        SCK is connected to 13th pin of the Arduino. 
       </p>
     </li>
     <li>
@@ -134,23 +140,23 @@
     </li>
     <li>
       <p>
-        MISQ is connected of RFID is connected to 12th  pin of the Arduino (dark pink). 
+        MISQ is connected of RFID is connected to 12th  pin of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        GND of the RFID is connected to GND of the Arduino (Black Wire). 
+        GND of the RFID is connected to GND of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        VCC of the RFID is connected to 3.3 V of the Arduino (Red wire).
+        VCC of the RFID is connected to 3.3 V of the Arduino.
       </p>
     </li>
   </ol>
-  <term>Pin Block</term>
   <table>
-    <tabular left="minor" right="minor" top="major" bottom="major">
+    <title>Pin Block</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
       <row>
         <cell><term>Arduino Pins</term></cell>
         <cell><term>Component Pins</term></cell>
@@ -182,11 +188,11 @@
     </tabular>
   </table>
   <figure>
-    <image source="/images/attendance_screen.JPG" width="40%"/>
-    <caption>Include SPI Serial Monitor library, below figure explains how to install the library for SPI and MFRC522</caption>
+    <image source="/images/attendancescreen.jpg" width="70%"/>
+    <caption>Include SPI Serial Monitor library, Above figure explains how to install the library for SPI and MFRC522</caption>
   </figure>
   <p>
-    SPI Serial Monitor Library is used to call the necessary functions and header files. Library installation procedure is displayed in fig 4.4.3.1
+    SPI Serial Monitor Library is used to call the necessary functions and header files. Library installation procedure is displayed in fig 4.4.6
   </p>
 </subsection>
 <subsection xml:id="subsec-Code-attendance">
@@ -222,25 +228,25 @@
 <subsection xml:id="subsec-Experimental-Result-attendance">
   <title>Experimental Result </title>
   <figure>
-    <image source="/images/attendance_result.JPG" width="40%"/>
+    <image source="/images/attendanceresult.jpg" width="50%"/>
     <caption>Output Name, Date and Time of the Employee is displayed in the serial monitor</caption>
   </figure>
   <p>
-    From the above fig 4.4.5.1, the ID has been extracts, the values such as name, date and time in serial monitor. It is required to view the attendance from another end, so PLX -DAQ software is installed, to view the data from anywhere from the world. Below figure 5, explains the installation guide for the software.
+    From the above fig 4.4.7, the ID has been extracts, the values such as name, date and time in serial monitor. It is required to view the attendance from another end, so PLX -DAQ software is installed, to view the data from anywhere from the world. Below 4.4.8, explains the installation guide for the software.
   </p>
   <figure>
-    <image source="/images/DAQ.JPG" width="40%"/>
+    <image source="/images/DAQ.jpg" width="60%"/>
     <caption>software PLX-DAQ</caption>
   </figure>
   <p>
-    After the software installation is completed, when the RC522 scans the RFID tag the name, date and time of the employee will be stored in the excel sheet displayed in fig 4.4.5.2.
+    After the software installation is completed, when the RC522 scans the RFID tag the name, date and time of the employee will be stored in the excel sheet displayed in fig 4.4.9.
   </p>
   <figure>
-    <image source="/images/DAQ_sheet.JPG" width="40%"/>
+    <image source="/images/DAQsheet.jpg" width="60%"/>
     <caption>Setting up the PLX -DAQ should set the appropriate baud rate and port.</caption>
   </figure>
   <figure>
-    <image source="/images/attendance_final.JPG" width="40%"/>
+    <image source="/images/attendancefinal.jpg" width="60%"/>
     <caption>Result stored in excel sheet can be used for reviewing the attendance of the  employee.Can be viewed from anywhere in the world.</caption>
   </figure>
 </subsection>

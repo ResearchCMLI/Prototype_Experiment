@@ -5,9 +5,9 @@
 <subsection xml:id="subsec-Introduction-parking">
   <title>Introduction</title>
   <p>
-    In this experiment leaners will learn about automatic parking system. India is the third largest country, emerging in automobile industry. Comparing with financial year of 2017-2018 the sales of passenger vehicles has increased from 2.70% for two-wheeler 4.80 % and for three-wheeler has increased to 10.27%. As the production of the vehicle gradually increases, the necessity for parking the vehicle becomes a chaos in our daily life. In abroad countries there are automated parking system and fine allotment for parking for more than the fixed time. In India, there is no such facility to automate our parking system. Here is the small prototype will help us to know the free slot to park our vehicles and it will notify us when there are no slots free. IR sensor is used to detect the presence of the vehicle and indicate the people, who are waiting to park their vehicle. Table 3.4.1:contains the components required for the experiment. Parking allotment reduces the man power to guard the parking system. It minimizes the waiting time. It also helps drivers to locate the parking spots easily. 
+    In this experiment leaners will learn about automatic parking system. India is the third largest country, emerging in automobile industry. Comparing with financial year of 2017-2018 the sales of passenger vehicles has increased from 2.70% for two-wheeler 4.80 % and for three-wheeler has increased to 10.27%. As the production of the vehicle gradually increases, the necessity for parking the vehicle becomes a chaos in our daily life. In abroad countries there are automated parking system and fine allotment for parking for more than the fixed time. In India, there is no such facility to automate our parking system. Here is the small prototype will help us to know the free slot to park our vehicles and it will notify us when there are no slots free. IR sensor is used to detect the presence of the vehicle and indicate the people, who are waiting to park their vehicle. Table 3.4.1 contains the components required for the experiment. Parking allotment reduces the man power to guard the parking system. It minimizes the waiting time. It also helps drivers to locate the parking spots easily. 
   </p>
-  <image source="/images/parking.JPG" width="40%"/>
+  <image source="/images/parking.jpg" width="40%"/>
   <p>
     The above picture shows the project proposed by the government of Madhya Pradesh where the automatic car parking system displays the space available to park the car. A small prototype is developed with minimal components to test the prototype. 
   </p>
@@ -61,59 +61,65 @@
 <subsection xml:id="subsec-experimental-approach-parking">
   <title>Experimental Approach </title>
   <figure>
-    <image source="/images/parking_experiment.JPG" width="50%"/>
+    <image source="/images/parkingexperiment.jpg" width="80%"/>
     <caption>Schematic diagram of Automatic Parking system</caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp9.html"/>
   <term>Connection Process</term>
   <ol> 
     <li>
       <p>
-        IR1 sensor has three pins OUT, VCC, GND. Out pin is connected to 3rd pin of the Arduino (Violet wire), and VCC of the IR sensor is connected to 5V of the Arduino (Red wire). 
+        IR1 sensor has three pins OUT, VCC, GND. Out pin is connected to 3rd pin of the Arduino, and VCC of the IR sensor is connected to 5V of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        GND of the IR1 sensor is connected to GND of the Arduino (Black Wire). 
+        GND of the IR1 sensor is connected to GND of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        LED associated with IR sensor is connected to 4th  pin of Arduino through a 10k resistor (blue wire)
+        LED associated with IR sensor is connected to 4th  pin of Arduino through a 10k resistor.
       </p>
     </li>
     <li>
       <p>
-        Shorter leg (-) of LED is connected to IR1 sensor is connected to ground of the arduino (black wire). 
+        Shorter leg (-) of LED is connected to IR1 sensor is connected to ground of the arduino. 
       </p>
     </li>
     <li>
       <p>
-        IR2 sensor out pin is connected to 2nd pin of the Arduino (green wire).
+        IR2 sensor out pin is connected to 2nd pin of the Arduino.
       </p>
     </li>
     <li>
       <p>
-        GND of the IR sensor is connected to GND of the Arduino (Black Wire). 
+        GND of the IR sensor is connected to GND of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        VCC of the IR sensor is connected to 5v of the Arduino (Red wire). 
+        VCC of the IR sensor is connected to 5v of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        LED is associated with IR2 is connected with LED is connected through 10k resistor to 5th pin of the Arduino (Red Wire)
+        LED is associated with IR2 is connected with LED is connected through 10k resistor to 5th pin of the Arduino.
       </p>
     </li>
     <li>
       <p>
-        Shorter leg (-) of LED is connected to IR2 sensor is connected to ground of the Arduino (black wire). 
+        Shorter leg (-) of LED is connected to IR2 sensor is connected to ground of the Arduino. 
       </p>
     </li>
     </ol>
-    <term>Pin Connection</term>
+   
     <table>
+      <title>Pin Connection</title>
       <tabular left="major" right="major" top="major" bottom="major">
         <row>
           <cell><term>Arduino Pins</term></cell>
@@ -227,15 +233,15 @@
 <subsection xml:id="subsec-experiment-result-parking">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/parking_working.JPG" width="40%"/>
+    <image source="/images/parkingworking.jpg" width="80%"/>
     <caption>Wiring diagram of the parking allotment, blue LED indicates that slot1 is full and slot 2 is free</caption>
   </figure>
   <figure>
-    <image source="/images/parking_red.JPG" width="40%"/>
+    <image source="/images/parkingred.jpg" width="80%"/>
     <caption>Red led indicates slot 2 is occupied and slot 1 is free  </caption>
   </figure>
   <p>
-    From the above fig 3.4.4, we can understand that LED blink is to indicate the slot 2 is full and slot 1 is free, and in fig 3.4.5, shows one of the LED blinks indicate the slot 1 is full and slot 2 is free.
+    From the above fig 3.4.5, we can understand that LED blink is to indicate the slot 2 is full and slot 1 is free, and in fig 3.4.4, shows one of the LED blinks indicate the slot 1 is full and slot 2 is free.
   </p>
 </subsection>
 </section>

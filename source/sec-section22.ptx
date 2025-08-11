@@ -61,25 +61,8 @@
    <p><em><term>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Arrange the above and below blocks
   &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in the frame to complete puzzle</term></em> </p>
     <p>
-      This water level sensor has three pins namely data pin, VCC and ground for power supply. In table 2.2.4 the pin configuration is given below.
+      This water level sensor has three pins namely data pin, VCC and ground for power supply. In table 2.2.3 the pin configuration is given below.
     </p>
-  </subsubsection>
-  <subsubsection xml:id="subsubsec-Buzzer">
-    <title>Buzzer</title>
-    <p>
-      Buzzer is basically a tiny speaker which is connected to the Arduino. When an electrical signal is produced at the right frequency a solid material will be formed as a crystal in response to the mechanical stress from which a sound will be produced. Main example for this is the door bell, when a mechanical stress is applied; the bell is triggered to alarm the surrounding. Buzzer is also known as piezo buzzer. 
-    </p>
-    <sidebyside>
-      <figure>
-        <image source="/images/Buzzer.jpg" width="30%"/>
-        <caption>Buzzer</caption>
-      </figure>
-        <interactive iframe ="https://p.interacty.me/3ae1eab733fa14d8/iframe.html"/>    
-    </sidebyside>
-   <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<em><term>"Arrange the above shuffled &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Block to solve the puzzle"</term></em> </p>
-     <p>
-      From the above fig 2.2.3, we can understand that the buzzer has two wires, red and black wire. Red wire is considered as data pin connected to digital pin in the micro controller and black wire is considered as a power wire, basically connected to ground connection.                                              
-     </p>
      <table>
       <title>Pin configuration of the water level sensor</title>
       <tabular left="minor" right="minor" top="minor" bottom="minor">
@@ -106,13 +89,36 @@
       </tabular>
     </table>
   </subsubsection>
+  <subsubsection xml:id="subsubsec-Buzzer">
+    <title>Buzzer</title>
+    <p>
+      Buzzer is basically a tiny speaker which is connected to the Arduino. When an electrical signal is produced at the right frequency a solid material will be formed as a crystal in response to the mechanical stress from which a sound will be produced. Main example for this is the door bell, when a mechanical stress is applied; the bell is triggered to alarm the surrounding. Buzzer is also known as piezo buzzer. 
+    </p>
+    <sidebyside>
+      <figure>
+        <image source="/images/Buzzer.jpg" width="30%"/>
+        <caption>Buzzer</caption>
+      </figure>
+        <interactive iframe ="https://p.interacty.me/3ae1eab733fa14d8/iframe.html"/>    
+    </sidebyside>
+   <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<em><term>"Arrange the above shuffled &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Block to solve the puzzle"</term></em> </p>
+     <p>
+      From the above fig 2.2.4, we can understand that the buzzer has two wires, red and black wire. Red wire is considered as data pin connected to digital pin in the micro controller and black wire is considered as a power wire, basically connected to ground connection.                                              
+     </p>
+    
+  </subsubsection>
   </subsection>
   <subsection xml:id="subsec-Experimental-Approach-buzzer">
     <title>Experimental Approach</title>
     <figure>
-      <image source="/images/schematic_diagram_water.png" width="60%"/>
+      <image source="/images/schematicdiagram_water.png" width="80%"/>
       <caption>Schematic diagram for water level indicator</caption>
     </figure>
+    <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+   <interactive iframe="https://researchcmli.github.io/3D_Objects/exp2.html"/>
     <term>Connection Block</term>
     <p>
       Water level sensor has three pins s, +, -. 
@@ -179,7 +185,7 @@
     <title>Code</title>
     <term>Source code</term>
     <program>
-      const int analogInPin = A0; // declaring the Analog input pin of the water level sensor 
+const int analogInPin = A0; // declaring the Analog input pin of the water level sensor 
 const int analogOutPin = 9; // declaring Analog output pin that the buzzer is attached to D9
 int sensorValue = 0; // value read from the pot
 int outputValue = 0; // value output to the PWM (analog out)
@@ -233,7 +239,7 @@ delay(1000); // delay between beeps
       </li>
       <li>
         <p>
-          7.	Here in this experiment 3cm cup is used, so the threshold is set to 100. This will vary according to the size of the tank, and the fig 2.2.7, gives the screenshot of the code. 
+          Here in this experiment 3cm cup is used, so the threshold is set to 100. This will vary according to the size of the tank, and the fig 2.2.7, gives the screenshot of the experiment. 
         </p>
       </li>
     </ol>
@@ -241,14 +247,14 @@ delay(1000); // delay between beeps
   <subsection xml:id="subsec-Experimental-Result-water">
     <title>Experimental Result </title>
     <figure>
-      <image source="/images/water_final_experiment.JPG" width="70%"/>
+      <image source="/images/waterfinal_experiment.jpg" width="80%"/>
       <caption>wiring diagram of the experiment</caption>
     </figure>
     <p>
       When the water level goes below the threshold level i.e., when the water level is 100, the buzzer will trigger and also the output can be monitored in the serial monitor that is displayed in fig 2.2.8 RX (orange colour) LED in Arduino will blink 
     </p>
     <figure>
-      <image source="/images/water_output.JPG" width="40%"/>
+      <image source="/images/wateroutput.jpg" width="60%"/>
       <caption>output in the serial monitor</caption>
     </figure>
     <p>

@@ -56,7 +56,7 @@
     </p>
     <table>
       <title>Pin configuration of ESP8266</title>
-      <tabular left="minor" right="minor" top="major" bottom="major">
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>S.No</term></cell>
           <cell><term>Pin</term></cell>
@@ -111,7 +111,7 @@
     <image source="/images/matlab.jpg" width="40%"/>
     <term>Create an account in thingspeak </term>
     <p>
-      First and foremost, need a thingspeak account to work it. If you do not have an account, create an account by clicking this link https://thingspeak.com/.
+      First and foremost, need a thingspeak account to work it. If you do not have an account, create an account by clicking this link <p><url href= "https://thingspeak.mathworks.com/" visual="https://thingspeak.mathworks.com/"></url></p>
     </p>
     <p>
       Create your own channel. Channel acts as a storage for our data to store in a place and access the data when needed. Each channel can have maximum of 8 fields which means can store 8 different types of data.
@@ -126,20 +126,27 @@
       Application programming interface key is the key to access our channel. To know the API key, click API Keys tab. The API key for both read and writes data will be given. API key is auto generated for every new channel
     </p>
     <image source="/images/thingspeaker5.png" width="60%"/>
+    <note>
     <p>
       Note: API key will be used in code to read and write the data from the sensor to the cloud platform
     </p>
+  </note>
   </subsubsection>
 </subsection>
 <subsection xml:id="subsec-Experimental-Approach-web">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/web_experiment.JPG" width="40%"/>
+    <image source="/images/webexperiment.jpg" width="70%"/>
     <caption>schematic diagram for smart weather monitoring system</caption>
   </figure>
-  <term>Pin Block</term>
+   <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp16.html"/>
   <table>
-    <tabular left="minor" right="minor" top="major" bottom="major">
+    <title>Pin Block</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
       <row>
         <cell><term>Arduino Pins</term></cell>
         <cell><term>Component Pins</term></cell>
@@ -338,7 +345,7 @@
     </li>
     <li>
       <p>
-        In void loop function, declaring DHT pin to 9th pin of the Arduino using read11 function. Printing 
+        In void loop function, declaring DHT pin to 9th pin of the Arduino using read11 function. 
       </p>
     </li>
     <li>
@@ -381,25 +388,26 @@
   <p>
     Before running the code, should test the ESP8266 with the following command to check its whether it is working appropriately. To check the ESP8266, we should connect RX and TX pin of ESP8266 to RX and TX of the Arduino and RST the GND by connecting GND pin to RST pin in Arduino. 
   </p>
-    <term>Note:</term> <p>
-      This connection is used only to test the WI-FI module 
-    </p>
+   <note>
     <p>
-      Type AT in serial monitor and click Send, when the serial monitor displays the output as ok the ESP8266 has established the connection. Displayed in 5.1.5.1
+      This connection is used only to test the WI-FI module </p>
+   </note> 
+    <p>
+      Type AT in serial monitor and click Send, when the serial monitor displays the output as ok the ESP8266 has established the connection. Displayed in 5.1.8
     </p>
     <figure>
-      <image source="/images/thingspeaker_result1.JPG" width="60%"/>
+      <image source="/images/webresult1.png" width="60%"/>
       <caption>Ensuring the communication between Module and Serial Port</caption>
     </figure>
     <p>
       Baud Rate for ESP8266 is 115200, so change the baud rate to 9600. Change the baud rate to 9600 by using AT command AT+UART_DEF=9600,8,1,0.  ESP8266 will respond OK. 
     </p>
     <figure>
-      <image source="/images/thingspeaker_result2.JPG" width="60%"/>
+      <image source="/images/webresult2.png" width="60%"/>
       <caption>Connecting the WIFI module to available network</caption>
     </figure>
     <p>
-      AT+CIPSTART=” TCP”,” api.thingspeak.com”, 80 will communicate data to Thingspeak website connect command is used to acknowledge the connection. OK command acknowledges that the data has sent to Thingspeak.
+      AT+CIPSTART=” TCP”,”api.thingspeak.com”, 80 will communicate data to Thingspeak website connect command is used to acknowledge the connection. OK command acknowledges that the data has sent to Thingspeak.
     </p>
     <p>
       AT+CWLAP, command will List all the access points which is open AT+CWJAP connect the WIFI network with the SSID and Password. WIFI network name and password is given in “SSID”,” Password” format the ESP will Reply back when the WIFI is Connected as WIFI connected. The temperature is stored in variable temp and humidity is stored in variable humidity
@@ -408,7 +416,7 @@
 <subsection xml:id="subsec-Experimental-Result-web">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/thingspeaker_result3.JPG" width="60%"/>
+    <image source="/images/webresult3.png" width="60%"/>
     <caption>Output in thingspeak website</caption>
   </figure>
 </subsection>

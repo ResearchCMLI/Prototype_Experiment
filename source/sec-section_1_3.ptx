@@ -2,34 +2,34 @@
 
 <section xml:id="sec-section_1_3" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Installation guide </title>
-  <p>Download the latest version of the software from the official page of Arduino IDE. Link https://www.arduino.cc/en/software, you need to select the software which is compatible for your OS (Windows/IoS/ Linux). When your download is completed, unzip the zip file from downloads folder in your computer/laptops.</p>
+  <p>Download the latest version of the software from the official page of Arduino IDE. Link <url href ="https://www.arduino.cc/en/software" visual="https://www.arduino.cc/en/software"></url>, you need to select the software which is compatible for your OS (Windows/IoS/ Linux). When your download is completed, unzip the zip file from downloads folder in your computer/laptops.</p>
   <figure>
-    <image source="images/arduino_page_1.JPG" width="70%"/>
+    <image source="images/arduino_page_1.JPG" width="90%"/>
     <caption> Official page of Arduino IDE.</caption>
   </figure>
   <figure>
-    <image source="images/arduino_page_2.JPG" width="70%"/>
+    <image source="images/ardiuno_page2.jpg" width="80%"/>
     <caption>Extract the Compressed folder in the laptop/PC.</caption>
   </figure>
   <figure>
-    <image source="images/arduino_page_3.JPG" width="70%"/>
+    <image source="images/arduino_page3.jpg" width="80%"/>
     <caption>Double click the icon to open the Arduino software icon.</caption>
   </figure>
   <p><term>Launch the Arduino IDE</term></p>
   <p>After the installation procedure is completed, open the Arduino software.</p>
   <figure>
-    <image source="images/arduino_page_4.JPG" width="70%"/>
+    <image source="images/arduino_page_4.JPG" width="80%"/>
     <caption>Splash Screen of Arduino IDE</caption>
   </figure>
   <p>After a few seconds, the splash screen will disappear and the Arduino IDE will be displayed.</p>
   <figure>
-    <image source="images/page_4_improved.JPG" width="70%"/>
+    <image source="images/page_4_improved.JPG" width="80%"/>
     <caption>Code Editor</caption>
   </figure>
   <p><term><em>Shortcut Menu</em></term></p>
-  <p>Frequently used short cut menus are explained in detailed in fig 1.2.8</p>
+  <p>Frequently used short cut menus are explained in detailed in fig 1.3.6</p>
   <figure>
-    <image source="images/arduino_page_6.JPG" width="40%"/>
+    <image source="images/arduino_page_6.JPG" width="80%"/>
     <caption>Description of each icon</caption>
   </figure>
   <ol>
@@ -64,10 +64,10 @@
       </p>
     </li>
   </ol>
-  <image source="images/menu.JPG" width="40%"/>
-<p>We will use all these menu options for upcoming chapters. Click file->Menu ->Preferences. Then check for verbosity options for compilation and uploading the code which is highlighted in the image below,</p>
+    <image source="images/menu.JPG" width="40%"/>
+<p>We will use all these menu options for upcoming chapters. Click file->Menu ->Preferences. Then check for verbosity options for compilation and uploading the code which is highlighted in the image below,</p>  
 <figure>
-  <image source="images/arduino_page_7.JPG" width="40%"/>
+  <image source="images/arduino_page_7.JPG" width="80%"/>
   <caption>verbose output is changed to upload</caption>
 </figure>
 <p>Hurray, now we are ready to execute the software to run the program.</p>
@@ -92,36 +92,36 @@
   </li>
 </ol>
 <term><p>USB Cable</p></term>
-<image source ="images/usb_cable.JPG" width="40%"/>
+<image source ="images/usb_cable.jpg" width="60%"/>
 <p>Arduino board can be powered via an USB cable.  USB cable can be connected to Laptop or a computer. When the computer recognizes the board, 5V current will be supplied. </p>
 <term><p>DC Power Jack</p></term>
-<image source ="images/DC_Power.JPG" width="40%"/>
+<image source ="images/DC_Power.jpg" width="60%"/>
 <p>Barrel connector is 2.1 mm in diameter. The center pin is a positive pin and outer pin is ground pin. Connector can supply 7-12V of input. The voltage regulator in the board regulates the 12V power into 5V.</p>
 <term><p>9V battery </p></term>
-<sidebyside widths="25% 25%" valign="middle">
-  <image source ="images/9v_battery_1.JPG" width="40%" decorative="yes"/>
-  <image source ="images/9v_battery_2.JPG" width="40%" decorative="yes"/>
+<sidebyside  valign="middle">
+  <image source ="images/9v_battery_1.png" width="50%" decorative="yes"/>
+  <image source ="images/9v_battery_2.png" width="50%" decorative="yes"/>
 </sidebyside>
 <p>The 9V battery the supply will range between 7-9V. Connect the Vin pin of the Arduino to positive terminal of the battery and ground of the battery is connected to ground of the Arduino.Vin port allows the input power of between 7-12 volt.</p>
 <p>Let’s first connect our Arduino board to the laptop using the USB cable. Below is the image to refer.</p>
 <figure>
-  <image source="/images/Arduino_UNO_BOARD.JPG" width="40%"/>
+  <image source="/images/lap_ardiuno.jpg" width="60%"/>
   <caption>Arduino UNO board is connected to the laptop via USB cable</caption>
 </figure>
 <p>After connecting, when the PC/Laptop is powered on, the power LED on the Arduino board will indicate that board is in ON state. Now we will verify whether window’s OS recognizes. Goto Control Panel->Device Manager</p>
 <figure>
-  <image source="/images/port.JPG" width="40%"/>
+  <image source="/images/port_screenshot.png" width="80%"/>
   <caption>choose ports (COM LPT)</caption>
 </figure>
 <figure>
-  <image source="/images/com.JPG" width="40%"/>
+  <image source="/images/port_2.png" width="80%"/>
   <caption>COM7 is our port for the Arduino</caption>
 </figure>
 <p>Check the port section to know which port is connected to the current Arduino board. Here it is (COM7) which is indicated by the red arrow.</p>
 <p>Well, we will start programming for Arduino. Understand the structure and code style of Arduino. Arduino program is called as sketch. In the community of Arduino, words like sketch, code and programs can be used. The sketch file will be saved in. ino extension.</p>
 <p>When we open Arduino IDE, a blank sketch is opened to program. Here Arduino IDE has large number of example files. That can be found from Examples option in File menu.  Now we will code the basic sketch blink. It is similar to Hello World in other programming languages.</p>
 <figure>
-  <image source="/images/blink_code.JPG" width="40%"/>
+  <image source="/images/menu_2.png" width="80%"/>
   <caption> (i) selecting a blink code from examples                (ii): view of blink code </caption>
 </figure>
 <term>Structure of the code</term>
@@ -139,44 +139,43 @@
 </program>
 <p>Now we will discuss about how the sketch works. The code enclosed in setup () can be executed once. The code which is enclosed as Loop () can execute repeatedly. Double slash (//) indicates the beginning of single line comment. In Setup (), pinMode is used to set the mode for pins which we are going to mention. The pin can be configured in both the ways as input and also as an output. </p>
 <p>In loop (), digitalWrite () writes HIGH for (5V or 3.3V) for UNO boards or LOW (0V) to specify the output pin. Delay () pauses the execution of the program for a certain number of milliseconds. </p>
-<p>To explain the working of the program, initiating LED pin 8 as output using Pin mode. In loop () pin 8 will turn on and off alternatively with the delay of few seconds. It is necessary to select the appropriate </p>
+<p>To explain the working of the program, initiating LED pin 8 as output using Pin mode. In loop () pin 8 will turn on and off alternatively with the delay of few seconds. It is necessary to select the appropriate board which matches the board, to upload the code into the Arduino board.  Select Tools->Board –> select your version of your board.</p>
 <figure>
-  <image source="/images/appropriate_board.JPG" width="40%"/>
+  <image source="/images/blink_2.png" width="80%"/>
   <caption>Selecting the appropriate board</caption>
 </figure>
-<p>board which matches the board, to upload the code into the Arduino board.  Select Tools->Board –> select your version of your board.</p>
 <p>After selecting the board select port to select the port, go to Tools->Port in menu. This will be reserved ports like COM1 or COM2.</p>
 <figure>
-  <image source="/images/right_port.JPG" width="40%"/>
+  <image source="/images/blink_3.png" width="80%"/>
   <caption>Selecting the right port</caption>
 </figure>
-<p>bove mentioned are the two necessary steps to upload the code correctly into board. Also, we can choose Tools->Get Board Info to know the board information</p>
+<p>Above mentioned are the two necessary steps to upload the code correctly into board. Also, we can choose Tools->Get Board Info to know the board information</p>
 <figure>
-  <image source="/images/succesful_compliation.JPG" width="40%"/>
+  <image source="/images/Successfull_compliation.png" width="80%"/>
   <caption>message for successful compilation. </caption>
 </figure>
-<p>To check whether the code has no error, we need to compile the code. We can compile by selecting Sketch->compile from menu. The bottom part of the IDE is console to display the </p>
+<p>To check whether the code has no error, we need to compile the code. We can compile by selecting Sketch->compile from menu. The bottom part of the IDE is console to display the output operations. </p>
+<p> If the compilation is success, then the console will display the message. Now we need to do upload the sketchto the board.  Select Sketch->Upload menu option to upload the code.</p>
 <figure>
-  <image source="/images/sucessful_upload.JPG" width="40%"/>
+  <image source="/images/sucessfull_upload.png" width="80%"/>
   <caption>Message for successful uploading </caption>
 </figure>
-<p>output operations. If the compilation is success, then the console will display the message. Now we need to do upload the sketchto the board.  Select Sketch->Upload menu option to upload the code.</p>
 <p>Once when the code is uploaded acknowledgement message will be displayed as in the figure. The LED will blink alternatively.</p>
 <subsection xml:id="subsec-Thonny-IDE">
   <title>Introduction to Thonny IDE</title>
   <p>
-    Thonny is an IDE developed by python, designed for beginners. Thonny IDE is freely available for Windows, Linux and Mac OS Platforms. Follows a unique way to run the code, bypasses the code deeply and checks for any compilation errors, evaluation can be done based on step-by-step expression. Python 3.7 is built in software.  The official website for downloading the software is https://thonny.org/.Once when the code is uploaded acknowledgement message will be displayed as in the figure. The LED will blink alternatively.
+    Thonny is an IDE developed by python, designed for beginners. Thonny IDE is freely available for Windows, Linux and Mac OS Platforms. Follows a unique way to run the code, bypasses the code deeply and checks for any compilation errors, evaluation can be done based on step-by-step expression. Python 3.7 is built in software.  The official website for downloading the software is <url href="https://thonny.org/" visual="https://thonny.org/"></url>.Once when the code is uploaded acknowledgement message will be displayed as in the figure. The LED will blink alternatively.
   </p>
   <figure>
-    <image source="/images/tonny.JPG" width="60%"/>
+    <image source="/images/thonny.png" width="80%"/>
     <caption>Official page to download Thonny IDE </caption>
   </figure>
   <figure>
-    <image source="/images/tonny_1.JPG" width="50%"/>
+    <image source="/images/thonny_2.png" width="80%"/>
     <caption>After completing the download, runs the software in your system </caption>
   </figure>
   <figure>
-    <image source="/images/tonny_source.JPG" width="50%"/>
+    <image source="/images/editor.png" width="80%"/>
     <caption>View of the software </caption>
   </figure>
   <term>Description of each icon </term>
@@ -236,6 +235,5 @@
     </p>
   </li>
 </ol>
-
 </subsection>
 </section>

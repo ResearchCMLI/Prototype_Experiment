@@ -5,7 +5,7 @@
 <subsection xml:id="subsec-Introduction-movement">
   <title>Introduction</title>
   <p>
-    In this experiment learners will learn how light controlled based on people’s movement is. Light is the main source of energy and the usage of light is so predominant in our day-day life. On an average household consumption of electricity is 5.7 KWh/day. According to the survey of centre of research policy, consumption of electricity has increased triple times in Indian houses. The percentage of using electricity in each household has been increased to 30% since 2007. As the electricity consumption increases, the wastage of electricity is also increasing gradually, 5-10% of electricity is wasted every month in each household. There are some preventive measures to save electricity, as such green technology and home automation and so on. Based on this, conceptual note, this prototype module is developed to save consumption of the electricity, by powering up the light based on people’s movement. The picture explains logic of the experiment more clearly when the person comes in the sensor detects the presence and activates the light to on and when he leaves the room light is automatically set to off.  It acts as a significant prototype to save energy. It controls the electronic appliances in home and also in offices 
+    In this experiment learners will learn how light controlled based on people’s movement. Light is the main source of energy and the usage of light is so predominant in our day-day life. On an average household consumption of electricity is 5.7 KWh/day. According to the survey of centre of research policy, consumption of electricity has increased triple times in Indian houses. The percentage of using electricity in each household has been increased to 30% since 2007. As the electricity consumption increases, the wastage of electricity is also increasing gradually, 5-10% of electricity is wasted every month in each household. There are some preventive measures to save electricity, as such green technology and home automation and so on. Based on this, conceptual note, this prototype module is developed to save consumption of the electricity, by powering up the light based on people’s movement. The picture explains logic of the experiment more clearly when the person comes in the sensor detects the presence and activates the light to on and when he leaves the room light is automatically set to off.  It acts as a significant prototype to save energy. It controls the electronic appliances in home and also in offices 
   </p>
   <image source="/images/movement.JPG" width="30%"/>
 </subsection>
@@ -86,24 +86,29 @@
 <subsection xml:id="subsec-Experimental-Approach-movement">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/pir_experiment.JPG" width="40%"/>
+    <image source="/images/pir_experiment.JPG" width="80%"/>
     <caption>Schematic diagram for movement based automatic light</caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp4.html"/>
   <term>Connection process</term>
   <ol>
     <li>
       <p>
-        Output pin is connected to 3rd pin of Arduino (Green wire).
+        Output pin is connected to 3rd pin of Arduino.
       </p>
     </li>
     <li>
       <p>
-        VCC of the sensor is connected to 5V of the Arduino (Red Wire). 
+        VCC of the sensor is connected to 5V of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        GND of the sensor is connected to GND of the Arduino(Black Wire)
+        GND of the sensor is connected to GND of the Arduino.
       </p>
     </li>
     <li>
@@ -113,7 +118,7 @@
     </li>
     <li>
       <p>
-        Longer leg of the LED is connected to pin 13 in Arduino (Blue Wire). 
+        Longer leg of the LED is connected to pin 13 in Arduino. 
       </p>
     </li>
     <li>
@@ -217,25 +222,27 @@ digitalWrite(led,LOW);// led will be set to high
     </li>
   </ol>
 </subsection>
+<interactive iframe="https://p.interacty.me/575abdc78a9c3f4f/iframe.html"/>
+        
 <subsection xml:id="subsec-Experimental-Result-movement">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/pir_experiment_final.JPG" width="40%"/>
+    <image source="/images/pir_experimentfinal.jpg" width="80%"/>
     <caption>LED is in off State when there is no human’s presence</caption>
   </figure>
   <p>
-    When an electrical signal is detected, the microcontroller will function according to the program, here in this program LED will blink if a person or object is present. The above fig 2.4.7 depicts the LED is in OFF state when there is no presence of human. The output will be also displayed in the serial monitor to denote that there is no presence of the human or any object and same is given in fig 2.4.8.
+    When an electrical signal is detected, the microcontroller will function according to the program, here in this program LED will blink if a person or object is present. The above fig 2.4.7 depicts the LED is in OFF state when there is no presence of human. The output will be also displayed in the serial monitor to denote that there is no presence of the human or any object and same is given in fig 2.4.9.
   </p>
   <figure>
-    <image source="/images/pir_experiment_final1.JPG" width="40%"/>
+    <image source="/images/pir_experimentfinal1.jpg" width="80%"/>
     <caption>LED is in on state when there is presence of human</caption>
   </figure>
   <figure>
-    <image source="/images/pir_output.JPG" width="40%"/>
+    <image source="/images/piroutput.jpg" width="60%"/>
     <caption>Output displayed in the serial monitor</caption>
   </figure>
   <p>
-    In the above fig 2.4.8, PIR sensor is placed at 90-degree angle straight to the person so the PIR sensor detects the IR Rays emitted from the person and generates an electrical signal to make the LED on. In the below fig 2.4.9, output will be also displayed in the serial monitor to know the presence of the human or any object. 
+    In the above fig 2.4.8, PIR sensor is placed at 90-degree angle straight to the person so the PIR sensor detects the IR Rays emitted from the person and generates an electrical signal to make the LED on. In the above fig 2.4.9, output will be also displayed in the serial monitor to know the presence of the human or any object. 
   </p>
 </subsection>
 </section>

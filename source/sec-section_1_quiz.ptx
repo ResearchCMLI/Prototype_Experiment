@@ -3,67 +3,33 @@
 <section xml:id="sec-section_1_quiz" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>First Chapter Quiz</title>
 
-  <task label="pic-question">
-    <statement>What is an embedded system?</statement>
+  <task>
+    <title>What is the primary purpose of software in embedded systems?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
-        <p>A stand-alone software program</p>
+        <p>To manufacture hardware</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>A hardware-only system</p>
+        <p>To cool the system</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
       <choice correct="yes"><statement>
-        <p>A combination of hardware and software to perform specific tasks</p>
+        <p>To execute programmed instructions</p>
       </statement>
       <feedback>
-      <p>Correct! A combination of hardware and software to perform specific tasks.</p>
+      <p>Correct!</p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>A general-purpose computer system</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-    </choices>
-  </task>
-  
-
-<task label="pic-question1">
-    <statement>Which company originally developed the AVR microcontroller?</statement>
-    <choices>
-      <choice correct="no"><statement>
-        <p>Microchip Technology</p>
-      </statement>
-        <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="yes"><statement>
-        <p>ATMEL Corporation</p>
-      </statement>
-        <feedback>
-      <p> Correct! ATMEL Corporation</p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Intel</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Texas Instruments</p>
+        <p>To build circuits</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
@@ -72,76 +38,9 @@
     </choices>
   </task>
 
-  <task label="multiple-choice-example">
-    <statement>What does PIC stand for in PIC Microcontroller?</statement>
-    <choices>
-      <choice correct="no"><statement>
-        <p>Programmable Integrated Circuit</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="yes"><statement>
-        <p>Peripheral Interface Controller</p>
-      </statement>
-      <feedback>
-      <p>Correct! Peripheral Interface Controller </p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Processor Integrated Chip</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Peripheral Input Control</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-    </choices>
-  </task>
-
-  <task label="multiple-choice-example1">
-    <statement>Which feature makes ARM microcontrollers popular for embedded systems?</statement>
-    <choices>
-      <choice correct="no"><statement>
-        <p>Low performance and high cost</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="yes"><statement>
-        <p>High performance and cost-efficiency</p>
-      </statement>
-      <feedback>
-      <p>Correct! High performance and cost-efficiency</p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Limited compatibility with peripherals</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>Complex architecture</p>
-      </statement>
-      <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-    </choices>
-  </task>
-
-  <task label="multiple-choice-example2">
-    <statement>Which programming languages does Arduino IDE primarily support?</statement>
+  <task>
+    <title>What programming languages form the basis of Arduino IDE coding?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
         <p>Python and Java</p>
@@ -154,18 +53,18 @@
         <p>C and C++</p>
       </statement>
       <feedback>
-      <p>Correct! C and C++</p>
+      <p>Correct!</p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>Assembly and COBOL</p>
+        <p>HTML and JavaScript</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>Ruby and Kotlin</p>
+        <p>R and SQL</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
@@ -174,43 +73,115 @@
     </choices>
   </task>
 
-  <task label="multiple-choice-example3">
-    <statement>What is the purpose of the Arduino Uno’s A0–A5 pins?</statement>
+  <task>
+    <title>Arduino IDE is available on which operating systems?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
-        <p>Digital input only</p>
+        <p>Only Windows</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>Analog output only</p>
+        <p>Only Linux</p>
       </statement>
       <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
       <choice correct="yes"><statement>
-        <p>Analog input only</p>
+        <p>Windows, Linux, and Mac</p>
       </statement>
       <feedback>
-      <p> Correct!Analog input only </p>
+      <p>Correct! </p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>Both analog input and output</p>
+        <p>Only Mac</p>
       </statement>
-       <feedback>
+      <feedback>
       <p>Not Correct! </p>
     </feedback>
       </choice>
     </choices>
   </task>
 
+  <task>
+    <title>What kind of software is Arduino IDE?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Paid and proprietary</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Free and open-source</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Commercial only</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Subscription-based</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
 
-  <task label="multiple-choice-example4">
-    <statement>What is a unique feature of the NodeMCU development board?</statement>
+  <task>
+    <title>What type of USB cable is needed for uploading code to Arduino UNO or MEGA 2560 boards?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Micro USB</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>USB-C</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>A plug to Mini B plug</p>
+      </statement>
+      <feedback>
+      <p> Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>A plug to B plug</p>
+      </statement>
+       <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>What is a unique feature of the NodeMCU development board?</title>
+    <statement></statement>
     <choices>
       <choice correct="yes"><statement>
         <p>Built-in ESP-12E module with WiFi and Bluetooth</p>
@@ -243,32 +214,33 @@
     </choices>
   </task>
 
-  <task label="multiple-choice-example5">
-    <statement>Which component in Raspberry Pi allows connection to a monitor?</statement>
+  <task>
+    <title>What is the function of Arduino IDE with respect to hardware boards?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
-        <p>GPIO pins</p>
+        <p>To draw circuit diagrams</p>
       </statement>
        <feedback>
       <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To upload firmware from the cloud</p>
+      </statement>
+       <feedback>
+      <p>Not Correct!</p>
     </feedback>
       </choice>
       <choice correct="yes"><statement>
-        <p>HDMI adapter</p>
+        <p>To write and upload code to physical boards</p>
       </statement>
        <feedback>
-      <p>Correct! HDMI adapter</p>
+      <p>Correct! </p>
     </feedback>
       </choice>
       <choice correct="no"><statement>
-        <p>Ethernet port</p>
-      </statement>
-       <feedback>
-      <p>Not Correct! </p>
-    </feedback>
-      </choice>
-      <choice correct="no"><statement>
-        <p>USB port</p>
+        <p>To perform automated debugging</p>
       </statement>
        <feedback>
       <p>Not Correct! </p>
@@ -277,8 +249,9 @@
     </choices>
   </task>
 
-  <task label="multiple-choice-example6">
-    <statement>What is the primary function of the void loop() function in Arduino code?</statement>
+  <task>
+    <title>What is the primary function of the void loop() function in Arduino code?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
         <p>Executes only once</p>
@@ -312,7 +285,8 @@
   </task>
 
   <task label="multiple-choice-example7">
-    <statement>What does the Thonny IDE primarily support?</statement>
+    <title>What does the Thonny IDE primarily support?</title>
+    <statement></statement>
     <choices>
       <choice correct="no"><statement>
         <p>Java programming</p>
@@ -345,28 +319,20 @@
     </choices>
   </task>
 
-
-<task label="mcq-with-feedback">
-  <statement>Which element is the most abundant in the Earth's atmosphere?</statement>
-  <choices>
-    <choice correct="no">
-      Oxygen
-      <feedback>Incorrect. Oxygen is present in the atmosphere, but it's not the most abundant.</feedback>
-    </choice>
-    <choice correct="yes">
-      Nitrogen
-      <feedback>Correct! About 78% of the Earth's atmosphere is nitrogen.</feedback>
-    </choice>
-    <choice correct="no">
-      Carbon Dioxide
-      <feedback>Incorrect. Carbon dioxide makes up a small fraction of the atmosphere.</feedback>
-    </choice>
-    <choice correct="no">
-      Argon
-      <feedback>Incorrect. Argon is present in trace amounts, not the most abundant.</feedback>
-    </choice>
-  </choices>
-</task>
-
+ <exercise>
+  <statement>
+     <p>
+      Select the three software tools are mentioned in the book for writing and executing code? 
+    </p>
+  </statement>
+  <areas>
+    <p>
+      <area correct="yes">Arduino IDE</area> 
+      <area correct="no">MATLAB</area> 
+      <area correct="yes">Thonny</area> 
+     <area correct="yes">PLX-DAQ</area> 
+    </p>
+  </areas>
+</exercise>
 
 </section>

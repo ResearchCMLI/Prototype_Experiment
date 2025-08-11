@@ -6,7 +6,7 @@
   <title> Introduction </title>
   <image source="/images/smart_watering.jpg" width="40%"/>
 <p>
-  Agriculture is the backbone of our country, comparing with traditional irrigation, smart irrigation has many advantages like, controlling and monitoring weather, soiling, watering will adjust the water automatically according to the soil level. Intelligent irrigation system will act as boon to our smart villagers. In this experiment, soil moisture sensor is used to detect the moisture level of plant. When the moisture level of the soil is low it will water the plant automatically and when the moisture level exceeds beyond the threshold the flow of water will be stopped immediately. This prototype will be useful for watering the plants without any human intervention. Table 1, illustrates the components required for the smart street system is listed with its purpose. It minimizes the wastage of water and monitors the plant 24*7 this experiment acts as a great aid in farm automation. 
+  Agriculture is the backbone of our country, comparing with traditional irrigation, smart irrigation has many advantages like, controlling and monitoring weather, soiling, watering will adjust the water automatically according to the soil level. Intelligent irrigation system will act as boon to our smart villagers. In this experiment, soil moisture sensor is used to detect the moisture level of plant. When the moisture level of the soil is low it will water the plant automatically and when the moisture level exceeds beyond the threshold the flow of water will be stopped immediately. This prototype will be useful for watering the plants without any human intervention. Table 4.5.1, illustrates the components required for the smart street system is listed with its purpose. It minimizes the wastage of water and monitors the plant 24*7 this experiment acts as a great aid in farm automation. 
 </p>
 </subsection>
 <subsection xml:id="subsec-Components-required-smart-watering">
@@ -121,9 +121,14 @@
 <subsection xml:id="subsec-Experimental-Approach-motor">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/motor_experiment.JPG" width="40%"/>
+    <image source="/images/motorexperiment.jpg" width="70%"/>
     <caption>Schematic diagram of smart irrigation system</caption>
   </figure>
+   <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp15.html"/>
   <term>Connection Process </term>
   <ol> 
     <li>
@@ -133,58 +138,58 @@
     </li>
     <li>
       <p>
-        A0 of the soil moisture sensor is connected to Arduino (Blue Wire). 
+        A0 of the soil moisture sensor is connected to Arduino. 
       </p>
     </li>
     <li>
       <p>
-        The GND of the sensor is connected to GND of the Arduino(Black Wire).  
+        The GND of the sensor is connected to GND of the Arduino.  
       </p>
     </li>
     <li>
       <p>
-        VCC of the sensor is connected to 5V of the Arduino (RED wire).   
+        VCC of the sensor is connected to 5V of the Arduino.   
       </p>
     </li>
     <li>
       <p>
-       Connect A1 pin of motor driver to 8th pin of Arduino (Blue Wire) 
+       Connect A1 pin of motor driver to 8th pin of Arduino.
       </p>
     </li>
     <li>
       <p>
-        Connect A2 pin of the motor driver to 5V of the Arduino (RED wire). 
+        Connect A2 pin of the motor driver to 5V of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        Connect VCC of the motor driver to VCC of the battery (RED wire) 
+        Connect VCC of the motor driver to VCC of the battery.
       </p>
     </li>
     <li>
       <p>
-        Connect GND of the motor driver   to GND of the battery (Black Wire). 
+        Connect GND of the motor driver   to GND of the battery. 
       </p>
     </li>
     <li>
       <p>
-        Connect V- pin of the motor driver to the GND of the Arduino (Black Wire). 
+        Connect V- pin of the motor driver to the GND of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        Connect positive terminal of motor pump to MA1 pin of the Motor Driver (RED wire). 
+        Connect positive terminal of motor pump to MA1 pin of the Motor Driver. 
       </p>
     </li>
     <li>
       <p>
-        Connect negative terminal of motor pump to MA1 pin of the Motor Driver (Black wire)
+        Connect negative terminal of motor pump to MA1 pin of the Motor Driver.
       </p>
     </li>
     </ol>
-    <term>Pin Connection </term>
     <table>
-      <tabular left="minor" right="minor" top="major" bottom="major">
+      <title>Pin Connection</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>Arduino Pins</term></cell>
           <cell><term>Component Pins</term></cell>

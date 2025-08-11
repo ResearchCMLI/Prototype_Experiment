@@ -4,10 +4,12 @@
   <title>Food Quality Monitoring System </title>
 <subsection xml:id="subsec-Introduction-food">
   <title>Introduction</title>
+  <image source="/images/Fruit-quality-monitoring.jpg" width="50%"/>
   <p>
     Food is the main source of energy for Human. Quality of the food is more important and also it is mandatory to maintain the safety and hygiene of the food to keep the food fresh and edible. There are different parameters to determine the decomposition of food, they are temperature, humidity and bacterium present in the food. When the temperature of the food is between 40F-140F the level of ethanol gas will be higher, then it is said to be a decomposed food .Table 2.5.1, illustrates the components required for experiment is listed with its purpose.it Monitors the food and prevents the food from decomposition. It saves people from food poisoning. In this experiment learners will learn about monitoring of food quality using Arduino UNO. 
   </p>
-</subsection>
+        
+ </subsection>
 <subsection xml:id="subsec-Components-required-food">
   <title>Components required</title>
   <table>
@@ -51,11 +53,11 @@
       DHT11 sensor detects both temperature and humidity present in the environment. This type of sensor is blended with NTC to measure temperature and it has an 8-bit micro controller to display the serial data. This sensor is built in such a way to detect both temperature and humidity in a single sensor. It is easy to interface with micro controller. Data pin is called as out pin can be used for both Analog and Digital. It can measure the temperature between 0 degree Celsius to 50 degrees celsius. The sensor has three pins 5V, GND and out pin. Operating voltage of the sensor is 2.5v to 5V.  LM135 sensor measures only the room tempertaure of the environment. Here DHT11 is used because it can measure both temperature and humidity.
     </p>
     <figure>
-      <image source="/images/DHT_SENSOR.JPG" width="40%"/>
+      <image source="/images/DHTSENSOR.jpg" width="40%"/>
       <caption>DHT11 Sensor</caption>
     </figure>
-    <term>LM135 VS DHT11</term>
     <table>
+       <title>LM135 VS DHT11</title>
       <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>S. No</term></cell>
@@ -109,24 +111,29 @@
 <subsection xml:id="subsec-Experimental-Approach-food">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/food_experiment.JPG" width="40%"/>
+    <image source="/images/foodexperiment.jpg" width="80%"/>
     <caption>Schematic diagram of food quality monitoring system</caption>
   </figure>
+   <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp5.html"/>
   <term>Connection Process </term>
   <ol>
     <li>
       <p>
-        VCC, GND. A0 of the gas sensor is connected to Arduino (Blue Wire). 
+        VCC, GND. A0 of the gas sensor is connected to Arduino. 
       </p>
     </li>
     <li>
       <p>
-        The GND of the sensor is connected to GND of the Arduino (Black Wire). 
+        The GND of the sensor is connected to GND of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        VCC of the sensor is connected to 5V of the Arduino (RED wire).   
+        VCC of the sensor is connected to 5V of the Arduino.   
       </p>
     </li>
     <li>
@@ -136,17 +143,17 @@
     </li>
     <li>
       <p>
-        Data of the DHT11 sensor is connected to Arduino (Green Wire).  
+        Data of the DHT11 sensor is connected to Arduino.  
       </p>
     </li>
     <li>
       <p>
-        The GND of the sensor is connected to GND of the Arduino (Black Wire).  
+        The GND of the sensor is connected to GND of the Arduino.  
       </p>
     </li>
     <li>
       <p>
-        VCC of the sensor is connected to 5V of the Arduino (RED wire).    
+        VCC of the sensor is connected to 5V of the Arduino.    
       </p>
     </li>
   </ol>
@@ -183,6 +190,11 @@
       </row>
     </tabular>
   </table>
+  <note>
+    <p>
+      Library installation is necessary for DHT11, need to install library in your PC/Laptop
+    </p>
+  </note>
 </subsection>
 <subsection xml:id="subsec-Code-food">
   <title>Code</title>
@@ -256,14 +268,14 @@
 <subsection xml:id="subsec-Experimental-Result-food">
   <title>Experimental Result</title>
   <p>
-    The decomposed apple is used to detect the accuracy of the prototype.  Average ethanol level in the decomposed food will be higher than 100. The temperature, humidity of the food is also calculated and displayed in the serial monitor.  Figure 2.5.8, displays temperature, humidity and gas value of the model is in the serial monitor 
+    The decomposed apple is used to detect the accuracy of the prototype.  Average ethanol level in the decomposed food will be higher than 100. The temperature, humidity of the food is also calculated and displayed in the serial monitor.  Figure 2.5.9, displays temperature, humidity and gas value of the model is in the serial monitor 
   </p>
   <figure>
-    <image source="/images/food_result.JPG" width="40%"/>
+    <image source="/images/foodresult.jpg" width="80%"/>
     <caption>Spoilage of the food is detected</caption>
   </figure>
   <figure>
-    <image source="/images/food_output.JPG" width="40%"/>
+    <image source="/images/foodoutput.png" width="60%"/>
     <caption>Output displayed in the serial monitor</caption>
   </figure>
 </subsection>

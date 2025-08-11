@@ -38,17 +38,17 @@
       </row>
     </tabular>
   </table>
-  <p>The above table 1 shows the components for the experiment and description for each component</p>
+  <p>The above table 2.1.1 shows the components for the experiment and description for each component</p>
   <subsubsection xml:id="subsubsec-Resistor">
     <title>Resistor</title>
-    <sidebyside valign="middle">
+    <!--<sidebyside valign="middle">-->
       <figure>
         <image source="/images/Resistor_2.jpg" width="40%"/>
         <caption>Resistor </caption>
       </figure>
-        <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=9cdae7f2&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f"/>
-    </sidebyside>
-    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+        <!--<interactive iframe="https://amuselabs.com/pmm/jigsaw?id=9cdae7f2&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f"/>-->
+    <!--</sidebyside>-->
+    <!--<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>-->
     <p>Resistor is a passive two terminal electrical component which can be fixed in a hole. It is used to control the flow of the current, which divides the required voltage for each component. Behaviour of the resistor is based on Ohm’s Law V=IR. </p>
     <p>There are different types of resistors, such as fixed resistor, variable resistor, thermistors and light dependent resistors that are used in industries.</p>
     <p>LED is a small diode that can handle only 5V of the current. Therefore, to avoid failure of the LED, resistors are used. Fig 2.1.2 shows the image of a simple resistor.</p>
@@ -65,9 +65,14 @@
 <subsection xml:id="subsec-Experimental-approach">
   <title>Experimental approach </title>
   <figure>
-    <image source="/images/led_blink.jpg" width="50%"/>
+    <image source="/images/experiment_led.png" width="70%"/>
     <caption>Schematic diagram for LED blinking </caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+   <interactive iframe="https://researchcmli.github.io/3D_Objects/exp1.html"/>
   <term>Connection Block </term>
   <p>The connections of components will be done with the help of the breadboard. A breadboard is a rectangular board with many mounting holes. It is used for connecting multiple electronic components with the single micro controller such as Arduino or Raspberry pi. </p>
   <term>Connection process</term>
@@ -159,7 +164,7 @@
 <subsection xml:id="subsec-Experimental-Resultwiring">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/experiment.png" width="50%"/>
+    <image source="/images/led_result.png" width="80%"/>
     <caption>wiring diagram for the experiment </caption>
   </figure>
 </subsection>

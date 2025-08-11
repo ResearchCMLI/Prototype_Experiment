@@ -6,7 +6,7 @@
     <title>Introduction</title>
     <image source="/images/solar_panel.jpg" width="40%"/>
     <p>
-      Renewable resource is one of the best natural resources. The usage of renewable resources is increasing day by day. Solar power is the main source for energy. Solar panel is used to accelerate the energy directly from the sun. Solar panel absorbs the energy from the sun, converts the energy to electrical energy. India produces large amount of energy. As of Nov 2020, India has installed 38% of the solar panels for energy generation, Energy generation capacity for India is 136 GW out of 373 GW and Energy generated from the sun is stored in batteries and used for our domestic and commercial purposes. The sun may move from east to west so the fixed solar panel may not produce an optimum energy, but a tracking solar panel can produce maximum energy than fixed solar panel. More energy is produced when solar cell is aligned, directly right angle to sun. Table 5.4.2, explains requirement of hardware components.Solar panel is deployed in many places to use the renewable energy. Sun tracking solar panel draws more energy comparing a non -tracker solar panel. Trackers are collection system to maximize energy and minimize the electricity 
+      Renewable resource is one of the best natural resources. The usage of renewable resources is increasing day by day. Solar power is the main source for energy. Solar panel is used to accelerate the energy directly from the sun. Solar panel absorbs the energy from the sun, converts the energy to electrical energy. India produces large amount of energy. As of Nov 2020, India has installed 38% of the solar panels for energy generation, Energy generation capacity for India is 136 GW out of 373 GW and Energy generated from the sun is stored in batteries and used for our domestic and commercial purposes. The sun may move from east to west so the fixed solar panel may not produce an optimum energy, but a tracking solar panel can produce maximum energy than fixed solar panel. More energy is produced when solar cell is aligned, directly right angle to sun. Table 5.4.1, explains requirement of hardware components.Solar panel is deployed in many places to use the renewable energy. Sun tracking solar panel draws more energy comparing a non -tracker solar panel. Trackers are collection system to maximize energy and minimize the electricity 
     </p>
     </subsection>
     <subsection xml:id="subsec-Components-Required-solar-panel">
@@ -55,20 +55,25 @@
       <subsubsection xml:id="subsubsec-Solar-cell">
         <title>Solar cell</title>
         <figure>
-          <image source="/images/solar_cell1.jpg" />
+          <image source="/images/solarcell_1.png" width="50%"/>
           <caption>Solar Cell</caption>
         </figure>
           <p>
-            Solar cell is an electrical device which converts light energy to electrical energy. Solar cell is basically a p-n junction diode. It is type of photo electric cell which has electrical characteristics such as current and voltage that will vary according to the exposure of the light. A common single junction solar cell is small in size and produce electricity about 0.5 to 0. 6 Volts. By combining more than ten solar cells can form a solar panel. Solar panel can produce vast amount of renewable energy.  It has no maintenance cost and last for a longer time.  Image of the solar panel is displayed, Single solar cell size of 11*6cm.Operating voltage of the solar cell is 6V and output power of this cell is 1W. The size of the solar cell will vary according the electricity consumption. The larger the size, greater the electricity consumption. From the fig 5.4.2.3, Solar cell and combine solar panel is displayed.
+            Solar cell is an electrical device which converts light energy to electrical energy. Solar cell is basically a p-n junction diode. It is type of photo electric cell which has electrical characteristics such as current and voltage that will vary according to the exposure of the light. A common single junction solar cell is small in size and produce electricity about 0.5 to 0. 6 Volts. By combining more than ten solar cells can form a solar panel. Solar panel can produce vast amount of renewable energy.  It has no maintenance cost and last for a longer time.  Image of the solar panel is displayed, Single solar cell size of 11*6cm.Operating voltage of the solar cell is 6V and output power of this cell is 1W. The size of the solar cell will vary according the electricity consumption. The larger the size, greater the electricity consumption. From the fig 5.4.2, Solar cell is displayed.
           </p>
       </subsubsection>
     </subsection>
     <subsection xml:id="subsec-experimental-approach-solar-panel">
       <title>Experimental Approach</title>
       <figure>
-        <image source="/images/solar-panel-experiment.png" />
+        <image source="/images/solarpanel-experiment.png" />
         <caption>Schematic diagram of sun tracking solar panel</caption>
       </figure>
+       <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+   <interactive iframe="https://researchcmli.github.io/3D_Objects/exp19.html"/>
       <term><p>Connection Process</p></term>
       <ol>
         <li>
@@ -102,8 +107,8 @@
           </p>
         </li>
       </ol>
-      <term><p>Pin Block</p></term>
       <table>
+        <title>Pin Block</title>
         <tabular left="minor" right="minor" top="minor" bottom="minor">
           <row>
             <cell><term>Arduino Pins</term></cell>

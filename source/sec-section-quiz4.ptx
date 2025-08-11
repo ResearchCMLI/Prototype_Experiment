@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-quiz4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fourth Chapter Quiz</title>
+
+  <task>
+    <title>Which of the following is true about the MQ135 Gas Sensor used for air quality monitoring?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>It detects methane, butane, and LPG gases.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> The A0 pin of the MQ135 sensor is used to detect the presence of gas in the environment.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The VCC pin of the MQ135 sensor is connected to the 3.3V pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The MQ135 sensor detects ozone gas and is used in water quality monitoring.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>How are the LEDs and buzzer connected in the air quality monitoring system?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The blue LED is connected to pin 13, while the red LED is connected to pin 8 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The red LED indicates a normal air quality and the blue LED indicates a poor air quality.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The positive pin of the buzzer is connected to pin 10 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The blue LED is connected to pin 10, while the red LED is connected to pin 8 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Which of the following correctly describes the connection of the Flame Sensor to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The VCC pin of the flame sensor is connected to 3.3V of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The AO (Analog Out) pin of the flame sensor is connected to A0 pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The GND pin of the flame sensor is connected to the 5V pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The AO pin of the flame sensor is connected to the D12 pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+   <task>
+    <title>How are the buzzer and LED connected in the flame detection system?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The positive pin of the buzzer is connected to pin 9 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The LED is connected to pin 12 of the Arduino with a 10k resistor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> The positive pin of the buzzer is connected to pin 12, and the negative pin is connected to GND of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The LED is connected directly to GND without any resistor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>Which pin of the Hall Sensor Interface is connected to the D8 pin of the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>Sensor Pin</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>VCC Pin</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>GND Pin</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Buzzer Pin</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+
+  <task>
+    <title>How are the power supply pins of the Hall Sensor Interface connected to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>5V of the Arduino interface is connected to VCC of the Hall Sensor Interface, and GND of the Arduino interface is connected to GND of the Hall Sensor Interface.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>5V of the Arduino interface is connected to GND of the Hall Sensor Interface, and GND of the Arduino interface is connected to VCC of the Hall Sensor Interface.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>5V of the Arduino interface is connected to D8 of the Hall Sensor Interface.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>GND of the Arduino interface is connected to D9 of the Hall Sensor Interface.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>Which of the following pins on the RFID Sensor is used for powering the module?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>SDA</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>VCC</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>IRQ</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>MISO</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Which of the following pins on the RFID Sensor is used to transmit data from the module to the microcontroller in SPI communication?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>MOSI</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>SCK</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>MISO</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>RST</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Which of the following pins on the Soil Moisture Sensor is used to calculate the moisture level in the soil?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>VCC</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>GND</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>A0</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>A1</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>Why is a Motor Driver used in the smart irrigation system with the submersible pump?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To reduce the size of the motor</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To increase the current supplied to the motor</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To control the water flow rate</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To detect the water level</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+
+</section>

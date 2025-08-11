@@ -6,7 +6,7 @@
   <title>Introduction</title>
   <image source="/images/metal_detector.jpg" width="40%"/>
   <p>
-    A metal detector is an instrument that detects the presence of metal. They are a handheld unit with a sensor probe in it, which can be swept over the ground or other objects. A metal detector consists of an oscillator , which produces an alternating current  when the current passes through a coil which produces an alternating magnetic field. If the sensor is closer to a piece of metal, it prompts the end user by a sound tone. Table 1, explains the components required for this experiment. It is quite different and easy experiment because the interface is designed to connect the components easily.It can be used in defence to find any guns and other metal items.
+    A metal detector is an instrument that detects the presence of metal. They are a handheld unit with a sensor probe in it, which can be swept over the ground or other objects. A metal detector consists of an oscillator , which produces an alternating current  when the current passes through a coil which produces an alternating magnetic field. If the sensor is closer to a piece of metal, it prompts the end user by a sound tone. Table 4.3.1, explains the components required for this experiment. It is quite different and easy experiment because the interface is designed to connect the components easily.It can be used in defence to find any guns and other metal items.
   </p>
 </subsection>
 <subsection xml:id="subsec-Components-required-metal">
@@ -49,26 +49,31 @@
   <subsubsection xml:id="subsubsec-Hall-sensor-interface">
     <title>Hall sensor interface </title>
     <p>
-      Hall sensor interface is a single interface module contains sensor pin, buzzer pin and power pins. Sensor pin connected to D8th of the Arduino interface and out pin of the hall sensor is connected to D9th. Power supply pins are 5V and GND that is connected to the respective pins in Arduino interface.
+      Hall sensor interface is a single interface module contains sensor pin, buzzer pin and power pins. Sensor pin connected to <m>D8^{th}</m> of the Arduino interface and out pin of the hall sensor is connected to <m>D9^{th}</m>. Power supply pins are 5V and GND that is connected to the respective pins in Arduino interface.
     </p>
   </subsubsection>
 </subsection>
 <subsection xml:id="subsec-Experimental-Approach-metal">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/metal_experiment.JPG" width="40%"/>
+    <image source="/images/metalexperiment.jpg" width="80%"/>
     <caption>Circuit diagram for metal detector</caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp13.html"/>
   <term>Connection Process</term>
   <ol>  
     <li>
       <p>
-        The out pin of the hall sensor interface is connected to D8th pin of the Arduino interface. 
+        The out pin of the hall sensor interface is connected to <m>D8^{th}</m> pin of the Arduino interface. 
       </p>
     </li>
     <li>
       <p>
-        The in pin of the hall sensor interface is connected to D9th pin of the Arduino interface.
+        The in pin of the hall sensor interface is connected to <m>D9^{th}</m> pin of the Arduino interface.
       </p>
     </li>
     <li>
@@ -82,9 +87,10 @@
       </p>
     </li>
   </ol>
-  <term>Pin connection </term>
+  
   <table>
-    <tabular left="minor" right="minor" top="major" bottom="major">
+    <title>Pin connection</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
       <row>
         <cell><term>Arduino Pins</term></cell>
         <cell><term>Component Pins</term></cell>
@@ -112,7 +118,7 @@
   <title>Code</title>
   <term>Source Code</term>
   <program> 
-    int hallSensorPin = 8;//declaration of sensor pin
+int hallSensorPin = 8;//declaration of sensor pin
 int buzzer  =  7;//declaration of buzzer
 int state = 0;
 void setup() {
@@ -181,7 +187,7 @@ Serial.println("There is no magnet");
 <subsection xml:id="subsec-Experimental-Result-metal">
   <title>Experimental Result </title>
   <figure>
-    <image source="/images/metal_output.JPG" width="40%"/>
+    <image source="/images/metaloutput.jpg" width="80%"/>
     <caption>wiring diagram of the metal detector </caption>
   </figure>
   <p>

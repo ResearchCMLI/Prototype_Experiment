@@ -131,19 +131,24 @@
   <subsection xml:id="subsec-Experimental-Approach-servo-motor">
     <title>Experimental Approach </title>
     <figure>
-      <image source="/images/dustbin_experiment.JPG" width="60%"/>
+      <image source="/images/dustbinexperiment.jpg" width="80%"/>
       <caption>Schematic diagram of smart dustbin</caption>
     </figure>
+    <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp7.html"/>
     <term>Connection process</term>
     <ol>
       <li>
         <p>
-          The VCC pin of the ultrasonic is connected to 5V of Arduino (Red wire). 
+          The VCC pin of the ultrasonic is connected to 5V of Arduino. 
         </p>
       </li>
       <li>
         <p>
-          GND of the ultrasonic sensor connected to GND of the Arduino (Black Wire). 
+          GND of the ultrasonic sensor connected to GND of the Arduino. 
         </p>
       </li>
       <li>
@@ -168,22 +173,22 @@
       </li>
       <li>
         <p>
-          PWM is connected to D9 of the Arduino (Blue wire). 
+          PWM is connected to D9 of the Arduino. 
         </p>
       </li>
       <li>
         <p>
-          VCC is connected to 3.3V of the Arduino (Red wire). 
+          VCC is connected to 3.3V of the Arduino. 
         </p>
       </li>
       <li>
         <p>
-          The GND pin is connected to the GND of the Arduino (Black Wire)
+          The GND pin is connected to the GND of the Arduino.
         </p>
       </li>
     </ol>
-    <term>Pin Connection</term>
     <table>
+      <title>Pin Connection</title>
       <tabular left="major" right="major" top="major" bottom="major">
         <row>
           <cell><term>Arduino Pins</term></cell>
@@ -275,7 +280,7 @@
         }          
     </program>
     <figure>
-      <image source="/images/servo_library.JPG" width="40%"/>
+      <image source="/images/dustbin_code.png" width="80%"/>
       <caption>selecting the library for servo motor</caption>
     </figure>
     <p>
@@ -353,15 +358,16 @@
   <subsection xml:id="subsec-Experimental-Result-dustbin">
     <title>Experimental Result</title>
     <figure>
-      <image source="/images/dustbin_working.JPG" width="35%"/>
+      <image source="/images/dustbinworking.jpg" width="50%"/>
       <caption>working of the experiment</caption>
     </figure>
     <figure>
-      <image source="/images/dustbin_output.JPG" width="35%"/>
+      <image source="/images/dustbinoutput.jpg" width="50%"/>
       <caption>working of the experiment</caption>
     </figure>
     <p>
       From the fig 3.2.9 learners can understand that the lid is in closed state, because there is no object in front the sensor. From the fig 3.2.10, we can find the sensor detects the objects and value of the sensor is in high state. As it rotates, the lid of the dustbin will open to drop the trash in the dustbin
     </p>
+    <interactive iframe ="https://p.interacty.me/3ae101ec805d516a/iframe.html"/>
   </subsection>
 </section>

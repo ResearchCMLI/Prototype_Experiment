@@ -7,7 +7,7 @@
   <titlepage>
     <author>
       <personname>Dr.M.Krishnaveni</personname>
-      <department>Assistant Professor,Department of Computer Science</department>
+      <department>Assistant Professor(SG),Department of Computer Science</department>
       <institution>Avinashilingam Insitute for Home Science and Higher Education for Women</institution>
     </author>
     <author>
@@ -20,24 +20,67 @@
       <department>Technical Assistant,Centre for Machine Learning and Intelligence</department>
       <institution>Avinashilingam Insitute for Home Science and Higher Education for Women</institution>
     </author>
-    <date>
-      <today />
-    </date>
+    
   </titlepage>
-
+ 
   <colophon>
-
-    <website>
-      <url href="https://pretextbook.org">My Website</url>
+   <website>
+      <url href="https://avinuty.ac.in/cmli-research" visual="">Centre for Machine Learning and Intelligence</url>
     </website>
-
     <copyright>
-      <year>2020<ndash />2023</year>
-      <holder>You</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <year>2025-2030</year>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"></url>
       </shortlicense>
     </copyright>
-  </colophon>
-  
+     </colophon>
+
+    <dedication><p> We are dedicating this book to the beginners, Who are here to learn about something.</p></dedication>
+    <acknowledgement>
+      <p>
+      We would like to acknowledge the technical assistants for their valuable support in the development of this interactive textbook.
+    </p>
+    <p>
+      Sandiya C, Technical Assistant at Centre for Machine Learning and Intelligence, provided technical support for converting the textbook content into an interactive format using the PreTeXt language.
+    </p>
+    <p>
+      Aanisa S, Technical Assistant at Centre for Machine Learning and Intelligence , developed the Augmented Reality content for the experiments featured throughout the textbook.
+    </p>
+  </acknowledgement>
+  <preface>
+    <p> This book is purely for beginners, those who want to create innovative products using hardware and software. Main objective of the book is to promote readers into product developers after completing the book. Outcome of the book is to eradicate the fear of taking up a project, especially among the beginners. This book provides information about the software, hardware and experimental setup with step-by-step guidelines, so that they can complete the product development with the ease.  The book contains 20 experiments from simple concepts to advance concepts. Every experiment in this book will be illustrated in an easy and understandable fashion so that all readers can explore the experiments. The book contains experiments from embedded system to IOT applications. </p>
+<p>
+    Embedded System is a two-way associated working paradigm, both hardware and software.   For example, washing machine, all of you know it has inbuilt software to spin the clothes and hardware to assist people for washing.  
+</p>
+<p>
+    Arduino IDE is free and user-friendly software, so it is mandatory for readers to learn about the Arduino IDE and its features.
+</p>
+<p>
+    The book consists of 20 chapters which are experimental based, not just a case study it is completely a working exposure of different applications. Each experiment is a simple solution for problems in real world, so learners do not skip any chapters because you will miss the adventure in working this application.
+</p>
+<p>
+<term>Chapter 1: </term>
+  Introduction about Arduino IDE, Arduino Micro     Controller   and step by step procedure to install the software.
+</p>
+<p>
+<term>Chapter 2: </term>
+  This chapter discuss about 5 applications about the Basic   operations of Embedded System.
+</p>
+<p>
+<term>Chapter 3: </term>
+  This chapter will explore about 5 applications which are useful for smart city.
+</p>
+<p>
+<term>Chapter 4: </term>
+  This chapter will explore about 5 applications which is useful for society.
+</p>
+<p>
+<term>Chapter 5: </term>
+  This chapter will explore about 5 applications about advanced concepts.
+</p>
+<p>
+<term>Note to learners: </term>
+  Dear friends, do not get panic, Remember, “Every expert is once a beginner”
+</p>
+  </preface>
 </frontmatter>
 

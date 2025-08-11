@@ -63,7 +63,7 @@
           <row>
             <cell>1</cell>
             <cell>VO</cell>
-            <cell>Produces analog output according to the dust present inn the air.</cell>
+            <cell>Produces analog output according to the dust present in the air.</cell>
           </row>
           <row>
             <cell>2</cell>
@@ -95,7 +95,7 @@
       <subsubsection xml:id="subsubsec-Dust-Sensor">
         <title>Dust Sensor</title>
         <p>
-          Dust sensor is a small air monitoring module. It is able to detect fine particles larger than 0.16 radius. The module has embedded with voltage boost circuit to provide wide range of power supply. The operating voltage for the sensor is 2.5V to 5.5V. The size of the air hole is 9.0mm. Fig 5.3.2.2 displays the image of dust sensor.
+          Dust sensor is a small air monitoring module. It is able to detect fine particles larger than 0.16 radius. The module has embedded with voltage boost circuit to provide wide range of power supply. The operating voltage for the sensor is 2.5V to 5.5V. The size of the air hole is 9.0mm. Fig 5.3.3 displays the image of dust sensor.
         </p>
         <figure>
           <image source="/images/dust_sensor.jpg" width="60%"/>
@@ -106,11 +106,16 @@
     <subsection xml:id="subsec-Experimental-Approach-dust">
       <title>Experimental Approach</title>
       <figure>
-        <image source="/images/experiment_dust.JPG" width="70%"/>
+        <image source="/images/experimentdust.jpg" width="80%"/>
         <caption>Schematic diagram of dust monitoring system</caption>
       </figure>
-      <term><p>Pin Block</p></term>
+       <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp18.html"/>
       <table>
+        <title>Pin Block</title>
         <tabular left="minor" right="minor" top="minor" bottom="minor">
           <row>
             <cell><term>Node MCU Pins</term></cell>
@@ -150,32 +155,32 @@
       <ol>
         <li>
           <p>
-            Connect V-LED of the dust sensor (blue wire) to Vin of the NODE MCU through 20uf capacitor and a 100k resistor (green wire).
+            Connect V-LED of the dust sensor to Vin of the NODE MCU through 20uf capacitor and a 100k resistor.
           </p>
         </li>
         <li>
           <p>
-            Connect shorter leg of the 20 micro-fahrenheit capacitor to GND of the NODEMCU (Black wire).
+            Connect shorter leg of the 20 micro-fahrenheit capacitor to GND of the NODEMCU.
           </p>
         </li>
         <li>
           <p>
-            Connect VOUT of the dust sensor to A0 of the NODEMCU (blue wire)
+            Connect VOUT of the dust sensor to A0 of the NODEMCU.
           </p>
         </li>
         <li>
           <p>
-            Connect VCC of the sensor to 3.3V of the Arduino (Red Wire).
+            Connect VCC of the sensor to 3.3V of the Arduino.
           </p>
         </li>
         <li>
           <p>
-            Connect S-GND, L-GND of the dust sensor to GND of the NODEMCU (Black wire)
+            Connect S-GND, L-GND of the dust sensor to GND of the NODEMCU.
           </p>
         </li>
         <li>
           <p>
-            Connect ILED of the dust sensor to D2 of the NODEMCU (violet wire)
+            Connect ILED of the dust sensor to D2 of the NODEMCU.
           </p>
         </li>
       </ol>
@@ -258,11 +263,11 @@
     <subsection xml:id="subsec-Experimental-Result-dust-monitoring">
       <title>Experimental Result </title>
       <figure>
-        <image source="/images/dust_monitoring_experiment.JPG" width="60%"/>
+        <image source="/images/dustmonitoring_experiment.jpg" width="60%"/>
         <caption>Wiring diagram of dust monitoring  </caption>
       </figure>
       <figure>
-        <image source="/images/dust_monitoring_output.JPG" width="60%"/>
+        <image source="/images/dustmonitoring_output.png" width="60%"/>
         <caption>Output displayed in the serial monitor  </caption>
       </figure>
       <p>

@@ -133,24 +133,29 @@ Therefore, in order to monitor the air quality this small prototype model will b
 <subsection xml:id="subsec-Experimental-Approach-air">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/air_experiment.JPG" width="40%"/>
+    <image source="/images/airexperiment.jpg" width="80%"/>
     <caption>Schematic diagram for air quality monitoring system </caption>
   </figure>
+  <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp11.html"/>
   <term>Connection Process</term>
   <ol> 
     <li>
       <p>
-        Analog pin of MQ3 is connected to A0 pin of Arduino (blue Wire).
+        Analog pin of MQ3 is connected to A0 pin of Arduino.
       </p>
     </li>
     <li>
       <p>
-        VCC of the sensor is connected to 5v of the Arduino (Red Wire). 
+        VCC of the sensor is connected to 5v of the Arduino. 
       </p>
     </li>
     <li>
       <p>
-        GND of the sensor is connected to GND of the Arduino (Black Wire) 
+        GND of the sensor is connected to GND of the Arduino. 
       </p>
     </li>
     <li>
@@ -190,13 +195,14 @@ Therefore, in order to monitor the air quality this small prototype model will b
     </li>
     <li>
       <p>
-        Positive red wire is connected to 10th pin of Arduino and negative pin of buzzer is connected to   GND of the Arduino.
+        Positive red wire is connected to 10th pin of Arduino and negative pin of buzzer is connected to GND of the Arduino.
       </p>
     </li>
     </ol>
-    <term>Pin connection</term>
+   
     <table>
-      <tabular left="minor" right="minor" top="major" bottom="major">
+      <title>Pin connection</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>Arduino Pins</term></cell>
           <cell><term>Component Pins</term></cell>
@@ -244,7 +250,7 @@ Therefore, in order to monitor the air quality this small prototype model will b
   <title>Code</title>
   <term>Source code</term>
   <program>
-    int redLed = 8;//declaring led1
+int redLed = 8;//declaring led1
 int greenLed = 12;//declaring led2
 int buzzer = 10; //declaring buzzer
 int smokeA0 = A0; //declaring MQ135
@@ -338,14 +344,14 @@ else
 <subsection xml:id="subsec-Experimental-air">
   <title>Experimental Result</title>
   <figure>
-    <image source="/images/air_experiment_1.JPG" width="40%"/>
+    <image source="/images/airexperiment_1.jpg" width="50%"/>
     <caption>wiring diagram of the experiment.</caption>
   </figure>
   <p>
     The fumes emitted from the lighter will emit an ethanol gas and when the gas level reaches above the certain level red LED will blink. From the fig 4.1.8, when there is ethanol gas present in the atmosphere the blue LED is set to high. 
   </p>
   <figure>
-    <image source="/images/air_experiment_2.JPG" width="40%"/>
+    <image source="/images/airexperiment_2.jpg" width="50%"/>
     <caption>The air quality is lower than the threshold.</caption>
   </figure>
 </subsection>

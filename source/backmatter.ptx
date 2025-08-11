@@ -8,16 +8,11 @@
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
   <title>Backmatter</title>
 
-  <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
-
-  <!-- <solutions divisional="solution"> <title>Selected Solutions</title> </solutions> -->
-
-  <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
-
-  <!-- <index> <title>Index</title> <index-list/> </index> -->
-
   <colophon>
-    <p> This book was authored in <pretext />. </p>
+    <p> Prototype Experiments for Beginners-Embedded Systems </p>
+    <p> Dr.M.Krishnaveni, Dr.P.Subashini, Ms.V.Narmadha</p>
+    <p> This Book is licensed under Creative Commons Attribution-ShareAlike 4.0 international license.</p>
+
   </colophon>
 </backmatter>
 

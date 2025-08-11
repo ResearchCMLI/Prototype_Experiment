@@ -6,7 +6,7 @@
     <image source="/images/street_light.jpg" width="40%"/>
     <title>Introduction</title>
     <p>
-      Street light plays a major role for security in urban areas. The street light will also improve the safety for drivers, riders and pedestrians. Half of the energy of the city is used for the electricity, is used for street light consumption. Sometimes during the dawn, the street light will be on for a longer time, this will eventually lead to wastage of electricity. To avoid this kind of problems, the smart street light will be used to power on or off the street light based on light intensity of the sunlight and based on the presence of the object. In this experiment LDR sensor and IR sensor is used. It is prototype model so only 2 IR sensors and 1 LDR sensor is used if needed can expand this to large scale by expanding the number of sensors. The table 3.5.2 lists the components required for the smart street system. It minimizes the electricity consumption and provides appropriate electricity only when needed
+      Street light plays a major role for security in urban areas. The street light will also improve the safety for drivers, riders and pedestrians. Half of the energy of the city is used for the electricity, is used for street light consumption. Sometimes during the dawn, the street light will be on for a longer time, this will eventually lead to wastage of electricity. To avoid this kind of problems, the smart street light will be used to power on or off the street light based on light intensity of the sunlight and based on the presence of the object. In this experiment LDR sensor and IR sensor is used. It is prototype model so only 2 IR sensors and 1 LDR sensor is used if needed can expand this to large scale by expanding the number of sensors. The table 3.5.1 lists the components required for the smart street system. It minimizes the electricity consumption and provides appropriate electricity only when needed
     </p>
   </subsection>
   <subsection xml:id="subsec-Components-Required-light">
@@ -55,15 +55,16 @@
     <subsubsection xml:id="subsubsec-LDR-Sensor">
       <title>LDR Sensor</title>
       <p>
-        LDR Sensor is also called as photo resistor. It works based on principle of photoconductivity. There is a passive component in the sensor which act as resistor whose resistance value will increase when the intensity of the light increases. From the fig 3.5.2.2 image of the LDR is displayed. 
+        LDR Sensor is also called as photo resistor. It works based on principle of photoconductivity. There is a passive component in the sensor which act as resistor whose resistance value will increase when the intensity of the light increases. From the fig 3.5.2 image of the LDR is displayed. 
       </p>
-      <p>
-        In the table 2, each pin configuration of   LDR is listed with its purpose
-      </p>
+     
       <figure>
-        <image source="/images/Idr_sensor.jpg" width="50%"/>
+        <image source="/images/LDRsensor.png" width="50%"/>
         <caption>LDR sensor</caption>
       </figure>
+       <p>
+        In the table 3.5.3, each pin configuration of   LDR is listed with its purpose
+      </p>
       <table>
         <title>Pin specification of LDR sensor</title>
         <tabular left="minor" right="minor" top="major" bottom="major">
@@ -94,64 +95,69 @@
     <subsection xml:id="subsec-Experimental-Approach-street-light">
       <title>Experimental Approach</title>
       <figure>
-        <image source="/images/street_light_experiment.JPG" width="50%"/>
+        <image source="/images/streetlight_experiment.jpg" width="60%"/>
         <caption>schematic diagram of Smart Street light</caption>
       </figure>
+      <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to the download app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp10.html"/>
       <term>Connection process</term>
      <ol> 
       <li>
         <p>
-          Out pin is connected to 9th pin of the Arduino (blue wire).
+          Out pin is connected to 9th pin of the Arduino.
         </p>
       </li>
       <li>
         <p>
-          VCC of the IR sensor is connected to 5V of the Arduino (Red wire). 
+          VCC of the IR sensor is connected to 5V of the Arduino. 
         </p>
       </li>
       <li>
         <p>
-          GND of the IR1 sensor is connected to GND of the Arduino (Black Wire).
+          GND of the IR1 sensor is connected to GND of the Arduino.
         </p>
       </li>
       <li>
         <p>
-          LED associated with IR sensor is connected to 13th pin of Arduino through a 10k resistor (blue wire), shorter leg of Arduino is connected to ground (black wire). 
+          LED associated with IR sensor is connected to 13th pin of Arduino through a 10k resistor, shorter leg of Arduino is connected to ground. 
         </p>
       </li>
       <li>
         <p>
-          IR2 sensor out pin is connected to 8th pin of the Arduino (green wire). 
+          IR2 sensor out pin is connected to 8th pin of the Arduino. 
         </p>
       </li>
       <li>
         <p>
-          GND of the IR sensor is connected to GND of the Arduino (Black Wire). 
+          GND of the IR sensor is connected to GND of the Arduino. 
         </p>
       </li>
       <li>
         <p>
-          VCC of the IR sensor is connected to 5v of the Arduino (Red wire).
+          VCC of the IR sensor is connected to 5v of the Arduino.
         </p>
       </li>
       <li>
         <p>
-          LED associated with IR2 is connected with LED is connected through 10k resistor to 12th  pin of the Arduino (Red Wire)
+          LED associated with IR2 is connected with LED is connected through 10k resistor to 12th  pin of the Arduino.
         </p>
       </li>
       <li>
         <p>
-          A0 pin of LDR sensor is connected to A0 pin of Arduino (purple wire). 
+          A0 pin of LDR sensor is connected to A0 pin of Arduino. 
         </p>
       </li>
       <li>
         <p>
-          VCC of the sensor is connected to 5V of the Arduino (Red Wire).
+          VCC of the sensor is connected to 5V of the Arduino.
         </p>
       </li>
       <li>
         <p>
-          GND of the LDR sensor is connected to GND of the Arduino (Black Wire). 
+          GND of the LDR sensor is connected to GND of the Arduino. 
         </p>
       </li>
     </ol>
@@ -309,10 +315,10 @@ if (LDRValue &gt; 800)//if LDRValue is greater than 800
       <subsection xml:id="subsec-Experimental-Result-street-light">
         <title>Experimental Result</title>
         <p>
-          From the above fig 3.5.6, when the light intensity from the external force is less than 500 and when IR1 and IR2 sensor finds the object, the light intensity will vary from the threshold, therefore the two LED will be set to high
+          From the below fig 3.5.6, when the light intensity from the external force is less than 500 and when IR1 and IR2 sensor finds the object, the light intensity will vary from the threshold, therefore the two LED will be set to high
         </p>
         <figure>
-          <image source="/images/street_light_output.JPG" width="50%"/>
+          <image source="/images/streetlight_output.jpg" width="50%"/>
           <caption>wiring diagram of Smart Street light</caption>
         </figure>
         </subsection>

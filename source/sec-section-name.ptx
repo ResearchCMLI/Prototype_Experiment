@@ -20,24 +20,29 @@
 <ul>
   <li><url href="https://en.wikipedia.org/wiki/PIC_microcontrollers">PIC Micro Controller</url> </li>
   <li> <url href="https://www.geeksforgeeks.org/arm-processor-and-its-features/">ARM Micro Controller</url> </li>
-  <li> <url href="https://www.javatpoint.com/embedded-system-8051-microcontroller">8051 Micro Controller</url> </li>
+  <li> <url href="https://www.geeksforgeeks.org/electronics-engineering/introduction-to-8051-microcontroller/">8051 Micro Controller</url> </li>
 </ul>
 <p><term>PIC Micro Controller</term></p>
 <p>PIC stands for Peripheral Interface Controller is a one kind of controller used in development of robotics and electronics components. It works based on hardware computing architecture the program is placed in separate registers to increase the number of input and output.</p>
-<image source ="images/pic-microcontroller.jpg" width="50%"/>
+<sidebyside valign="middle">
+<image source ="images/pic-microcontroller.jpg" width="30%"/>
 <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=7e925ea4&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%"/>
-<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+<!--<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>-->
+</sidebyside>
 
 <p><term>ARM Micro Controller </term></p>
 <p>ARM stands for Advanced RISC Machine. ARM is the Popular micro controller used in digital embedded systems. ARM is known for its significant feature to develop product with Great output. It is cost efficient and high-performance device.</p>
-<image source ="images/arm.jpg" width="50%"/>
+<sidebyside valign="middle">
+<image source ="images/arm.jpg" width="30%"/>
 <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=c5f8b15e&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%"/>
-<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+</sidebyside>
+
 <p><term>8051 Micro Controller </term></p>
 <p>It is an 8-bit micro controller. It has 40 pins and storage of 4kb ROM and 128 bytes of RAM. 8051 microcontrollers have four parallel bit ports which is programmable as per the specification.</p>
-<image source ="images/8051_micro_controller.jpg" width="50%"/>
+<sidebyside valign="middle">
+<image source ="images/8051_micro_controller.jpg" width="30%"/>
 <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=2dcc04f3&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%"/>
-<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+</sidebyside>
 
 </subsection>
 <subsection>
@@ -57,15 +62,21 @@
 <p>Official Arduino boards have Arduino tag which is directly supported by Arduino IDE. They are directly supported by the official Arduino IDE. It’s been manufactured by authorized manufactures. The official manufactures of Arduino boards, they sell the boards worldwide through their official website of Arduino.  Let’s take few moments to look the important boards.</p>
 <p><term>Arduino UNO</term> </p>
 <p>Arduino UNO is the common effectively used board by the wide population. It uses ATmega328P micro controller </p>
+<figure>
+  <image source ="images/ardiuno.jpg" width="50%"/>
+  <caption><term>Arduino UNO REV 3</term></caption>
+</figure>
 
-<image source ="images/ardiuno.jpg" width="50%"/>
-<shortdescription><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<term>Arduino UNO REV 3</term></p></shortdescription>
+
 <p><term>Arduino NANO</term> </p>
+<figure>
 <image source ="images/ardiuno_nano.jpg" width="50%" />
-<shortdescription><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<term>Arduino Nano</term></p></shortdescription>
-<p>Arduino NANO is small and highly compatible for breadboards. Board is based on ATmega328P micro controller. Following is the image of Arduino nano</p>
+  <caption><term>Arduino Nano</term></caption>
+</figure>
+
+<p>Arduino NANO is small and highly compatible for breadboards. Board is based on ATmega328P micro controller. Above is the image of Arduino nano</p>
 <p><term>Arduino UNO</term> </p>
-<p>Arduino Uno is a micro controller which controls the micro components. Works based on 32-bit micro controller. It acts as heart of the entire system. It has 6 Analog pins A0-A5 used as input pins, 14 digital pins 0-13, of which 6 pins are used as PWM (pulse width modulation). Digital pins used for both input and output. Arduino can be powered by USB cable or 9V volt battery if needed. It additionally has a 16 MHz ceramic resonator, power jack, ICSP header, 6 pins to program the boards firmware of the Arduino UNO consists of one inbuilt resistor and EEPROM Memory for storing the program.  Arduino UNO is also known as beginners kit for its robust feature in developing the products.  From the following figure 1, pin configuration of Arduino is explained in a pictorial representation. 	</p>
+<p>Arduino Uno is a micro controller which controls the micro components. Works based on 32-bit micro controller. It acts as heart of the entire system. It has 6 Analog pins A0-A5 used as input pins, 14 digital pins 0-13, of which 6 pins are used as PWM (pulse width modulation). Digital pins used for both input and output. Arduino can be powered by USB cable or 9V volt battery if needed. It additionally has a 16 MHz ceramic resonator, power jack, ICSP header, 6 pins to program the boards firmware of the Arduino UNO consists of one inbuilt resistor and EEPROM Memory for storing the program.  Arduino UNO is also known as beginners kit for its robust feature in developing the products.  From the following figure 1.1.4, pin configuration of Arduino is explained in a pictorial representation. 	</p>
 <p><em><term>Applications of Arduino UNO</term></em></p>
 <ol>
   <li>
@@ -82,37 +93,48 @@
     </p>
   </li>
 </ol>
-<url href ="https://drive.google.com/file/d/1ckLx1cslu_hfm6yujTeEQwkk75f4mENi/view?usp=drive_link"> Click the this link  to download the AR Visualization app for Ardiuno Board and Raspberry-Pi or Scan the QR Code to download the APP </url>
-<term><p>After downloading the AR Visualization app, you can interactively view the AR models of the Arduino board and Raspberry Pi using the app by showing the images of the Arduino and Raspberry Pi provided in this book</p> </term>
-  <image source ="images/Raspberry_qrcode.png" width="40%" decorative="yes"/>
-<image source ="/images/board.png" width="60%" decorative="yes"/>
-<shortdescription><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<term>Pin configuration of Arduino UNO</term></p></shortdescription>
-<p><term>NODE MCU </term></p>
+<!--<url href ="https://drive.google.com/file/d/1ckLx1cslu_hfm6yujTeEQwkk75f4mENi/view?usp=drive_link"> Click the this link  to download the AR Visualization app for Ardiuno Board and Raspberry-Pi or Scan the QR Code to download the APP </url>-->
+<remark>
+  <p>Augmented reality model of the Arduino, Raspberry Pi, and all experiments featured in this interactive book have been developed.</p>
+  <p>To explore these models, download the app using the link below or scan the QR code.</p> <url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url>
+  <p> Once installed, simply scan the corresponding images in this textbook to view the interactive AR content.</p>
+ <image source ="images/qr-code.png" width="40%" decorative="yes"/>
+</remark>
+<aside>
+    <p>You can also view the Arduino UNO interactively by downloading the app on your mobile phone and scanning the Arduino UNO image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+  <figure>
+    <image source ="/images/board.png" width="70%" decorative="yes"/>
+    <caption><term>Pin configuration of Arduino UNO</term></caption>
+  </figure>
+    <interactive iframe="https://researchcmli.github.io/3D_Objects/ardiuno.html"/>
+  <p><term>NODE MCU </term></p>
   <p>NodeMCU is an open-source and development board specially made especially for IoT based Applications.  The NodeMCU ESP8266 development board has an inbuilt ESP-12E module. ESP8266 chip has Tensilica xtensa 32-bit LX106 RISC microprocessor.  It has a built in WIFI and Bluetooth module for higher end IOT applications. Node MCU supports real time operating system. It operates from 80 to 160 MHz clock frequency. Memory capacity up to 128 KB RAM and 4 MB of flash memory to store the data and program. It has 16 digital input and output pin (GPIO1- GPIO16) and has one Analog to Digital converter pin. Node MCU can be powered by VIN pin as external power supply and also by a micro-USB jack. It also supports UART, SPI and I2C interface.  There are two control pins EN, RST to reset the micro controller. Analog pin A0 to measure the voltage from 0-3.3V. Node MCU enables SPI serial peripheral interface communication between two controllers based on Master and slave protocol, SD1, CMD,SD0,CLK four pins are used for this purpose. The UART interface is to provide asynchronous communication. It communicates up to 4.5 Mbps speed and 4 pins for this purpose TXD0, RXD0, TXD2, RXD2.  From the below diagram clearly explains the pictorial representation of the NodeMCU. </p>
-  
-  <interactive iframe="https://cautious-space-parakeet-q79g796rxv4x249rv-8772.app.github.dev/output/web/sample.html" 
-    width="800" height="600">
-    <description>3D model of Arduino</description>
-</interactive>
-  <image source ="images/Node_mcu.jpg" width="60%" decorative="yes"/>
-<shortdescription><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<term>Pin Configuration of NodeMCU</term></p></shortdescription>
+
+  <figure>
+  <image source ="images/Node_mcu.jpg" width="70%" decorative="yes"/>
+    <caption><term>Pin Configuration of NodeMCU</term></caption>
+  </figure>
   <p><term>Raspberry Pi -OS </term></p>
     <p>How to Install OS - Raspberry pi  </p>
-    <p>Take 16 GB SD card and insert the SD card in slot dedicated for it. With the help of the browser, download the Raspbian OS from the official website https://www.raspberrypi.org/downloads/ and open Thorny IDE software. Connect HDMI adapter from monitor, mouse and keyboard to the raspberry pi. Connect the ethernet cable from LAN adapter to raspberry pi .It also has an inbuilt WIFI and Bluetooth module to work with IOT applications. In Raspbian control panel, download GitHub clone to clone the projects in GitHub.  Board can be powered by micro-USB connector. When the board is powered, Raspbian OS get installed. </p>
+    <p>Take 16 GB SD card and insert the SD card in slot dedicated for it. With the help of the browser, download the Raspbian OS from the official website <url href= "https://www.raspberrypi.com/software/" visual="https://www.raspberrypi.com/software/"></url> and open Thorny IDE software. Connect HDMI adapter from monitor, mouse and keyboard to the raspberry pi. Connect the ethernet cable from LAN adapter to raspberry pi .It also has an inbuilt WIFI and Bluetooth module to work with IOT applications. In Raspbian control panel, download GitHub clone to clone the projects in GitHub.  Board can be powered by micro-USB connector. When the board is powered, Raspbian OS get installed. </p>
   <p><term>After installing the OS, we can code the prototype with the help of Thonny IDE</term></p>
   <p><term>To install the python library, open the terminal and type</term> </p>
-  <p>$ sudo apt -get install python -rpi.gpio python3 -rpi.gpio,after installing the python library, code the program in Thonny Python IDE.</p>
+  <p>$ sudo apt -get install python -rpi.gpio python3 -rpi.gpio</p><p>after installing the python library, code the program in Thonny Python IDE.</p>
   <p><em><term>Raspberry Pi</term></em></p>
   <p>It is actually a small computer .It has 40 GPIO pins, for input and output purpose, HDMI adapter to connect to the monitor, 4 USB ports used to connect peripherals like keyboard, mouse. It also consists of ethernet port, to connect the board to internet. Operating voltage for the board is 5V and audio output is powered by 3.5mm audio jack port. It is typically used by computer and electronic hobbyists. SD card slot is used to insert the SD card.Camera port is used to connect camera with Raspberry Pi to work with image and video processing applications.  Although the usages of raspberry pi is less comparing to other micro controllers. It is widely used in many areas, such as for industries due to its, modularity and open design. </p>
+   <aside>
+    <p>You can also view the Raspberry Pi interactively by downloading the app on your mobile phone and scanning the Raspberry Pi image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
+  <figure>
   <image source ="images/Raspberry_Pi_3_Large.jpg" width="60%" decorative="yes"/>
-  <shortdescription><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<term>Pin Configuration of Raspberry Pi</term></p></shortdescription>
-  <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=eeff6227&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%" />
-  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+    <caption><term>Pin Configuration of Raspberry Pi</term></caption>
+  </figure>
   
-
-
-  <interactive iframe="https://en.wikipedia.org/wiki/Alphabet_Inc."/>
-
-
+  <!--<interactive iframe="https://amuselabs.com/pmm/jigsaw?id=eeff6227&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%" />-->
+  <!--<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>-->
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/raspberry.html"/>
 </subsection>
 </section>

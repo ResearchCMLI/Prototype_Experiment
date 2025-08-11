@@ -4,7 +4,7 @@
   <title>Home Automation System using Raspberry PI</title>
   <subsection xml:id="subsec-Introduction-automation">
     <title>Introduction</title>
-    <image source="/images/home_automation.jpg" width="50%"/>
+    <image source="/images/smarthome.png" width="50%"/>
     <p>
       A home automation system will monitor and control attributes such as lighting, climate and appliances.  Home automation system is also known as smart powered home, which controls the home with IOT devices. It can control light, fan and other electronics appliances.  Home automation is divided into major IOT components like IOT sensors, IOT Gateways cloud and database. For example, it can monitor the light intensity of the sun, a switch on the light based on the intensity of the sunlight. Table 5.5.1, illustrates the components required for the experiment. It controls and monitors the home appliances from anywhere in the world. It is used in controlling smart homes and many electronic appliances.
     </p>
@@ -50,9 +50,14 @@
   <subsection xml:id="subsec-Experimental-Approach-automation">
     <title>Experimental Approach</title>
     <figure>
-      <image source="/images/home_automation_experiment.JPG" width="70%"/>
+      <image source="/images/homeautomation_experiment.jpg" width="80%"/>
       <caption>Output displayed in the serial monitor </caption>
     </figure>
+     <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+   <interactive iframe="https://researchcmli.github.io/3D_Objects/exp20.html"/>
     <term><p>Connection process </p></term>
     <ol>
       <li>
@@ -125,7 +130,7 @@
   <subsection xml:id="subsec-Experimental-Result-home-automation">
     <title>Experimental Result</title>
     <figure>
-      <image source="/images/home_automation_experiment_2.png" width="50%"/>
+      <image source="/images/homeautomation_experiment_2.png" width="70%"/>
       <caption>LED is blinking after running the Code </caption>
     </figure>
   </subsection>

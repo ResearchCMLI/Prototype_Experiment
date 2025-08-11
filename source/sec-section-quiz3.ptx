@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-quiz3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Third Chapter Quiz</title>
+
+  <task>
+    <title>Which of the following is NOT a characteristic of a servo motor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>It provides precise control of angular position.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> It is used for continuous rotation.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It has a feedback mechanism for position control.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It operates based on pulse width modulation (PWM).</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which of the following correctly describes the pin connections for the IR sensor and servo motor with the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The IR sensor’s OUT pin is connected to D9 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> The servo motor's signal pin is connected to D3 of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The VCC pin of the IR sensor is connected to 5V of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The GND of the servo motor is connected to 3.3V of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>What is the primary function of the Ultrasonic Sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To measure the temperature of an object.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> To detect the presence of light.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To measure distance by emitting sound waves and measuring the echo.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To detect the motion of objects.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which of the following describes the function of the TRIG pin in an ultrasonic sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The TRIG pin sends a signal to power the sensor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> The TRIG pin is used to set the ultrasonic wave to high and initiate the measurement.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The TRIG pin triggers an external activity to indicate the presence of an object.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The TRIG pin is connected to the ground (GND) pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+<task>
+    <title>Which of the following is true about the active infrared sensor (IR sensor)?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>It only detects infrared radiation emitted by the object.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> It has two parts: an LED (emitter) and a receiver to detect reflected infrared light.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It is used for measuring temperature.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It has a single pin for power and ground connections.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>How does the IR sensor function when detecting an object?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The receiver continuously emits infrared light, and the object blocks the signal.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> The sensor detects the absence of infrared light and triggers an output.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The emitter sends infrared light to the object, and the receiver detects the reflected rays.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The sensor sends an audible signal when detecting an object.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Which of the following is true about the connection of the IR1 sensor to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The OUT pin of the IR1 sensor is connected to the 5V pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The GND pin of the IR1 sensor is connected to VCC of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The LED associated with the IR1 sensor is connected to the 4th pin of the Arduino through a 10k resistor.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The OUT pin of the IR1 sensor is connected to the 2nd pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>How is the IR2 sensor connected to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The OUT pin of the IR2 sensor is connected to the 3rd pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The LED associated with the IR2 sensor is connected to the 5th pin of the Arduino through a 10k resistor.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The VCC of the IR2 sensor is connected to GND of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The OUT pin of the IR2 sensor is connected to the 4th pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which of the following correctly describes the connection of the LDR sensor to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>The A0 pin of the LDR sensor is connected to the A0 pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> The VCC pin of the LDR sensor is connected to 3.3V of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p> Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The GND pin of the LDR sensor is connected to the 5V of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The OUT pin of the LDR sensor is connected to the D9 pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>How is the IR sensor connected to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The LED associated with the IR sensor is connected to the 8th pin of the Arduino through a 10k resistor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p> The OUT pin of the IR sensor is connected to the 9th pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p> Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The VCC pin of the IR sensor is connected to the 3.3V pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The GND pin of the IR sensor is connected to the VCC pin of the Arduino.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+
+</section>

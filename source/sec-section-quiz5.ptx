@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section-quiz5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fiveth Chapter Quiz</title>
+
+  <task>
+    <title>What is the main purpose of the ESP8266 Wi-Fi module in IoT applications?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To control the temperature</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To connect a microcontroller to a Wi-Fi network and make TCP/IP connections</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To store sensor data</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To detect humidity and temperature</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+   <task>
+    <title>What is the purpose of the API Key in ThingSpeak?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To connect the device to the internet</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To store sensor data</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To access and write data to the ThingSpeak channel</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To set up a Wi-Fi connection</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+    <task>
+    <title>What is the function of the Enable pin in the Bluetooth module (HC05)?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>It is used to connect to the power supply.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>It toggles between data mode and AT command mode.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> It is used to transmit data.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It is used to receive data from a device.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+   <task>
+    <title>What principle does the Heart Beat Sensor work on to detect a pulse?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Thermoelectric principle</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Photoplethysmography (PPG)</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> Ultrasonic waves</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Capacitive sensing</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>What is the function of the VLED pin on the Dust Sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> It produces an analog output based on dust density.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>It powers the IR LED to emit infrared light.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It is used to connect the sensor to the power supply.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It is used to ground the sensor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Why is a 20 µF capacitor used in the connection between the Dust Sensor and NodeMCU?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> To store electrical energy for the sensor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To power the IR LED of the sensor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To act as a filter to smooth out the sensor's output.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To reduce the voltage supplied to the NodeMCU.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>What is the role of the LDR (Light Dependent Resistor) in the solar tracking system?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> To generate electricity from sunlight.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To measure the intensity of light from the sun.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To rotate the solar panel based on light intensity.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To store energy generated by the solar cell.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Why is the Servo Motor connected to the PWM pin (Pin 7) of the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> To allow the motor to receive power.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To control the voltage supplied to the solar panel.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To rotate the solar panel based on the light intensity detected by the LDRs.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To adjust the resistance in the circuit.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>What is the purpose of using the GPIO14 pin in the Raspberry Pi circuit with the LED?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> To provide power to the Raspberry Pi.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To set the initial value of the LED as high.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To reduce the current flowing through the LED.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To control the LED’s on/off state by sending signals.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>In the provided Python code, what does the command GPIO.output(8, GPIO.HIGH) do?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p> Turns off the LED.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Sets pin 8 to low voltage.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Turns on the LED.</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Delays the execution for 1 second.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  
+
+
+</section>

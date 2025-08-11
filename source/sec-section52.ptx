@@ -10,9 +10,9 @@
   <image source="/images/HEART_BEAT.jpg" width="60%"/>
 </subsection>
 <subsection xml:id="subsec-Components-required-heart-beat">
-  <title>components required for the experiment</title>
+  <title>components required</title>
   <table>
-    <title>Pin configuration of ESP8266</title>
+    <title>components required for the experiment</title>
     <tabular left="minor" right="minor" top="minor" bottom="minor">
       <row>
         <cell><term>S.No</term></cell>
@@ -20,12 +20,7 @@
         <cell><term>QTY</term></cell>
         <cell><term>Purpose</term></cell>
       </row>
-      <row>
-        <cell>S.No</cell>
-        <cell>Pin</cell>
-        <cell>QTY</cell>
-        <cell>Purpose</cell>
-      </row>
+      
       <row>
         <cell>1</cell>
         <cell>Arduino UNO</cell>
@@ -62,7 +57,7 @@
     <title>Bluetooth Module </title>
     <figure>
       <image source="/images/bluethooth_sensor.JPG" width="60%"/>
-      <caption>Output in thingspeak website</caption>
+      <caption>Bluetooth Module</caption>
     </figure>
     <p>
       Bluetooth module is one of the reliable modules among the other communication modules. The module is used to communicate between the micro controller and any other bluetooth devices like phone or laptop. It works based on the functionality of Bluetooth, has two working modes, master mode and slave mode. It can transmit the data and receives the data from one module to another. It has six pins such   as VCC, GND, Enable, RX, TX, and state pin.  Image of the Bluetooth module and its each pin is given in fig 5.2.2 Table 5.2.3, explains purpose of each pin.                                     
@@ -117,7 +112,7 @@
     </figure>
     <table>
       <title>Pin configuration of Temperature sensor</title>
-      <tabular left="minor" right="minor" top="major" bottom="major">
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>S. No</term></cell>
           <cell><term>Name</term></cell>
@@ -149,10 +144,13 @@
     <p>
       It has three pins S, +, -.The operating voltage is 3.3 to 5V. The figure below is the image of heart beat sensor. In the below table 5.2.7, pin configuration of heart beat sensor is listed.
     </p>
+    <sidebyside>
     <figure>
-      <image source="/images/heartbeat.jpg" width="60%"/>
+      <image source="/images/heartbeat_sensor.jpg" width="60%"/>
       <caption>Heart beat sensor</caption>
     </figure>
+    <image source="/images/heartbeat_sensor_2.jpg" width="60%"/>
+     </sidebyside>
     <table>
       <title>Pin configuration of Heart beat sensor</title>
       <tabular left="minor" right="minor" top="minor" bottom="minor">
@@ -183,9 +181,14 @@
 <subsection xml:id="subsec-experiment-heart-beat">
   <title>Experimental Approach</title>
   <figure>
-    <image source="/images/Experiment_heart.JPG" width="60%"/>
+    <image source="/images/Experimentheart.jpg" width="80%"/>
     <caption>schematic diagram of heart beat monitoring</caption>
   </figure>
+   <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click here to download the app</url></p>
+  </aside>
+  <interactive iframe="https://researchcmli.github.io/3D_Objects/exp17.html"/>
   <term><p>Connection Process</p></term>
  <ol>
   <li>
@@ -195,7 +198,7 @@
   </li>
   <li>
     <p>
-      S pin is connected to A0 (Pink Wire), VCC is connected to 5V (Red Wire) and GND is connected to GND (Black Wire).
+      S pin is connected to A0, VCC is connected to 5V and GND is connected to GND.
     </p>
   </li>
   <li>
@@ -205,12 +208,12 @@
   </li>
   <li>
     <p>
-      Out pin is connected to A1 in the Arduino (Green wire), VCC of the sensor is connected to 5V (Red Wire). 
+      Out pin is connected to A1 in the Arduino, VCC of the sensor is connected to 5V. 
     </p>
   </li>
   <li>
     <p>
-      GND is connected to GND of the Arduino (Black Wire). 
+      GND is connected to GND of the Arduino. 
     </p>
   </li>
   <li>
@@ -234,8 +237,8 @@
     </p>
   </li>
  </ol>
- <term><p>Pin connection </p></term>
  <table>
+  <title>Pin connection</title>
   <tabular left="minor" right="minor" top="minor" bottom="minor">
     <row>
       <cell><term>Arduino Pins</term></cell>
@@ -357,8 +360,8 @@
         Calculating heart beat with the following formula, 
       </p>
       <p>
-        Alpha*oldValue+ (1-alpha) *beat; i.e., 0.75*(0) +(1-0.75) *(value obtained from the sensor). 
- For example if following values are 0.75+1-0.75=1 *(70). Then the output will be Oldvalue =700. 
+        <term>Alpha*oldValue+ (1-alpha) *beat; i.e., 0.75*(0) +(1-0.75) *(value obtained from the sensor). 
+        For example if following values are 0.75+1-0.75=1 *(70). Then the output will be Oldvalue =700. </term>
       </p>
     </li>
     <li>
@@ -399,7 +402,7 @@
   </ol>
   <sidebyside>
     <figure>
-      <image source="/images/bluetooth_terminal.JPG" width="60%"/>
+      <image source="/images/bluetoothterminal.jpg" width="50%"/>
       <caption>Installing the Bluetooth Terminal App from Play store. </caption>
     </figure>
     <figure>
@@ -410,7 +413,7 @@
   <subsection xml:id="subsec-experiment-bluetooth-heart">
     <title>Experimental Result </title>
     <figure>
-      <image source="/images/experiment_bluetooth_heart.JPG" width="60%"/>
+      <image source="/images/experimentbluetooth_heart.jpg" width="80%"/>
       <caption>Testing the heart beat sensor with bluetooth module </caption>
     </figure>
     <figure>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section2_quiz" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Second Chapter Quiz</title>
+
+  <task>
+    <title>What is the main purpose of using a resistor in the LED blinking experiment?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To increase the brightness of the LED</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To change the polarity of the current</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To control the flow of current and divide voltage</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To power the Arduino board</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>In the LED blinking experiment, how is the LED connected to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Longer leg to GND, shorter leg to D8</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Longer leg to D8 through 1K resistor, shorter leg to GND</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Both legs connected directly to D8</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To power the Arduino board</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which of the following correctly describes the connection of the water level sensor to the Arduino?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>S pin to D8, VCC to 3.3V, GND to GND</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>S pin to D9, VCC to 5V, GND to GND</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>S pin to A0, VCC to 5V, GND to D9</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>S pin to GND, VCC to 5V, GND to D8</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+  
+
+  <task>
+    <title>How is the buzzer connected to the Arduino in the given setup?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Positive terminal to D9, negative to 5V</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Positive terminal to GND, negative to D8</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Positive terminal to A0, negative to GND</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Positive terminal to D8, negative to GND</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which of the following pins on the sound sensor is used to read the data?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>VCC</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>GND</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>D0</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>-</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>What is the primary function of the diaphragm in the sound sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>To amplify the sound signal</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>To convert vibrations into a digital signal</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To detect the sound source</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>To supply power to the sensor</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task>
+    <title>Which sensor is commonly used for automatic light control?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Ultrasonic Sensor</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Temperature Sensor</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>PIR (Passive Infrared Sensor)</p>
+      </statement>
+      <feedback>
+      <p>Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Servo motor</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>Which of the following is true about the PIR sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>The PIR sensor emits infrared radiation and detects the reflected rays.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>The PIR sensor detects infrared radiation emitted by humans or animals.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The PIR sensor is a transmitter that sends infrared rays.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The PIR sensor only operates on a voltage of 5V.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+<task>
+    <title>Which of the following is true about the DHT11 sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>It can only measure temperature.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>It can measure both temperature and humidity.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> It can only measure humidity.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>It is used to detect Methane, Nitrogen, and Carbon Dioxide.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task>
+    <title>How does the DHT11 sensor compare with the LM135 sensor?</title>
+    <statement></statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>The DHT11 sensor can measure both temperature and humidity, while the LM135 sensor only measures temperature.</p>
+      </statement>
+      <feedback>
+      <p>Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The DHT11 sensor can measure a higher range of temperatures than the LM135 sensor.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p> The DHT11 requires a higher operating voltage than the LM135.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct!</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>The LM135 sensor is used to monitor food quality, while the DHT11 is not.</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <exercise collapsed="no">
+  <statement>
+    Match the core components required for the below experiment.
+  </statement>
+  <matches>
+    <match>
+      <premise>water Level Sensor, Buzzer</premise>
+      <response>Water Level Indicator</response>
+    </match>
+    <match>
+      <premise>DHT11, MQ3 Sensor</premise>
+      <response>Food Quality Monitoring</response>
+    </match>
+    <match>
+      <premise>Resistor,LED</premise>
+      <response>LED Blinking</response>
+    </match>
+    <match>
+      <premise>Sound Sensor, LED, Resistor</premise>
+      <response>Switch on/off based on the clap sound</response>
+    </match>
+     <match>
+      <premise>PIR Sensor, LED</premise>
+      <response>Automatic light control based on movement.</response>
+    </match>
+  </matches>
+</exercise>
+
+
+</section>
