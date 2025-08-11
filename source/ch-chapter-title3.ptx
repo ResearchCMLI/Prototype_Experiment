@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Experimental Applications for Smart City</title>
+
+  <introduction>
+    <p> This chapter will explore about 5 applications which are useful for smart city. </p>
+  </introduction>
+
+  <!-- include sections -->
+ <xi:include href="sec-section31.ptx" />
+ <xi:include href="sec-section32.ptx" />
+ <xi:include href="sec-section33.ptx" />
+ <xi:include href="sec-section34.ptx" />
+ <xi:include href="sec-section35.ptx" />
+  
+</chapter>

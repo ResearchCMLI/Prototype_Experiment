@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section25" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Food Quality Monitoring System </title>
+<subsection xml:id="subsec-Introduction-food">
+  <title>Introduction</title>
+  <p>
+    Food is the main source of energy for Human. Quality of the food is more important and also it is mandatory to maintain the safety and hygiene of the food to keep the food fresh and edible. There are different parameters to determine the decomposition of food, they are temperature, humidity and bacterium present in the food. When the temperature of the food is between 40F-140F the level of ethanol gas will be higher, then it is said to be a decomposed food .Table 2.5.1, illustrates the components required for experiment is listed with its purpose.it Monitors the food and prevents the food from decomposition. It saves people from food poisoning. In this experiment learners will learn about monitoring of food quality using Arduino UNO. 
+  </p>
+</subsection>
+<subsection xml:id="subsec-Components-required-food">
+  <title>Components required</title>
+  <table>
+    <title>components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>DHT11</cell>
+        <cell>1</cell>
+        <cell>Sensor used to detect temperature and humidity of the environment</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>MQ3 Sensor</cell>
+        <cell>1</cell>
+        <cell>Detect the presence of Methane, Nitrogen and Carbon di-oxide in air. (Refer chapter 4.1)</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <subsubsection xml:id="subsubsec-DHT11-sensor">
+    <title>DHT11 sensor </title>
+    <p>
+      DHT11 sensor detects both temperature and humidity present in the environment. This type of sensor is blended with NTC to measure temperature and it has an 8-bit micro controller to display the serial data. This sensor is built in such a way to detect both temperature and humidity in a single sensor. It is easy to interface with micro controller. Data pin is called as out pin can be used for both Analog and Digital. It can measure the temperature between 0 degree Celsius to 50 degrees celsius. The sensor has three pins 5V, GND and out pin. Operating voltage of the sensor is 2.5v to 5V.  LM135 sensor measures only the room tempertaure of the environment. Here DHT11 is used because it can measure both temperature and humidity.
+    </p>
+    <figure>
+      <image source="/images/DHT_SENSOR.JPG" width="40%"/>
+      <caption>DHT11 Sensor</caption>
+    </figure>
+    <term>LM135 VS DHT11</term>
+    <table>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>LM135</term></cell>
+          <cell><term>DHT11</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>It Measures only Temperature</cell>
+          <cell>It can measure both temperature and humidity</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>Small amount of current is required</cell>
+          <cell>Less voltage for operation</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>Range of measuring is high</cell>
+          <cell>Range of measuring is less than LM135</cell>
+        </row>
+      </tabular>
+    </table>
+    <table>
+      <title>Pin configuration of DHT11</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>DATA</cell>
+          <cell>Both Analog and digital pin detects the temperature and humidity in the environment  </cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-food">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/food_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram of food quality monitoring system</caption>
+  </figure>
+  <term>Connection Process </term>
+  <ol>
+    <li>
+      <p>
+        VCC, GND. A0 of the gas sensor is connected to Arduino (Blue Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        The GND of the sensor is connected to GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5V of the Arduino (RED wire).   
+      </p>
+    </li>
+    <li>
+      <p>
+        DHT11 has three Pins Data i.e VCC and GND. DHT11 Sensor has three pins A0, VCC, GND. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Data of the DHT11 sensor is connected to Arduino (Green Wire).  
+      </p>
+    </li>
+    <li>
+      <p>
+        The GND of the sensor is connected to GND of the Arduino (Black Wire).  
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5V of the Arduino (RED wire).    
+      </p>
+    </li>
+  </ol>
+  <term>Pin connection</term>
+  <table>
+    <tabular left="major" right="major" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>A0</cell>
+        <cell>A0 MQ3</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>VCC (+)MQ3</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND (-)MQ3</cell>
+      </row>
+      <row>
+        <cell>D8</cell>
+        <cell>Data DHT11</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND (-) DHT11</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>VCC (+) DHT11</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Code-food">
+  <title>Code</title>
+  <term>Source code </term>
+  <program>
+    #include &lt;dht.h&gt;//header files
+      dht DHT;//define function 
+      int t=0;//initialize t.
+      int h=0;// initialize h
+      #define //DHT11_PIN 8 define pin D8
+      #define //MQ3_PIN A0 define A0
+      char data = 0;
+      int gas_read = 0; //define gas sensor
+      void setup() 
+      {                
+      Serial.begin(9600); // enable software serial
+      pinMode(MQ3_PIN, INPUT);//mode declaration
+      }
+      void loop()// the loop
+      {
+      gas_read = analogRead(MQ3_PIN);//convert value of gas sensor as analog value
+      Serial.print(gas_read);//print value of gas sensor 
+      int chk = DHT.read11(DHT11_PIN);//read the Temperature and humidity
+      Serial.print("Temperature = ");// print value of temperature 
+      t = DHT.temperature;
+      Serial.println(t);
+      Serial.print("Humidity = "); print value of humidity 
+      int h = DHT.humidity;
+      Serial.println(h);
+      }      
+  </program>
+  <term>Code Explanation </term>
+  <ol>
+    <li>
+      <p>
+        Declaring pins of Gas sensor and DHT11.
+      </p>
+    </li>
+    <li>
+      <p>
+        Defining the dht pin as 8 and MQ3 pin as A0. At the beginning of the program variable gas read is initialized to zero. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Function dht DHT () is initialized.   
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup() declaring MQ3 and DHT pin as input pin using Pinmode function. 
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function, converting the data generated from MQ3 sensor to analog data using analogRead function and converting the data generated from DHT11 sensor to read data variable using DHT11. 
+      </p>
+    </li>
+    <li>
+      <p>
+        The parameter humidity, temperature is saved in and instance variable called h and t. 
+      </p>
+    </li>
+    <li>
+      <p>
+        As this is a monitoring system there is no output modules are used.
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-food">
+  <title>Experimental Result</title>
+  <p>
+    The decomposed apple is used to detect the accuracy of the prototype.  Average ethanol level in the decomposed food will be higher than 100. The temperature, humidity of the food is also calculated and displayed in the serial monitor.  Figure 2.5.8, displays temperature, humidity and gas value of the model is in the serial monitor 
+  </p>
+  <figure>
+    <image source="/images/food_result.JPG" width="40%"/>
+    <caption>Spoilage of the food is detected</caption>
+  </figure>
+  <figure>
+    <image source="/images/food_output.JPG" width="40%"/>
+    <caption>Output displayed in the serial monitor</caption>
+  </figure>
+</subsection>
+</section>

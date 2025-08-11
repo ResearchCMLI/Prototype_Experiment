@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section23" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Switch on/off based on the clap sound</title>
+  <subsection xml:id="subsec-Introduction-clap">
+    <title>Introduction</title>
+    <p>
+      In this smart world, home automation is a prominent area where smart technology plays a major role in accessing our home appliances. In this experiment you will know how home automation plays a significant role and also will believe learners will have a huge impact about home automation. This experiment is a simple and renewable prototype for home automation which activates on/off the light automatically based on the clap sound.  It acts as helping aid for differently abled people to access their electrical appliances in their home or workplace. Automatic clapper is a machine which controls the light by making any sound. It can be used to on/off light without any human intervention. It is much useful for differently abled people to access their electrical appliances without any hindrances. It can be effectively used in home, offices and college.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Components-required-sound">
+    <title>Components required</title>
+    <table>
+      <title>Components required for the experiment </title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>QTY</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Arduino UNO</cell>
+          <cell>1</cell>
+          <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>Sound Sensor</cell>
+          <cell>1</cell>
+          <cell>It is used to detect the sound wave in the environment.</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>LED</cell>
+          <cell>1</cell>
+          <cell>Visualizes the feedback of the current for any application. (Refer chapter 2.1)</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>Resistor</cell>
+          <cell>1</cell>
+          <cell>Reduces the flow of the current and divide the voltage. (Refer chapter 2.1)</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>Jumper Wire </cell>
+          <cell>As per requirement</cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The table 2.3.1 shows, the hardware required for the following experiment that are listed with its appropriate purpose 
+    </p>
+    <subsubsection xml:id="subsubsec-Sound-Sensor">
+      <title>Sound Sensor </title>
+      <p>
+        Sound sensor will detect the sound wave from the microphone attached in the sensor. The sound sensor has its own inbuilt microphone, a peak detector and an amplifier to convert the sound signal to voltage. Microphone will detect the sound generated from any external force, then the sound will be further converted to an operating voltage, then the operating voltage will be sent to micro controller for further execution.  Sensor has three pins D0, +, -.  
+      </p>
+      <sidebyside valign="middle">
+      <figure>
+        <image source="/images/sound_sensor.jpg" width="50%"/>
+        <caption>Sound Sensor </caption>
+      </figure>
+            <interactive iframe="https://p.interacty.me/6fb61e926ba7ce4c/iframe.html"/>
+      </sidebyside>
+       <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<em><term>Arrange the above and below blocks in the&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;frame to complete puzzle"</term></em> </p>
+
+      <p>
+        D0 is used as input pin for reading the data, VCC and GND is used as input pins for power supply.  Sound sensor works similarly to the working of human ear that consists of diaphragm. Diaphragm will convert the vibration into digital signal. It is widely used in applications like mobile phones and audio systems. LM393 sound sensor is shown in fig 2.3.2. From the above table, table 2.3.3 the pin configuration of the sound sensor is explained with its purpose. Sound sensor has its own variation. The characteristics of the sensor depend on the type of microphones used. There are different types of micro phone i.e.  Carbon micro phone, ribbon microphone, dynamic microphone and condenser micro phone.  LM393 is preferred widely for applications like hearing aid and also for radio and television broadcasting.
+      </p>
+      <table>
+        <title>Pin configuration of sound sensor</title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S. No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>DO</cell>
+            <cell>Digital pin converts the sound wave into digital signal</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>GND (-)</cell>
+            <cell>GND of the Power supply</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>VCC (+)</cell>
+            <cell>Power pin is usually connected to 5V</cell>
+          </row>
+        </tabular>
+      </table>
+    </subsubsection>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Approach-sound">
+    <title>Experimental Approach</title>
+    <figure>
+      <image source="/images/sound_experiment.JPG" width="40%"/>
+      <caption>Schematic diagram </caption>
+    </figure>
+   <ol>
+    <li>
+      <p>
+        D0 pin of sound sensor is connected to 2nd pin (Green Wire) of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sound sensor is connected to 5V (Red wire) of the Arduino
+      </p>
+    </li>
+    <li>
+      <p>
+        GND (Black wire) is connected to GND of the Arduino. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Positive pin of LED (longer LEG) is connected to 4th pin (Blue wire) through a 100k resistor, negative (shorter leg), 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the LED is connected to GND (Black Wire) of the Arduino.
+      </p>
+    </li>
+  </ol>
+    <term>Pin Connection</term>
+    <table >
+      <tabular left="major" right="major" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>D2</cell>
+          <cell>DO</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>VCC(+)</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>GND(-)</cell>
+        </row>
+        <row>
+          <cell>D4</cell>
+          <cell>+ leg via 1K</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>GND(-)</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-Code-clap">
+    <title>Code</title>
+    <term>Source Code</term>
+    <program >
+      int soundSensor=2;//declare sensor
+int LED=4;.//led declaration
+boolean LEDStatus=false;
+void setup() {
+pinMode(soundSensor,INPUT);//mode declaration for sensor
+pinMode(LED,OUTPUT);//mode declaration for LED
+}
+void loop() {
+int SensorData=digitalRead(soundSensor); //Get data from the sensor
+if(SensorData==1){
+if(LEDStatus==false){
+  LEDStatus=true;//set status =true
+  digitalWrite(LED,HIGH);//set led as high
+  }
+  else{
+  LEDStatus=false;//set status =false
+  digitalWrite(LED,LOW);//set led as low
+  }
+  }
+  }  
+    </program>
+    <term>Code explanation </term>
+    <ol>
+      <li>
+        <p>
+          Initialize the pin of the sensor to the 2nd pin of the Arduino, Longer of the LED is connected to the 4th pin of the Arduino.
+        </p>
+      </li>
+      <li>
+        <p>
+          Initially the variable LED is set to false 
+        </p>
+      </li>
+      <li>
+        <p>
+          In void setup(), declaring the sensor pin as input using Pinmode function and LED pin as output using Pinmode function
+        </p>
+      </li>
+      <li>
+        <p>
+          In void loop (), when the sensor detects any sound it activates LED to on by itself.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Result-sound">
+    <title>Experimental Result</title>
+    <figure>
+      <image source="/images/sound_wiring.JPG" width="40%"/>
+      <caption>wiring diagram of the experiment</caption>
+    </figure>
+    <figure>
+      <image source="/images/sound_experiment_final.JPG" width="20%"/>
+      <caption>LED is in ON state </caption>
+    </figure>
+    <p>
+      From the fig 2.3.6 wiring diagram which shows how the sound sensor detects the sound made by the hands and LED is blinking. From the fig 2.3.7, we can understand that is no sound from any external sources, so the LED remains in the OFF state.
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title5" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Applications on Advanced concepts </title>
+
+  <introduction>
+    <p> This chapter will explore about 5 applications about advanced concepts. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-section51.ptx" />
+  <xi:include href="sec-section52.ptx" />
+  <xi:include href="sec-section53.ptx" />
+  <xi:include href="sec-section54.ptx" />
+  <xi:include href="sec-section55.ptx" />
+  
+</chapter>

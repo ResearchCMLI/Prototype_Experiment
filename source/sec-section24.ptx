@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section24" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Automatic light control based on movement</title>
+<subsection xml:id="subsec-Introduction-movement">
+  <title>Introduction</title>
+  <p>
+    In this experiment learners will learn how light controlled based on people’s movement is. Light is the main source of energy and the usage of light is so predominant in our day-day life. On an average household consumption of electricity is 5.7 KWh/day. According to the survey of centre of research policy, consumption of electricity has increased triple times in Indian houses. The percentage of using electricity in each household has been increased to 30% since 2007. As the electricity consumption increases, the wastage of electricity is also increasing gradually, 5-10% of electricity is wasted every month in each household. There are some preventive measures to save electricity, as such green technology and home automation and so on. Based on this, conceptual note, this prototype module is developed to save consumption of the electricity, by powering up the light based on people’s movement. The picture explains logic of the experiment more clearly when the person comes in the sensor detects the presence and activates the light to on and when he leaves the room light is automatically set to off.  It acts as a significant prototype to save energy. It controls the electronic appliances in home and also in offices 
+  </p>
+  <image source="/images/movement.JPG" width="30%"/>
+</subsection>
+<subsection xml:id="subsec-Components-required-movement">
+  <title>Components required </title>
+  <table>
+    <title>Components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>PIR sensor</cell>
+        <cell>1</cell>
+        <cell>Used to detect the human movement</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>LED</cell>
+        <cell>1</cell>
+        <cell>Visualizes the feedback of the current for any application. (Refer chapter 2.1)</cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    The table 2.4.1 gives the hardware requirement for the following experiment is listed with its appropriate purpose.
+  </p>
+  <subsubsection xml:id="subsubsec-PIR-Sensor">
+    <title>PIR Sensor </title>
+    <p>
+      PIR sensor is used to detect the radiations emitted by the presence of human.PIR sensor is made up of pyro electric component which detects the infrared radiation that is emitted by human or an animal within a particular range. This device is only a receiver but not a transmitter to transmit the IR rays. When the temperature focuses on the object it will generate a sudden electrical signal. It has three pins VCC, GND and OUT pin. VCC pin and GND pin is declared as power and ground pins and its range of operating voltage is up to, 4.5-20V. Level output is 0 when it is low and its 3.3V when high. The table 2.4.2 explains the pin configuration of the sensor. From the fig 2.4.3, the image of the PIR sensor is given. The below fig 2.4.4, shows the pictorial format the working of the PIR sensor.
+    </p>
+    <table >
+      <title>Pin configuration of PIR sensor</title>
+      <tabular left="major" right="major" top="major" bottom="major">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Out</cell>
+          <cell>Digital pin detects the presence of human</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+    </table>
+    <figure>
+      <image source="/images/pir.JPG" width="40%"/>
+      <caption>Image of PIR Sensor</caption>
+    </figure>
+    <figure>
+      <image source="/images/working_pir.JPG" width="40%"/>
+      <caption>Working of PIR sensor</caption>
+    </figure>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-movement">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/pir_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram for movement based automatic light</caption>
+  </figure>
+  <term>Connection process</term>
+  <ol>
+    <li>
+      <p>
+        Output pin is connected to 3rd pin of Arduino (Green wire).
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino(Black Wire)
+      </p>
+    </li>
+    <li>
+      <p>
+        LED can also be connected directly to Arduino. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Longer leg of the LED is connected to pin 13 in Arduino (Blue Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Shorter leg of the Arduino is connected to GND of the Arduino 
+      </p>
+    </li>
+  </ol>
+  <term>Pin Connection </term>
+  <table>
+    <tabular left="major" right="major" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>D3</cell>
+        <cell>Out</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>+</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>-</cell>
+      </row>
+      <row>
+        <cell>D13</cell>
+        <cell>+ via 1K</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Code-movement">
+  <title>Code</title>
+  <term>Source code</term>
+  <program>
+int led=13;//Declaring D13 pin for led
+int pin=3; ///Declaring D3 pin as pin 
+int value=0; //initializing value as 0
+int pirState=LOW;// initializing the state =low
+void setup(){
+pinMode(led,OUTPUT);//mode declaration for led
+pinMode(pin,INPUT);//mode declaration for PIR sensor 
+Serial.begin(9600);//initializing serial communication 
+}
+void loop()
+{
+value=digitalRead(pin);
+if (value==HIGH)//when the sensor indicates the person 
+{
+if(pirState==LOW)// when the pir state is low
+{
+Serial.println("Motion Detected");
+pirState=HIGH;//state will be set to high
+digitalWrite(led,HIGH);//led will be set to high
+}
+}else 
+{
+Serial.println("No Motion Detected");
+digitalWrite(led,LOW);// led will be set to high
+}
+}
+  </program>
+  <term>Code Explanation</term>
+  <ol>
+    <li>
+      <p>
+        In Declaration part, LED pin is declared as 13th pin and input pin of sensor is declared as 3rd pin. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Initialize the int value =0 at the beginning of the program.
+      </p>
+    </li>
+    <li>
+      <p>
+        Declaring Int PIRState=low, In void setup() PIR pin is declared as input pin using Pinmode function and declaring led pin as output pin using   PinMode function.
+      </p>
+    </li>
+    <li>
+      <p>
+        In void Loop, value of the PIR sensor is stored in an instance variable, value value=digitalRead (pin). 
+      </p>
+    </li>
+    <li>
+      <p>
+        With the help of nested if else statement, it checks the following two conditions , if PIR sends any IR radiation from the object and when the PIR state=low, the LED pin will be set to high and also a message will be displayed in the serial monitor as “Motion Detected”. 
+      </p>
+    </li>
+    <li>
+      <p>
+        If the first two conditions fail, the LED will be set to LOW.
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-movement">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/pir_experiment_final.JPG" width="40%"/>
+    <caption>LED is in off State when there is no human’s presence</caption>
+  </figure>
+  <p>
+    When an electrical signal is detected, the microcontroller will function according to the program, here in this program LED will blink if a person or object is present. The above fig 2.4.7 depicts the LED is in OFF state when there is no presence of human. The output will be also displayed in the serial monitor to denote that there is no presence of the human or any object and same is given in fig 2.4.8.
+  </p>
+  <figure>
+    <image source="/images/pir_experiment_final1.JPG" width="40%"/>
+    <caption>LED is in on state when there is presence of human</caption>
+  </figure>
+  <figure>
+    <image source="/images/pir_output.JPG" width="40%"/>
+    <caption>Output displayed in the serial monitor</caption>
+  </figure>
+  <p>
+    In the above fig 2.4.8, PIR sensor is placed at 90-degree angle straight to the person so the PIR sensor detects the IR Rays emitted from the person and generates an electrical signal to make the LED on. In the below fig 2.4.9, output will be also displayed in the serial monitor to know the presence of the human or any object. 
+  </p>
+</subsection>
+</section>

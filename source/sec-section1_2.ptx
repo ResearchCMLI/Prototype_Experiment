@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section1_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to the Software </title>
+  <p> Software is used to execute the set of instructions programmed to the computer.  Software plays a major role in transforming the ideas into a prototype model. Here in this book, Arduino IDE, PLX-DAQ and Thonny software is used to write code and execute our prototype modules.</p>
+  <subsection>
+      <title>Arduino IDE 
+      <image source ="images/ardiuno_logo.png" width="10%" decorative="yes"/> </title>
+    <p>Arduino IDE is free open-source software available on the internet. IDE is cross platform application that runs on Windows, Linux and Mac operating system. The essence of coding is based on C and C++ language.  IDE is used to write and upload the code to physical Arduino boards, and also other third-party development boards like. This chapter discusses about, how to install the software in the computer through easy steps to make the learners understand.</p>
+    <p>Before going for installation, we can choose any board you like Arduino UNO, Nano and MEGA boards and a USB cable to upload the code to the board.  In case you have versions of UNO, MEGA 2560 boards, you need a standard USB cable (A plug to B plug) shown in the figure 1.2.1. If you have an Arduino Nano board, you will need an USB cable (A plug to Mini Bplug) shown in the following figure 1.2.2  </p>
+    <figure >
+      <image source ="images/ardiuno_cable.JPG" width="40%" decorative="yes"/>
+      <caption>USB cable for Arduino UNO</caption>
+    </figure>
+    <figure>
+      <image source ="images/nano-cable.JPG" width="40%" decorative="yes"/>
+      <caption>USB cable for Arduino Nano</caption>
+    </figure>
+  </subsection>
+</section>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section31" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Automatic Door using Servo Motor </title>
+<subsection xml:id="subsec-Introduction-door">
+  <title>Introduction</title>
+  <p>
+    Automatic door is an intelligent system to open and close the door without any human intervention. When an object is in front of the door It will open the door automatically with the help of servo motor. It is also used in shopping malls, offices and so on. Working of automatic door is similar to the previous experiment automatic sanitizer using IR sensor (chapter 3.3). Table 3.1.1, explains requirement of hardware components. Below image displays the automatic door which is used in many places. 
+  </p>
+  <image source="/images/door.JPG" width="40%"/>
+</subsection>
+<subsection xml:id="subsec-Components-required-door">
+  <title>Components required </title>
+  <table>
+    <title>components required for the experiment </title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer Chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>IR sensor </cell>
+        <cell>1</cell>
+        <cell>Detect the presence of human and triggers an activity. (Refer Chapter 3.3.)</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Servo motor </cell>
+        <cell>1</cell>
+        <cell>Servo motor is used to open the lid based on the object detected (Refer Chapter 3.3)</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Jumper wires</cell>
+        <cell>As per Requirement </cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-servo">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/servo_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram for Automatic Door</caption>
+  </figure>
+  <term>Connection Process</term>
+  <ol>
+    <li>
+      <p>
+        IR sensor has three pins OUT pin is connected 3rd pin of Arduino (Blue Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of IR sensor is connected to 5V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        Servo motor signal pin is connected to 9th pin of the Arduino (Violet wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of servo motor is connected to 3.3V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino  
+      </p>
+    </li>
+  </ol>
+  <table>
+    <title>Pin Connection</title>
+    <tabular left="major" right="major" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>D3</cell>
+        <cell>Out (IR)</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>+</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>-</cell>
+      </row>
+      <row>
+        <cell>D9</cell>
+        <cell>PWM(servo)</cell>
+      </row>
+      <row>
+        <cell>VCC</cell>
+        <cell>3.3 V</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Code-servo">
+  <title>Code</title>
+  <term>Source Code</term>
+  <program>
+    #include&lt;Servo.h&gt;
+      Servo motor;
+      int IRSensor=3;
+      void setup()
+      {
+      Serial.begin(9600);
+      motor.attach(9);
+      pinMode(IRSensor, INPUT);
+      }
+      void loop ()
+      {
+      int statusSensor=digitalRead(IRSensor);
+      if(statusSensor==1)
+      {
+      motor.write(90);
+      delay (1000);
+      Serial.println("okay");
+      }      
+      delay (1000);
+}
+  </program>
+  <term>Code Explanation</term>
+  <ol>
+    <li>
+      <p>
+        First, we should install the library for servo motor. Library installation is given in chapter 1.3
+      </p>
+    </li>
+    <li>
+      <p>
+        Declaring pins of IR sensor and servo motor to 3rd and 9th pins of Arduino respectively. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Declaring servo motor function as servo motor. 
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup function declaring motor using motor for example, Attach (9). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Initializing the IR sensor as input using PinMode function. 
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function the value of IR sensor will be stored digital data using digital Read function.
+      </p>
+    </li>
+    <li>
+      <p>
+        When the sensor finds the object the, it will be set to high, when it is high the motor will rotate for 90 degrees with the delay of 1 milli second. The 90-degree rotation will open the door. 
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-servo">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/door_closed.JPG" width="40%"/>
+    <caption>The door remains in closed state</caption>
+  </figure>
+  <figure>
+    <image source="/images/door_open.JPG" width="40%"/>
+    <caption>The door is in open state</caption>
+  </figure>
+  <p>
+    In fig 3.1.4, when there is no object detected by the IR sensor the door of the small house remains closed.  When IR sensors==0 the servo motor will remain in the idle position.  
+  </p>
+  <p>
+    In fig 3.1.5, when the IR sensor ==1 detects the object.  The servo motor will rotate 90 degree which can pull the one side of the door to open. 
+  </p>
+</subsection>
+</section>

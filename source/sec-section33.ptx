@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section33" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Smart sanitizer dispenser using Arduino </title>
+<subsection xml:id="subsec-Introduction-sanitizer">
+  <title>Introduction </title>
+  <p>
+    Hand sanitizer is an antiseptic liquid which is used to kill the germs. In this pandemic situation sanitizer plays a major role to save us from the virus. WHO instructs the people, to wash their hands for more than 20 seconds to kill the corona virus. We often use sanitizer in public places, there might be a situation to use the sanitizer which is also used by the infected person that may increase the risk of transmitting the viruses so easily. To avoid this kind of situation, automatic sanitizer will detect the person’s hand when the hand is place before the sanitizer and it will dispense the sanitizer without human’s touch. This prototype model will be used as touch free sanitizer to avoid the spread of corona virus. In this prototype IR sensor is used.
+  </p>
+  <image source="/images/sanitizer.jpg" width="40%"/>
+</subsection>
+<subsection xml:id="subsec-Components-required-sanitizer">
+  <title>Components required </title>
+  <table>
+    <title>components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S.No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>IR Sensor</cell>
+        <cell>1</cell>
+        <cell>IR sensor detect the presence of IR waves emitted by Human body</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Servo Motor</cell>
+        <cell>1</cell>
+        <cell>Servo motor is used to press the knob based on the object detected.(Refer chapter )</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    From the above table 3.3.1, the components required for the air quality monitoring system is listed with its purpose.  </p>
+    <subsubsection xml:id="subsubsec-IR-Sensor">
+      <title>IR Sensor </title>
+      <p>
+        IR sensor is an electronic sensor which measures and detects any object around the surroundings. There are two kind of IR sensor, active and passive, active infrared sensor has two parts LED and a receiver. When the object is closer the infra-red light emitted from the LED will hit the object and reflect back to the receiver.
+      </p>
+      <figure>
+        <image source="/images/ir_sensor.jpg" width="40%"/>
+        <caption>components required for the experiment</caption>
+      </figure>
+      <term>IR sensor VS Proximity </term>
+      <p>
+        Active sensor is also called as proximity sensor, (ultrasonic sensor). Active sensor will be used for calculating distance. Passive infrared sensor will only detect the IR radiation from the object. IR sensor acts in a same way of how PIR sensor acts.
+      </p>
+      <p>
+        IR sensor has two LED one acts as emitter and other one acts as a transmitter. When the sensor detects an object, the emitter will send an infra light to the object and the object will reflect back the rays to the receiver. When the receiver receives the IR signal, it will trigger the micro controller to execute accordingly. It has three pins VCC, GND, D0. Each pin of IR sensor is explained in detail. In table 3.3.3, the pin configuration about the sensor is described with its purpose.
+      </p>
+      <table>
+        <title>pin configuration of IR sensor</title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S.No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>VCC</cell>
+            <cell>Power pin of the sensor. It takes 5V power</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>GND</cell>
+            <cell>GND pin of the Arduino</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>D0</cell>
+            <cell>Digital output pin receives and transmit IR waves.</cell>
+          </row>
+        </tabular>
+      </table>
+    </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-approach-sanitizer">
+  <title>Experimental approach</title>
+  <figure>
+    <image source="/images/sanitizer_experiment.JPG" width="60%"/>
+    <caption>Schematic diagram of Automatic sanitizer</caption>
+  </figure>
+  <term>Connection process </term>
+  <ol> 
+    <li>
+      <p>
+        IR sensor has three pins OUT pin is connected 8th pin of Arduino (Green Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of IR sensor is connected to 5V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino Servo motor signal pin is connected to 9th pin of the Arduino (Violet wire).  
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of servo motor is connected to 3.3V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino.
+      </p>
+    </li>
+  </ol>
+  <term>Pin Connection</term>
+  <table>
+    <tabular left="major" right="major" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>D8</cell>
+        <cell>Out (IR)</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>+</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>-</cell>
+      </row>
+      <row>
+        <cell>D9</cell>
+        <cell>PWM(servo)</cell>
+      </row>
+      <row>
+        <cell>VCC</cell>
+        <cell>3.3 V</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Code-sanitizer">
+  <title>Code</title>
+  <program>
+    #include &lt;Servo.h &gt;//library for servo motor
+      Servo motor;
+      int IRSensor=8;//declare IRsensor 
+      void setup()
+      {
+      Serial.begin(9600);//initialize Serial communication
+      motor.attach(9);//declare servo motor
+      pinMode(IRSensor, INPUT);//mode declaration for IR sensor
+      }
+      void loop ()
+      {
+      int statusSensor=digitalRead(IRSensor);
+      if(statusSensor==1)// detects the presence of IR
+      {
+      motor.write(0);
+      delay (1000);
+      motor.write(180);//rotate 180 degree
+      delay (100);//delay in micro seconds
+      }      
+      delay (1000);
+      }      
+  </program>
+  <term>Code Explanation </term>
+ <ol> 
+  <li>
+    <p>
+      As we are familiar with the smart dustbin, we should install the library for servo motor.
+    </p>
+  </li>
+  <li>
+    <p>
+      Declaring pins of IR sensor and servo motor for 8th  and 9th  pins to Arduino respectively. 
+    </p>
+  </li>
+  <li>
+    <p>
+      Declaring servo motor function as Servo motor (). 
+    </p>
+  </li>
+  <li>
+    <p>
+      In void setup function initialize motor using motor. Attach (9).
+    </p>
+  </li>
+  <li>
+    <p>
+      Initialize the IR sensor as input using PinMode function 
+    </p>
+  </li>
+  <li>
+    <p>
+      In void loop function the value of IRSensor will be stored as digital data using digital Read() function.
+    </p>
+  </li>
+  <li>
+    <p>
+      When the sensor finds the object, the value will be set to high, when the value is high the motor will rotate for 180 degrees with the delay of 1 second.
+    </p>
+  </li>
+  <li>
+    <p>
+      When motor rotates 180-degree rotation will pull the knob of the sanitizer to dispense the sanitizer.
+    </p>
+  </li>
+</ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-sanitizer">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/sanitizer_working.JPG" width="20%"/>
+    <caption>working of sanitizer</caption>
+  </figure>
+  <figure>
+    <image source="/images/sanitizer_output.JPG" width="20%"/>
+    <caption>working of sanitizer</caption>
+  </figure>
+  <p>
+    The fig 3.3.6 shows that there is no object the so the IR sensor is in its actual position so the servo motor remains the same position From the fig 3.3.7, when the IR sensor =1, IR sends an electrical signal to the microcontroller, controller will communicate to the servo motor to about 180 degree accordingly. When the servo motor rotates 180 degrees, the knob of the servo motor will dispense the sanitizer.
+  </p>
+</subsection>
+</section>

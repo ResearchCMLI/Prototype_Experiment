@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section22" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Water Level Indicator </title>
+  <subsection xml:id="subsec-Introduction-water">
+    <title>Introduction</title>
+    <p>
+      Next experiment we are going to learn about is water level indicator. Water is a main resource for humans to live. An average family wastes water up to 9,400 gallons every year. To avoid this kind of wastage, water level indicator is used to remind the family members when the water the tank is full. Water level indicator is a prototype model that indicates whether the water level in the container is low or high. Here, water level indicator is developed with the help of a water level sensor. Water level sensor has a probe, the probe will detect the level of the water and trigger the controller to perform a micro-operation.
+    </p>
+    <image source="/images/water.jpg" width="50%"/>
+    <p>
+      The objective of the experiment is to remind people, whether the water level is low or high. The system is incorporated with a buzzer as an indicating unit to remind the user to fill the tank if it is empty. The system can also be programmed to fill the tank, automatically through powering up the motor when the water level is low. This prototype is readily available in the market where people can buy the product and fix in their tank to execute the function. Interestingly, it monitors not only water but all kind of liquid like oil, petrol and so on. It has vast variety of applications like monitoring the sea level to predict tsunami and move peoples to a safe place. In industries water level indicator is used to indicate the leakages of oil from the tank. Prior monitoring of leakages of oil can prevent the industry form a huge accident
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Components-Required-water">
+    <title>Components Required</title>
+  <table>
+    <title>Components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Water level sensor</cell>
+        <cell>1</cell>
+        <cell>It has a sensor probes which indicate water level in a storage tank and will send information to the control panel that trigger an alarm.</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Buzzer </cell>
+        <cell>1</cell>
+        <cell>It is mainly used as warning tone that alerts the people if there is an emergency. </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    Components required for the water level indicator, is listed with its appropriate purposes in the above table 2.2.1
+  </p>
+  <subsubsection xml:id="subsubsec-Water-Level-Sensor">
+    <title>Water Level Sensor </title>
+    <p>
+      Water level sensor is used to detect the water level, monitor a pit, detect rainfall or detect leakage. From fig 2.2.2, horizontal line represents the sensor probes and that sensor probes sense the presence of water in the container and sends the information collected from the sensor to the microcontroller. Micro controller will work according to the instructions programmed
+    </p>
+    <sidebyside valign="middle">
+      <figure>
+        <image source="/images/water_sensor.jpg" width ="50%"/>
+        <caption>Water level sensor </caption>
+      </figure>
+      <interactive iframe="https://p.interacty.me/538450f91dbfb5c2/iframe.html"/>
+    </sidebyside>
+   <p><em><term>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Arrange the above and below blocks
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;in the frame to complete puzzle</term></em> </p>
+    <p>
+      This water level sensor has three pins namely data pin, VCC and ground for power supply. In table 2.2.4 the pin configuration is given below.
+    </p>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-Buzzer">
+    <title>Buzzer</title>
+    <p>
+      Buzzer is basically a tiny speaker which is connected to the Arduino. When an electrical signal is produced at the right frequency a solid material will be formed as a crystal in response to the mechanical stress from which a sound will be produced. Main example for this is the door bell, when a mechanical stress is applied; the bell is triggered to alarm the surrounding. Buzzer is also known as piezo buzzer. 
+    </p>
+    <sidebyside>
+      <figure>
+        <image source="/images/Buzzer.jpg" width="30%"/>
+        <caption>Buzzer</caption>
+      </figure>
+        <interactive iframe ="https://p.interacty.me/3ae1eab733fa14d8/iframe.html"/>    
+    </sidebyside>
+   <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<em><term>"Arrange the above shuffled &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Block to solve the puzzle"</term></em> </p>
+     <p>
+      From the above fig 2.2.3, we can understand that the buzzer has two wires, red and black wire. Red wire is considered as data pin connected to digital pin in the micro controller and black wire is considered as a power wire, basically connected to ground connection.                                              
+     </p>
+     <table>
+      <title>Pin configuration of the water level sensor</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No </term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>S</cell>
+          <cell>INPUT pin of the sensor </cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>+</cell>
+          <cell>Power pin of the sensor</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>-</cell>
+          <cell>OUTPUT pin will trigger an external activity to indicate that there is an object</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Approach-buzzer">
+    <title>Experimental Approach</title>
+    <figure>
+      <image source="/images/schematic_diagram_water.png" width="60%"/>
+      <caption>Schematic diagram for water level indicator</caption>
+    </figure>
+    <term>Connection Block</term>
+    <p>
+      Water level sensor has three pins s, +, -. 
+    </p>
+    <p>
+      Similarly, buzzer have two wires is positive and negative. 
+    </p>
+    <ol>
+      <li>
+        <p>
+          S pin is connected to D9 pin of Arduino.
+        </p>
+      </li>
+      <li>
+        <p>
+          VCC (+) pin connected to 5V    
+            </p>
+      </li>
+      <li>
+        <p>
+          GND (-) pin is connected to GND of the Arduino.  
+             </p>
+      </li>
+      <li>
+        <p>
+          Positive terminal of the buzzer is connected to D8 pin of the Arduino.              </p>
+      </li>
+      <li>
+        <p>
+          Negative terminal of the buzzer is connected to GND of the Arduino.             </p>
+      </li>
+    </ol>
+    <term>Pin Connection</term>
+    <table>
+      <tabular left="major" right="major" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>D9</cell>
+          <cell>S(water level sensor)</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D8</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-Code-water">
+    <title>Code</title>
+    <term>Source code</term>
+    <program>
+      const int analogInPin = A0; // declaring the Analog input pin of the water level sensor 
+const int analogOutPin = 9; // declaring Analog output pin that the buzzer is attached to D9
+int sensorValue = 0; // value read from the pot
+int outputValue = 0; // value output to the PWM (analog out)
+void setup() {
+Serial.begin(9600);// // initialize serial communications at 9600 bps:
+}
+void loop() {
+// read the analog in value:
+sensorValue = analogRead(analogInPin);
+if(sensorValue&lt;200) //checks for the threshold value when higher than 200, the function will execute 
+{
+Serial.print("sensor = ");
+Serial.print(sensorValue);//print the values of the sensor 
+Serial.println("Water Level: Low");//Display the status in serial monitor 
+digitalWrite(9,HIGH);//enable Pin D9 to HIGH 
+delay(1000); // delay between beeps
+}
+}
+    </program>
+    <term>Code Explanation</term>
+    <ol>
+      <li>
+        <p>
+          Declare the water level sensor pin as const int analogInPin = A0; 
+        </p>
+      </li>
+      <li>
+        <p>
+          Declare the variale const int analogOutPin = 9, as input pin to read the value of the sensor. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Buzzer pin is considered as const int analogOutPin = 9.
+        </p>
+      </li>
+      <li>
+        <p>
+          In void Setup (), Serial. Begin function is used to initiate the serial communication at 9600 baud rate. 
+        </p>
+      </li>
+      <li>
+        <p>
+          In void loop (), analogRead () reads the value from the specified digital pin 9 and convert as analog value.  
+        </p>
+      </li>
+      <li>
+        <p>
+          A simple if condition is used to check whether water level is less than 100, if the water level is less than 100, buzzer will trigger a sound, the output will be displayed also in the serial monitor will intimate that the water level is low and fill it immediately, else the buzzer remains in the initial state i.e. in off state. Range of water level sensor varies from 1 to 1024.  
+        </p>
+      </li>
+      <li>
+        <p>
+          7.	Here in this experiment 3cm cup is used, so the threshold is set to 100. This will vary according to the size of the tank, and the fig 2.2.7, gives the screenshot of the code. 
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Result-water">
+    <title>Experimental Result </title>
+    <figure>
+      <image source="/images/water_final_experiment.JPG" width="70%"/>
+      <caption>wiring diagram of the experiment</caption>
+    </figure>
+    <p>
+      When the water level goes below the threshold level i.e., when the water level is 100, the buzzer will trigger and also the output can be monitored in the serial monitor that is displayed in fig 2.2.8 RX (orange colour) LED in Arduino will blink 
+    </p>
+    <figure>
+      <image source="/images/water_output.JPG" width="40%"/>
+      <caption>output in the serial monitor</caption>
+    </figure>
+    <p>
+      to indicate that when the water level sensor has reached the certain threshold level. TX LED (orange colour) in Arduino will be blinked, to transmit the data for further functioning of the buzzer. As this prototype is a real time working module, the buzzer is used to alert people even when they are away from their place.   
+    </p>
+  </subsection>
+</section>

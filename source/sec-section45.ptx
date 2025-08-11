@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section45" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Smart plant watering system </title>
+<subsection xml:id="subsec-Introduction-smart-watering">
+  <title> Introduction </title>
+  <image source="/images/smart_watering.jpg" width="40%"/>
+<p>
+  Agriculture is the backbone of our country, comparing with traditional irrigation, smart irrigation has many advantages like, controlling and monitoring weather, soiling, watering will adjust the water automatically according to the soil level. Intelligent irrigation system will act as boon to our smart villagers. In this experiment, soil moisture sensor is used to detect the moisture level of plant. When the moisture level of the soil is low it will water the plant automatically and when the moisture level exceeds beyond the threshold the flow of water will be stopped immediately. This prototype will be useful for watering the plants without any human intervention. Table 1, illustrates the components required for the smart street system is listed with its purpose. It minimizes the wastage of water and monitors the plant 24*7 this experiment acts as a great aid in farm automation. 
+</p>
+</subsection>
+<subsection xml:id="subsec-Components-required-smart-watering">
+  <title>Components required</title>
+  <table>
+    <title>components required for the experiment </title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S.No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Soil moisture sensor</cell>
+        <cell>1</cell>
+        <cell>Soil moisture sensor is used to detect the moisture level in the soil</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Mini submersible water pump</cell>
+        <cell>1</cell>
+        <cell>Mini pump will be used to suck the water from the tank and flow through the water pump.</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Motor driver</cell>
+        <cell>1</cell>
+        <cell>Motor driver will take a low-current control signal and then convert it into a higher current signal to drive a motor.</cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell>9 Volt battery</cell>
+        <cell>1</cell>
+        <cell>Battery is used to power up submersible motor.</cell>
+      </row>
+      <row>
+        <cell>6</cell>
+        <cell>3 Terminal Male Pin connector</cell>
+        <cell>1</cell>
+        <cell>3 Terminal male pin connectors is used to connect 3 power pins to 5V</cell>
+      </row>
+      <row>
+        <cell>7</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <subsubsection xml:id="subsubsec-Soil-Moisture-Sensor">
+    <title>Soil Moisture Sensor</title>
+    <figure>
+      <image source="/images/soil_moisture.JPG" width="40%"/>
+      <caption>Soil Moisture Sensor</caption>
+    </figure>
+    <p>Soil moisture sensor is used to measure the content of the water level in the soil. Sensor has two parts one part of the sensor consist of conductive probes which send the signal to the control board. Control board has an IC which acts according to the program.Connect the conductive probe and sensor with the two Male to male jumper wire. The sensor has three pins VCC, GND, A0.From the Fig 4.5.2, the image of soil moisture sensor is displayed. The below table 4.5.3 each pin of the soil moisture sensor is explained with its purpose.  </p>
+    <table>
+      <title>Pin configuration of Soil Moisture sensor </title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>VCC</cell>
+          <cell>Power pin of the sensor. It takes 5V power</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND</cell>
+          <cell>GND pin of the Arduino</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>A0</cell>
+          <cell>Analog pin is input pin calculates the moisture level.</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-Submersible-mini-water-pump">
+    <title>Submersible mini-water pump</title>
+    <p>
+      Submersible water pump is a centrifugal water pump, which is a light weight body and consumes low power consumption. It has a valve opener, to connect the pump. It has two wires, positive(red) and negative(black) terminals that can be connected to positive(red) and negative terminal(black) of 9-volt battery. Remember 5V power supply is not sufficient to drive the motor so 9V battery is used.  From the below fig 4.5.4, water pump is shown
+    </p>
+    <figure>
+      <image source="/images/water_motor.JPG" width="40%"/>
+      <caption>submersible water pump</caption>
+    </figure>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-Motor-Driver">
+    <title>Motor Driver </title>
+    <p>
+      DC motor will need high voltage to drive to flow of the water. Motor driver is a small current amplifier which converts the lower current to higher current signal to drive a dc motor. Voltage supply ranges from 4.5 V to 36V. As Arduino handles only 5V, so there will be no sufficient power supply to drive the motor, so the motor driver is used. From the image 4.5.5, the image of motor driver is shown.            
+    </p>
+    <figure>
+      <image source="/images/motor_driver.JPG" width="40%"/>
+      <caption>Motor Driver</caption>
+    </figure>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-motor">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/motor_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram of smart irrigation system</caption>
+  </figure>
+  <term>Connection Process </term>
+  <ol> 
+    <li>
+      <p>
+        Soil moisture sensor has three pins A0, VCC, GND. 
+      </p>
+    </li>
+    <li>
+      <p>
+        A0 of the soil moisture sensor is connected to Arduino (Blue Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        The GND of the sensor is connected to GND of the Arduino(Black Wire).  
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5V of the Arduino (RED wire).   
+      </p>
+    </li>
+    <li>
+      <p>
+       Connect A1 pin of motor driver to 8th pin of Arduino (Blue Wire) 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect A2 pin of the motor driver to 5V of the Arduino (RED wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect VCC of the motor driver to VCC of the battery (RED wire) 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect GND of the motor driver   to GND of the battery (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect V- pin of the motor driver to the GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect positive terminal of motor pump to MA1 pin of the Motor Driver (RED wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Connect negative terminal of motor pump to MA1 pin of the Motor Driver (Black wire)
+      </p>
+    </li>
+    </ol>
+    <term>Pin Connection </term>
+    <table>
+      <tabular left="minor" right="minor" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>A0</cell>
+          <cell>A0</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D8</cell>
+          <cell>A1(motor driver)</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>V- (motor driver)</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>A2(motor driver)</cell>
+        </row>
+        <row>
+          <cell>-</cell>
+          <cell>VCC(motor driver)-VCC(battery)</cell>
+        </row>
+        <row>
+          <cell>-</cell>
+          <cell>GND(motor driver)-GND(battery)</cell>
+        </row>
+        <row>
+          <cell>-</cell>
+          <cell>+(motor pump)- MA1(motor driver)</cell>
+        </row>
+        <row>
+          <cell>-</cell>
+          <cell>-(motor pump) -  MA2(motor driver)</cell>
+        </row>
+      </tabular>
+    </table>
+</subsection>
+<subsection xml:id="subsec-Code-motor">
+  <title>Code</title>
+  <term>Sample code</term>
+  <program>
+    #include &lt;SoftwareSerial.h&gt;//declare header files
+      int srdata;//declare soilmoisture sensor 
+      int prdata; //declare prdata variable
+      int pump_status;//varible declaration
+      void setup() {
+      pinMode (A0, INPUT);//mode declaration for sensor
+      pinMode (8, OUTPUT);// mode declaration for pump
+        // put your setup code here, to run once:
+      }
+      void loop() {
+        srdata=analogRead(A0);//convert srdata to analogdata 
+        prdata=map(srdata, 0,1023, 100, 0);//
+        Serial.print("Sensor data: ");
+        Serial.println(prdata);//print the value
+        String sensor_value=String(prdata);
+        if(prdata>30)//when moisture level is less than30
+      {  
+          digitalWrite(8, LOW);//pump is set to off state
+          pump_status=100; //value of the pump is set to 100
+        }
+        else
+        {
+          digitalWrite(8, HIGH); pump is set to on state
+          pump_status=0; value of the pump is set to 0
+            }
+      }      
+  </program>
+  <term>Code Explanation </term>
+  <ol> 
+    <li>
+      <p>
+        Declare the pins of sensor data as srdata, int prdata and pump_status globally. 
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup function declaring input and output pin using Pinmode function. Declaring sensor A0 as input and motor pin 8 as output. pinMode(A0, INPUT) 
+      </p>
+    </li>
+    <li>
+      <p>
+        Void loop function converting the data generated from sensor to analog data using analogRead function. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Map function is used to map any kind of analog values ranges from 0-1023. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Using if condition when the soil moisture level is greater than 30 so the pump will be set will be set to low, water will stop automatically.
+      </p>
+    </li>
+    <li>
+      <p>
+        When the data is less than 30, water will flow automatically water the plants. It is shown in the below fig 4.5.8 and 4.5.9.
+      </p>
+    </li>
+    </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-motor">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/motor_experiment_1.JPG" width="40%"/>
+    <caption>Flow of the water stops when the soil is wet</caption>
+  </figure>
+  <figure>
+    <image source="/images/motor_experiment_2.JPG" width="40%"/>
+    <caption>The water is flowing when the soil is dry</caption>
+  </figure>
+</subsection>
+</section>

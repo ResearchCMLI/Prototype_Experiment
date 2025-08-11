@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section_1_quiz" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>First Chapter Quiz</title>
+
+  <task label="pic-question">
+    <statement>What is an embedded system?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>A stand-alone software program</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>A hardware-only system</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>A combination of hardware and software to perform specific tasks</p>
+      </statement>
+      <feedback>
+      <p>Correct! A combination of hardware and software to perform specific tasks.</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>A general-purpose computer system</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+  
+
+<task label="pic-question1">
+    <statement>Which company originally developed the AVR microcontroller?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Microchip Technology</p>
+      </statement>
+        <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>ATMEL Corporation</p>
+      </statement>
+        <feedback>
+      <p> Correct! ATMEL Corporation</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Intel</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Texas Instruments</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example">
+    <statement>What does PIC stand for in PIC Microcontroller?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Programmable Integrated Circuit</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Peripheral Interface Controller</p>
+      </statement>
+      <feedback>
+      <p>Correct! Peripheral Interface Controller </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Processor Integrated Chip</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Peripheral Input Control</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example1">
+    <statement>Which feature makes ARM microcontrollers popular for embedded systems?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Low performance and high cost</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>High performance and cost-efficiency</p>
+      </statement>
+      <feedback>
+      <p>Correct! High performance and cost-efficiency</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Limited compatibility with peripherals</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Complex architecture</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example2">
+    <statement>Which programming languages does Arduino IDE primarily support?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Python and Java</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>C and C++</p>
+      </statement>
+      <feedback>
+      <p>Correct! C and C++</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Assembly and COBOL</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Ruby and Kotlin</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example3">
+    <statement>What is the purpose of the Arduino Uno’s A0–A5 pins?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Digital input only</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Analog output only</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Analog input only</p>
+      </statement>
+      <feedback>
+      <p> Correct!Analog input only </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Both analog input and output</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+  <task label="multiple-choice-example4">
+    <statement>What is a unique feature of the NodeMCU development board?</statement>
+    <choices>
+      <choice correct="yes"><statement>
+        <p>Built-in ESP-12E module with WiFi and Bluetooth</p>
+      </statement>
+       <feedback>
+      <p> Correct! Built-in ESP-12E module with WiFi and Bluetooth</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Lack of I/O pins for connectivity</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Designed specifically for robotics</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Incompatible with IoT applications</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example5">
+    <statement>Which component in Raspberry Pi allows connection to a monitor?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>GPIO pins</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>HDMI adapter</p>
+      </statement>
+       <feedback>
+      <p>Correct! HDMI adapter</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Ethernet port</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>USB port</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example6">
+    <statement>What is the primary function of the void loop() function in Arduino code?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Executes only once</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Executes continuously in a repetitive cycle</p>
+      </statement>
+       <feedback>
+      <p>Correct! Executes continuously in a repetitive cycle</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Sets up the initial configurations</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Saves the program to EEPROM</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+  <task label="multiple-choice-example7">
+    <statement>What does the Thonny IDE primarily support?</statement>
+    <choices>
+      <choice correct="no"><statement>
+        <p>Java programming</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="yes"><statement>
+        <p>Python programming</p>
+      </statement>
+      <feedback>
+      <p>Correct! Python programming</p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>C++ programming</p>
+      </statement>
+      <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+      <choice correct="no"><statement>
+        <p>Assembly programming</p>
+      </statement>
+       <feedback>
+      <p>Not Correct! </p>
+    </feedback>
+      </choice>
+    </choices>
+  </task>
+
+
+<task label="mcq-with-feedback">
+  <statement>Which element is the most abundant in the Earth's atmosphere?</statement>
+  <choices>
+    <choice correct="no">
+      Oxygen
+      <feedback>Incorrect. Oxygen is present in the atmosphere, but it's not the most abundant.</feedback>
+    </choice>
+    <choice correct="yes">
+      Nitrogen
+      <feedback>Correct! About 78% of the Earth's atmosphere is nitrogen.</feedback>
+    </choice>
+    <choice correct="no">
+      Carbon Dioxide
+      <feedback>Incorrect. Carbon dioxide makes up a small fraction of the atmosphere.</feedback>
+    </choice>
+    <choice correct="no">
+      Argon
+      <feedback>Incorrect. Argon is present in trace amounts, not the most abundant.</feedback>
+    </choice>
+  </choices>
+</task>
+
+
+</section>

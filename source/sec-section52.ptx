@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section52" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Heart Beat and Temperature Monitoring using Bluetooth Module </title>
+<subsection xml:id="subsec-Introduction-heart">
+  <title>Introduction</title>
+  <p>
+    This experiment deals with patient monitoring system. Function of the human body is determined by 4 vital signs like body temperature, heartbeat, respiration rate and blood pressure. The following vital signs will be useful for detecting and monitoring the human’s health. Any changes in the vital signs for a human may lead to a disease. This proposed prototype can read the heartbeat of a person, measure patient’s temperature and continuously monitor the patient and will update them in a Bluetooth APP. Table 5.2.1, displays the hardware components is listed with its purpose Bluetooth Terminal monitors the patient from the mobile phone itself to have a self-evaluation. Useful for both doctors and patient Application called instant heat rate, measures heart rate and pulse rate of the patient and displays a visualization chart. The Instant rate is available on google play store. 
+  </p>
+  <image source="/images/HEART_BEAT.jpg" width="60%"/>
+</subsection>
+<subsection xml:id="subsec-Components-required-heart-beat">
+  <title>components required for the experiment</title>
+  <table>
+    <title>Pin configuration of ESP8266</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S.No</term></cell>
+        <cell><term>Pin</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>S.No</cell>
+        <cell>Pin</cell>
+        <cell>QTY</cell>
+        <cell>Purpose</cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs.(Refer Chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Bluetooth Module</cell>
+        <cell>1</cell>
+        <cell>Bluetooth module is used to communicate from one device to another device in a shorter distance.</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Temperature sensor</cell>
+        <cell>1</cell>
+        <cell>Detect the body temperature of the person</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>Heart beat sensor</cell>
+        <cell>1</cell>
+        <cell>Sensor used to measure heartbeat of the human</cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <subsubsection xml:id="subsubsec-Bluetooth-Module">
+    <title>Bluetooth Module </title>
+    <figure>
+      <image source="/images/bluethooth_sensor.JPG" width="60%"/>
+      <caption>Output in thingspeak website</caption>
+    </figure>
+    <p>
+      Bluetooth module is one of the reliable modules among the other communication modules. The module is used to communicate between the micro controller and any other bluetooth devices like phone or laptop. It works based on the functionality of Bluetooth, has two working modes, master mode and slave mode. It can transmit the data and receives the data from one module to another. It has six pins such   as VCC, GND, Enable, RX, TX, and state pin.  Image of the Bluetooth module and its each pin is given in fig 5.2.2 Table 5.2.3, explains purpose of each pin.                                     
+    </p>
+    <table>
+      <title>pin specification of HC05 sensor</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Enable </cell>
+          <cell>Used to toggle between data mode and AT command mode. Default mode is Data mode.</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>RX</cell>
+          <cell>Receives the data from any module connected</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>TX</cell>
+          <cell>Transmits the data from connected sensor to another module</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>State</cell>
+          <cell>Feedback to check whether Bluetooth is working properly.</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-temperature-sensor">
+    <title>Temperature sensor  </title>
+    <p>Temperature sensor is an electronic sensor that detects the temperature of the human body. It has three pins VCC, GND and S pin. The output voltage is proportional to temperature in Celsius. The range of the temperature is measured in 550C to +1500C. Pin configuration of the sensor is given in table 5.2.5</p>
+    <figure>
+      <image source="/images/temp_sensor.jpg" width="60%"/>
+      <caption>Temperature sensor</caption>
+    </figure>
+    <table>
+      <title>Pin configuration of Temperature sensor</title>
+      <tabular left="minor" right="minor" top="major" bottom="major">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>S</cell>
+          <cell>Input pin that detects the temperature of the human body.</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+      </table>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-heart-beat">
+    <title>Heart Beat Sensor</title>
+    <p>
+      Heart Beat sensor is an electronic device, which detects heart beat from the pulse wave emitted from the finger. A heart beat sensor consists of LED and a photo diode. The heartbeat sensor works on the principle of photoplethysmography. The heart beat is caused by the variation of the blood flow in the heart, when a pulse is exposed to a light source it either reflects the light or transmits the detected light output in the form of electrical signal. 
+    </p>
+    <p>
+      It has three pins S, +, -.The operating voltage is 3.3 to 5V. The figure below is the image of heart beat sensor. In the below table 5.2.7, pin configuration of heart beat sensor is listed.
+    </p>
+    <figure>
+      <image source="/images/heartbeat.jpg" width="60%"/>
+      <caption>Heart beat sensor</caption>
+    </figure>
+    <table>
+      <title>Pin configuration of Heart beat sensor</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S.No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>S</cell>
+          <cell>Input pin that detects heart beat</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-experiment-heart-beat">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/Experiment_heart.JPG" width="60%"/>
+    <caption>schematic diagram of heart beat monitoring</caption>
+  </figure>
+  <term><p>Connection Process</p></term>
+ <ol>
+  <li>
+    <p>
+      The heart beat sensor three pins S, VCC, GND. 
+    </p>
+  </li>
+  <li>
+    <p>
+      S pin is connected to A0 (Pink Wire), VCC is connected to 5V (Red Wire) and GND is connected to GND (Black Wire).
+    </p>
+  </li>
+  <li>
+    <p>
+      Temperature sensor has three pins out, +,-. 
+    </p>
+  </li>
+  <li>
+    <p>
+      Out pin is connected to A1 in the Arduino (Green wire), VCC of the sensor is connected to 5V (Red Wire). 
+    </p>
+  </li>
+  <li>
+    <p>
+      GND is connected to GND of the Arduino (Black Wire). 
+    </p>
+  </li>
+  <li>
+    <p>
+      Bluetooth module has 6 pins. VCC, GND, RX, TX, EN, ST. 
+    </p>
+  </li>
+  <li>
+    <p>
+      VCC of the Bluetooth module is connected to 5v of the Arduino. 
+    </p>
+  </li>
+  <li>
+    <p>
+      GND is connected to GND of the Arduino. RX of the Bluetooth is connected to 10th pin of the Arduino. 
+    </p>
+  </li>
+  <li>
+    <p>
+      TX of the Bluetooth is connected to 11th pin of the Arduino.
+    </p>
+  </li>
+ </ol>
+ <term><p>Pin connection </p></term>
+ <table>
+  <tabular left="minor" right="minor" top="minor" bottom="minor">
+    <row>
+      <cell><term>Arduino Pins</term></cell>
+      <cell><term>Component Pins</term></cell>
+    </row>
+    <row>
+      <cell>A0</cell>
+      <cell>Out (heart beat sensor)</cell>
+    </row>
+    <row>
+      <cell>5V</cell>
+      <cell>VCC(+)(heart beat sensor)</cell>
+    </row>
+    <row>
+      <cell>GND</cell>
+      <cell>GND(-)heart beat sensor))</cell>
+    </row>
+    <row>
+      <cell>A1</cell>
+      <cell>Out (Temperature)</cell>
+    </row>
+    <row>
+      <cell>5V</cell>
+      <cell>VCC(+)</cell>
+    </row>
+    <row>
+      <cell>GND</cell>
+      <cell>GND(-)</cell>
+    </row>
+    <row>
+      <cell>D10</cell>
+      <cell>RX(HC05)</cell>
+    </row>
+    <row>
+      <cell>D11</cell>
+      <cell>TX (HC05)</cell>
+    </row>
+    <row>
+      <cell>5V</cell>
+      <cell>VCC(+)(HC05)</cell>
+    </row>
+    <row>
+      <cell>5V</cell>
+      <cell>VCC(+)(HC05)</cell>
+    </row>
+    <row>
+      <cell>GND</cell>
+      <cell>GND(-)(HC05)</cell>
+    </row>
+  </tabular>
+ </table>
+</subsection>
+<subsection xml:id="subsec-code-heart">
+  <title>Code</title>
+  <term><p>Source code</p></term>
+  <program>
+    #include &lt;SoftwareSerial.h&gt;//header files
+      SoftwareSerial BTserial(11, 10); // RX | TX
+      int pinTemp = A1;   //This is where our Output data goes
+      double alpha=0.75;
+      int period=200; 
+      double refresh=0.0;
+      void setup() {
+        Serial.begin(9600);  //enables serial monitor
+        BTserial.begin(9600); //enables bluetooth serial monitor 
+        pinMode(A0,INPUT); //mode declaration for A0  
+        }
+        void loop() {
+        static double oldValue=0;
+        static double oldrefresh=0;
+        int beat=analogRead(A0);
+        double value=alpha*oldValue+(1-alpha)*beat;
+        oldValue=value;
+        Serial.print("Heart Beat: ");//print the heart beat
+        BTserial.print("heart beat=");// BTserial.print("Heart Beat",beat);
+        Serial.println(beat/10);
+        BTserial.println(beat/10);
+        oldValue=value;
+        oldrefresh=refresh;
+        int temp = analogRead(pinTemp);   //Read the analog pin
+        temp = temp * 0.48828125;   // convert output (mv) to readablecelcius
+        BTserial.println("Temperature=");
+        Serial.println("Temperature:");
+        Serial.print(temp);
+        Serial.print("C"); //print the temperature status
+        BTserial.println(temp);//print the temperature status
+        delay(1000);  
+        }        
+  </program>
+  <term><p>
+    Code Explanation
+  </p></term>
+  <ol>
+    <li>
+      <p>
+        Declaring the int pinTemp=A1 as a global variable and also initializing alpha=0.75, int period = 200, double refresh = 0. 0.
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup declare the serial. Begin (9600) function and initializes Bluetooth serial with the same baud rate as 9600. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Declaring A0 as input pin using Pinmode function. For example, pin Mode(A0, INPUT);  
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function initializing old value=0, old refresh=0 
+      </p>
+    </li>
+    <li>
+      <p>
+        To converting the digital data generated from the sensor to analog data using analogRead function. 
+      </p>
+      <p>
+        Calculating heart beat with the following formula, 
+      </p>
+      <p>
+        Alpha*oldValue+ (1-alpha) *beat; i.e., 0.75*(0) +(1-0.75) *(value obtained from the sensor). 
+ For example if following values are 0.75+1-0.75=1 *(70). Then the output will be Oldvalue =700. 
+      </p>
+    </li>
+    <li>
+      <p>
+        The heart beat per minute =700. Assigning oldValue =value.  Now the oldValue=700. serial.println (beat/10);  
+      </p>
+    </li>
+    <li>
+      <p>
+        Divide the beat value by 10 700/10=70.
+      </p>
+    </li>
+    <li>
+      <p>
+        Displaying the value in Bluetooth terminal using the following code BTserial.println(beat/10); 
+      </p>
+    </li>
+    <li>
+      <p>
+        Convert the data generated from Temperature to analog data using analogRead function. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Convert output (mv) generated from the temperature sensor to readable Celsius. Temp= temp * 0.48828125;
+      </p>
+    </li>
+    <li>
+      <p>
+        Interfacing with Bluetooth Mobile Application
+      </p>
+    </li>
+    <li>
+      <p>
+        Download Bluetooth terminal from play store, for that installation procedures are given below in the fig 5.2.10 and 5.2.11 respectively.
+      </p>
+    </li>
+  </ol>
+  <sidebyside>
+    <figure>
+      <image source="/images/bluetooth_terminal.JPG" width="60%"/>
+      <caption>Installing the Bluetooth Terminal App from Play store. </caption>
+    </figure>
+    <figure>
+      <image source="/images/bluetooth_terminal2.JPG" width="60%"/>
+      <caption>Connecting Bluetooth terminal with Bluetooth module with password.</caption>
+    </figure>
+  </sidebyside>
+  <subsection xml:id="subsec-experiment-bluetooth-heart">
+    <title>Experimental Result </title>
+    <figure>
+      <image source="/images/experiment_bluetooth_heart.JPG" width="60%"/>
+      <caption>Testing the heart beat sensor with bluetooth module </caption>
+    </figure>
+    <figure>
+      <image source="/images/experiment_bluetooth_terminal.JPG" width="60%"/>
+      <caption>Data extracted from the sensor is displayed in Bluetooth terminal mobile Application. </caption>
+    </figure>
+  </subsection>
+</subsection>
+</section>

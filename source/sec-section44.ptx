@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section44" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Smart Attendance system using RFID</title>
+<subsection xml:id="subsec-Introduction-attendance">
+  <title>Introduction</title>
+  <p>
+    Attendance system is the evaluation system to monitor whether they are inside the organizations or not. It works based on the Radio Frequency. The RFID sensor receives the frequencies of the RFID tag, sensor will match the unique ID (represents the person) given for each tag.  It used EMF to automatically identify and track the tag. RFID consists of three parts a radio receiver to receive the frequency, tiny radio transponder receives the radio signal and emits a different radio signal and a transmitter to transmit radio waves. Application of RFID tag is widely used around the world. One of the applications of RFID tag is also used in forest to monitor the activities of wild animals.  In 2018 Government of Tamil Nadu introduces this scheme to monitor the attendance of the students. It captures the value of the card when passes through it. Higher officials can monitor from anywhere in the world.
+  </p>
+    <image source="/images/smart_attendance.jpg" width="40%"/>
+</subsection>
+<subsection xml:id="subsec-Components-Required-attendance">
+  <title>Components Required</title>
+  <table>
+    <title>components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer Chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>RFID sensor</cell>
+        <cell>1</cell>
+        <cell>Radio waves transmit data from the tag to a reader. </cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Jumper wires</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <subsubsection xml:id="subsubsec-RFID-Sensor">
+    <title>RFID Sensor</title>
+    <p>
+      RFID is an acronym for Radio Frequency Identification. It uses electromagnetic field to identify the object. It consists of a radio receiver, transmitter and tiny radio transponder. It is based on MFRC522 controller. The module will support 12C, SPI, UART. The RFID sensor has a sensor, a small key chain and a blank card to transmit and receive radio waves. RFID has 8 pins SDA, SCK, MOSI, MISO, IRQ, GND, RST and VCC.
+    </p>
+    <figure>
+      <image source="/images/RFID_Sensor.jpg" width="40%"/>
+      <caption>RFID Sensor</caption>
+    </figure>
+    <p>
+      The table 4.4.2.2 explains each pin and its usage. Fig 4.4.2.2 displays the RFID.
+    </p>
+    <table>
+      <title>Pin configuration for RC522</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Pin</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>SDA</cell>
+          <cell>Serial input for SPI communication </cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>SCK</cell>
+          <cell>Used to provide clock source </cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>MOSI</cell>
+          <cell>Master out slave in pin for SPI communication </cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>MISO</cell>
+          <cell>Acts differently according to the communication SCL for I2C and TX for UART</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>IRQ</cell>
+          <cell>Interrupt pin, wake the module when the object comes to the range.</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>GND</cell>
+          <cell>Connect to GND of the Arduino </cell>
+        </row>
+        <row>
+          <cell>7</cell>
+          <cell>RST</cell>
+          <cell>Reset the modules</cell>
+        </row>
+        <row>
+          <cell>8</cell>
+          <cell>VCC</cell>
+          <cell>Used to power basically 3.3 V </cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-attendance">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/attendance_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram for the smart attendance system</caption>
+  </figure>
+  <term>Connection Process</term>
+  <ol> 
+    <li>
+      <p>
+        SDA of the RFID is connected to 10th pin Arduino (Sky Blue Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        RST of the RFID is connected to 9th  pin of the Arduino (Sky Blue Wire) 
+      </p>
+    </li>
+    <li>
+      <p>
+        SCK is connected to 13th pin of the Arduino (Green Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        MOSI of the RFID is connected to 11th pin of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        MISQ is connected of RFID is connected to 12th  pin of the Arduino (dark pink). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the RFID is connected to GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the RFID is connected to 3.3 V of the Arduino (Red wire).
+      </p>
+    </li>
+  </ol>
+  <term>Pin Block</term>
+  <table>
+    <tabular left="minor" right="minor" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>D10</cell>
+        <cell>SDA (RC522)</cell>
+      </row>
+      <row>
+        <cell>D13</cell>
+        <cell>SCK(RC522)</cell>
+      </row>
+      <row>
+        <cell>D11</cell>
+        <cell>MOSI(RC522)</cell>
+      </row>
+      <row>
+        <cell>D12</cell>
+        <cell>MISQ(RC522)</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND (RC522)</cell>
+      </row>
+      <row>
+        <cell>3.3 V</cell>
+        <cell>VCC(RC522)</cell>
+      </row>
+    </tabular>
+  </table>
+  <figure>
+    <image source="/images/attendance_screen.JPG" width="40%"/>
+    <caption>Include SPI Serial Monitor library, below figure explains how to install the library for SPI and MFRC522</caption>
+  </figure>
+  <p>
+    SPI Serial Monitor Library is used to call the necessary functions and header files. Library installation procedure is displayed in fig 4.4.3.1
+  </p>
+</subsection>
+<subsection xml:id="subsec-Code-attendance">
+  <title>Code</title>
+  <ol> 
+    <li>
+      <p>
+        Declare the RST pin of RFID sensor to 9th pin of Arduino 
+      </p>
+    </li>
+    <li>
+      <p>
+        Declare the SS pin of RFID sensor to 10th pin of Arduino. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Declaring function mfrc522 with SS_Pin and RST_Pin
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function the value of key will be stored int variable byte. A unique key is generated    when the tag of the RFID is read by the sensor. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Whenever a new key (individual) crosses the RC522 it stores the value and saves it with time and date of the individual key will be stored in excel file.
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Result-attendance">
+  <title>Experimental Result </title>
+  <figure>
+    <image source="/images/attendance_result.JPG" width="40%"/>
+    <caption>Output Name, Date and Time of the Employee is displayed in the serial monitor</caption>
+  </figure>
+  <p>
+    From the above fig 4.4.5.1, the ID has been extracts, the values such as name, date and time in serial monitor. It is required to view the attendance from another end, so PLX -DAQ software is installed, to view the data from anywhere from the world. Below figure 5, explains the installation guide for the software.
+  </p>
+  <figure>
+    <image source="/images/DAQ.JPG" width="40%"/>
+    <caption>software PLX-DAQ</caption>
+  </figure>
+  <p>
+    After the software installation is completed, when the RC522 scans the RFID tag the name, date and time of the employee will be stored in the excel sheet displayed in fig 4.4.5.2.
+  </p>
+  <figure>
+    <image source="/images/DAQ_sheet.JPG" width="40%"/>
+    <caption>Setting up the PLX -DAQ should set the appropriate baud rate and port.</caption>
+  </figure>
+  <figure>
+    <image source="/images/attendance_final.JPG" width="40%"/>
+    <caption>Result stored in excel sheet can be used for reviewing the attendance of the  employee.Can be viewed from anywhere in the world.</caption>
+  </figure>
+</subsection>
+</section>

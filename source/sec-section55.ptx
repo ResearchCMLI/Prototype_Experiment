@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section55" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Home Automation System using Raspberry PI</title>
+  <subsection xml:id="subsec-Introduction-automation">
+    <title>Introduction</title>
+    <image source="/images/home_automation.jpg" width="50%"/>
+    <p>
+      A home automation system will monitor and control attributes such as lighting, climate and appliances.  Home automation system is also known as smart powered home, which controls the home with IOT devices. It can control light, fan and other electronics appliances.  Home automation is divided into major IOT components like IOT sensors, IOT Gateways cloud and database. For example, it can monitor the light intensity of the sun, a switch on the light based on the intensity of the sunlight. Table 5.5.1, illustrates the components required for the experiment. It controls and monitors the home appliances from anywhere in the world. It is used in controlling smart homes and many electronic appliances.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Components-Required-automation">
+    <title>Components Required</title>
+    <table>
+      <title>Hardware Requirements for the experiment </title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>QTY</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Raspberry PI</cell>
+          <cell>1</cell>
+          <cell>Raspberry Pi is a tiny computer to execute   based on Linux OS (Refer Chapter 1.3)</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>LED</cell>
+          <cell>1</cell>
+          <cell>Visualizes the feedback of the current for any application (Refer Chapter 2.1) </cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>Resistor </cell>
+          <cell>1</cell>
+          <cell>Reduces the flow of the current and divide the voltage Refer Chapter 2.1)</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>Jumper wires </cell>
+          <cell>1</cell>
+          <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Approach-automation">
+    <title>Experimental Approach</title>
+    <figure>
+      <image source="/images/home_automation_experiment.JPG" width="70%"/>
+      <caption>Output displayed in the serial monitor </caption>
+    </figure>
+    <term><p>Connection process </p></term>
+    <ol>
+      <li>
+        <p>
+          Longer leg of the LED is connected to the GPIO14 pin through 100K resistor.
+        </p>
+      </li>
+      <li>
+        <p>
+          Shorter leg of the LED is connected to ground of the Arduino. 
+        </p>
+      </li>
+    </ol>
+    <table>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>Raspberry PI</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>GPIO14</cell>
+          <cell>+ leg via 100k resistor</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-leg</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-Code-automation">
+    <title>Code</title>
+    <term><p>Source code</p></term>
+    <program>
+      import RPI.GPIO as GPIO //import Raspberry Pi GPIO library 
+      from time import sleep //Import the sleep function from the time module
+      GPIO. setwarnings (False) //ignore waiting for now
+      GPIO. setmode(GPIO.BOARD) //Use physical pin numbering
+      GPIO.setup(8, GPIO.OUT, initial=GPIO.Low)//set pin 8 to an output pin and set the initial value as low(off)
+      while True: //Run forever 
+      GPIO.output(8, GPIO.HIGH)//turn on 
+      sleep(1) //sleep for 1 second
+      GPIO.output(8, GPIO.LOW)//turn off
+      sleep(1) //sleep for 1 second      
+    </program>
+    <term><p>Code Explanation</p></term>
+    <ol>
+      <li>
+        <p>
+          Import Raspberry Pi. GPIO library for declaring input and output pins. 
+        </p>
+      </li>
+      <li>
+        <p>
+          GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) 
+        </p>
+      </li>
+      <li>
+        <p>
+          Set pin 8 to be an output pin and set initial value to low (off) 
+        </p>
+      </li>
+      <li>
+        <p>
+          With the help of while statement, when condition is true the LED will set to HIGH with delay of 1 second.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Result-home-automation">
+    <title>Experimental Result</title>
+    <figure>
+      <image source="/images/home_automation_experiment_2.png" width="50%"/>
+      <caption>LED is blinking after running the Code </caption>
+    </figure>
+  </subsection>
+</section>

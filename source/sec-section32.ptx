@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section32" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Smart Dustbin </title>
+  <subsection xml:id="subsec-Introduction-dustbin">
+    <title>Introduction</title>
+    <image source="/images/dustbin.jpg" width="40%"/>
+    <p>
+      Dustbin plays a major role in our routine house hold activities that keeps the environment clean and neat. Here smart dustbin, work based on the distance calculated between the object and the dustbin. When a person wants to drop a waste in the bin, based on the distance the lid of the bin will automatically open and close. Bin acts as an intelligent bin to trash waste. It is a decent prototype for a clean environment which can be used in homes, offices, colleges etc. Here is an example how smart dustbin is used in many countries, like London, Atlanta, Melbourne and many more. Smart dustbin consists of many sensors and LED screen.  LED screen is used to display the storage level of dustbin.  The dustbin can be connected through WI-FI modules, to monitor the dustbin from anywhere around the world.  Smart bin saves the time and energy of the human in cleaning process.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Components-required-dustbin">
+    <title>Components required</title>
+    <table>
+      <title>components required for the experiment</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>QTY</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Arduino UNO</cell>
+          <cell>1</cell>
+          <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>Ultrasonic sensor</cell>
+          <cell>1</cell>
+          <cell>Detect the object and trigger an activity</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>Servo motor</cell>
+          <cell>1</cell>
+          <cell>Servo motor is used to open the lid based on the object detected.</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>Jumper wires</cell>
+          <cell>As per requirement</cell>
+          <cell>Jumper wires are used to connect the components with the Arduino UNO Board.</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The table 3.2.1, list the hardware required for the following experiment with its appropriate purpose 
+    </p>
+    <subsubsection xml:id="subsubsec-Ultrasonic-sensor">
+      <title>Ultrasonic sensor</title>
+      <figure>
+        <image source="/images/ultrasonic.jpg" width="40%"/>
+        <caption>ultra sonic sensor</caption>
+      </figure>
+      <p>
+        Ultrasonic sensor will measure the distance of the target by transmitting ultrasonic sound waves, further it is converted into electrical signals. Working of the sensor is merely similar to the working, of how a bat catches its prey using an ultrasonic sound wave.  It has an inbuilt single transducer to send and receive the pulse wave signal. The distance is calculated, by time taken between the sending and receiving ultrasonic pulse.  It has 4 pins VCC, TRIG, ECHO and GND.From fig 3.2.2, an image of the sensor is displayed.
+      </p>
+      <table>
+        <title>Pin description of ultrasonic sensor </title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S. No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>VCC</cell>
+            <cell>Power pin of the sensor. It takes 5V power</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>TRIG</cell>
+            <cell>INPUT pin initially the pin has to be set as high to reach the ultra sound wave</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>ECHO</cell>
+            <cell>OUTPUT pin will trigger an external activity to indicate that there is an object</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>GND</cell>
+            <cell>GND pin of the Arduino</cell>
+          </row>
+        </tabular>
+      </table>
+      <p>
+        From above table 3.2.3, we can understand each pin in the ultrasonic sensor and its usage.
+      </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-Servo-Motor">
+      <title>Servo Motor</title>
+      <figure>
+        <image source="/images/pin_servo.png" width="40%"/>
+        <caption>servo motor</caption>
+      </figure>
+      <p>
+        Servo Motor is a one kind of motor, which controls the system based on position of the angular and speed, Servo motor is made up of potentiometer and some gears. It works based on PWM principle. The angle of rotation is controlled by the pulse, which is associated to its corresponding pin. Servo motor will control the speed and position of the system very precisely. It basically consists of three parts, controlled device and output sensor and feedback system. It is usually associated with the sensor for a positive feedback. It has three pins PWM, VCC, GND and operating voltage is 3.3V.  The above figure represents the servo motor in pictorial representation. In table 3.2.5, each pin of the servo motor is explained with its uses.
+      </p>
+      <table>
+        <title>Pin description of servo motor</title>
+        <tabular left="major" right="major" top="major" bottom="major">
+          <row>
+            <cell><term>S. No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>Purpose of the Pin</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>PWM (orange)</cell>
+            <cell>Input pin</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>GND (brown)</cell>
+            <cell>GND of the Power supply</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>VCC</cell>
+            <cell>Power pin usually connects to 3.3 V</cell>
+          </row>
+        </tabular>
+      </table>
+    </subsubsection>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Approach-servo-motor">
+    <title>Experimental Approach </title>
+    <figure>
+      <image source="/images/dustbin_experiment.JPG" width="60%"/>
+      <caption>Schematic diagram of smart dustbin</caption>
+    </figure>
+    <term>Connection process</term>
+    <ol>
+      <li>
+        <p>
+          The VCC pin of the ultrasonic is connected to 5V of Arduino (Red wire). 
+        </p>
+      </li>
+      <li>
+        <p>
+          GND of the ultrasonic sensor connected to GND of the Arduino (Black Wire). 
+        </p>
+      </li>
+      <li>
+        <p>
+          The Trig pin is connected to D10 of the Arduino.
+        </p>
+      </li>
+      <li>
+        <p>
+          Echo pin is connected to D11 of the Arduino. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Servo motor will rotate based on the position of the object detected. 
+        </p>
+      </li>
+      <li>
+        <p>
+          It has three pins. PWM, VCC and GND.
+        </p>
+      </li>
+      <li>
+        <p>
+          PWM is connected to D9 of the Arduino (Blue wire). 
+        </p>
+      </li>
+      <li>
+        <p>
+          VCC is connected to 3.3V of the Arduino (Red wire). 
+        </p>
+      </li>
+      <li>
+        <p>
+          The GND pin is connected to the GND of the Arduino (Black Wire)
+        </p>
+      </li>
+    </ol>
+    <term>Pin Connection</term>
+    <table>
+      <tabular left="major" right="major" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>D9</cell>
+          <cell>PWM</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>GND(-)</cell>
+        </row>
+        <row>
+          <cell>3.3 V</cell>
+          <cell>VCC(+)</cell>
+        </row>
+        <row>
+          <cell>D10</cell>
+          <cell>Trig</cell>
+        </row>
+        <row>
+          <cell>D11</cell>
+          <cell>Echo</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>GND(-)</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>VCC (+)</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-Code-dustbin">
+    <title>Code</title>
+    <term>Source Code</term>
+    <program>
+      #include &lt;Servo.h&gt;//Initializing the library for servo motor 
+        const int trigPin = 11;/Declaring trig pin to D11
+        const int echoPin = 10; Declaring echo pin to D10
+        const int servoPin = 9; Declaring servo pin to D9
+        double SetDelay, Input, Output, ServoOutput; // variables declaration 
+        Servo myServo; //Initialize Servo function
+        void setup() {
+        pinMode(trigPin, OUTPUT); // mode declaration for the trigPin as  output mode
+        pinMode(echoPin, INPUT); // mode declaration for the echopin as  input  mode
+        myServo.attach(servoPin); //declaring the servo pin using attach function 
+        Input = readPosition(); //getting the current position 
+        }
+        void loop() {//runs more than once
+          Input = readPosition(); 
+          ServoOutput = Input; 
+          myServo.write(ServoOutput);//
+          if(ServoOutput == 90) 
+          {
+          SetDelay=3000;
+          }
+          else{
+          SetDelay=0;     
+          } 
+          delay(SetDelay); 
+          }
+          float readPosition() {
+          delay(40); 
+          long duration, var;
+          int distance; 
+          // Clears the trigPin
+          digitalWrite(trigPin, LOW);
+          delayMicroseconds(2);
+          // Sets the trigPin on HIGH state for 10 micro seconds
+          digitalWrite(trigPin, HIGH);
+          delayMicroseconds(10);
+          digitalWrite(trigPin, LOW);
+          // Reads the echoPin
+          duration = pulseIn(echoPin, HIGH);
+          // Calculating the distance
+          distance = duration/(29*2); 
+          if(distance &lt;34) {
+            var = 180;
+          }
+          else{
+          var = 0;
+          }         
+          //Returns distance value.
+          return var; 
+        }          
+    </program>
+    <figure>
+      <image source="/images/servo_library.JPG" width="40%"/>
+      <caption>selecting the library for servo motor</caption>
+    </figure>
+    <p>
+      Arduino supports some built-in libraries to extend the functionality in sketch. There are number of libraries installed with Arduino IDE.As shown in figure 3.2.8, the learners should include library for servo motor, to download the library, click Sketch->Include library->select servo library from the list of libraries available.
+    </p>
+    <term>Code Explanation</term>
+    <ol>
+      <li>
+        <p>
+          The library will have all the necessary functions used for the program.
+        </p>
+      </li>
+      <li>
+        <p>
+          Ultrasonic sensor has four pins TRIG, ECHO, VCC and GND.
+        </p>
+      </li>
+      <li>
+        <p>
+          Trig pin is connected to 11th pin of Arduino and it is considered as output pin, that will send the pulse wave when the object is nearby.
+        </p>
+      </li>
+      <li>
+        <p>
+          Echo pin is connected to 10th pin and considered as input pin. 
+        </p>
+      </li>
+      <li>
+        <p>
+          When the object is found at the closest proximity, servo motor will rotate in 360-degree rotation.
+        </p>
+      </li>
+      <li>
+        <p>
+          In void setup function, should declare all the specified variables const int trigPin = 11, initialize trig pin as 11th pin of the Arduino, const int echoPin = 10, declaring the echo pin as 10th pin of Arduino. Declaring const int servo Pin = 9.
+        </p>
+      </li>
+      <li>
+        <p>
+          Declaring PWM pin as 9th pin of Arduino, the declaring additional variables for further processing is double SetDelay, Input, Output and ServoOutput.
+        </p>
+      </li>
+      <li>
+        <p>
+          Input is a variable, which is used to gather the current position of the motor.
+        </p>
+      </li>
+      <li>
+        <p>
+          SetDelay variable is used to set delay in the motor, because the motor need not have to rotate continuously.
+        </p>
+      </li>
+      <li>
+        <p>
+          Assigning the values of input variable servo output to a new variable input based on the position of the motor it will rotate at 90 degree. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Declaring a function Input=readposition (), when the read position () is called the trig pin is set to LOW for a second and when the echo pin is high the distance and duration is calculated by the formula given.
+        </p>
+      </li>
+      <li>
+        <p>
+          The distance is calculated with the help of the variable duration, if the duration is calculated by the formula (distance/29*2), For example, if the duration is one-minute 60/29*2 =4.137. Therefore, with the help of this value, distance can be calculated. 
+        </p>
+      </li>
+      <li>
+        <p>
+          When the observed distance is less than 34 the lid of the dustbin will automatically open up to 180 degree or else the lid remains closed.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection xml:id="subsec-Experimental-Result-dustbin">
+    <title>Experimental Result</title>
+    <figure>
+      <image source="/images/dustbin_working.JPG" width="35%"/>
+      <caption>working of the experiment</caption>
+    </figure>
+    <figure>
+      <image source="/images/dustbin_output.JPG" width="35%"/>
+      <caption>working of the experiment</caption>
+    </figure>
+    <p>
+      From the fig 3.2.9 learners can understand that the lid is in closed state, because there is no object in front the sensor. From the fig 3.2.10, we can find the sensor detects the objects and value of the sensor is in high state. As it rotates, the lid of the dustbin will open to drop the trash in the dustbin
+    </p>
+  </subsection>
+</section>

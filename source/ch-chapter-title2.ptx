@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Basic Operations of Embedded System</title>
+
+  <introduction>
+    <p> This chapter discuss about 5 applications about the Basic   operations of Embedded System. </p>
+  </introduction>
+  <xi:include href="sec-section21.ptx" />
+  <xi:include href="sec-section22.ptx" />
+  <xi:include href="sec-section23.ptx" />
+  <xi:include href="sec-section24.ptx" />
+  <xi:include href="sec-section25.ptx" />
+  <xi:include href="sec-section2_quiz.ptx" />
+  
+  
+</chapter>

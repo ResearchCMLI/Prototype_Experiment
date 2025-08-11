@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section42" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fire alarm using flame sensor </title>
+  <subsection xml:id="subsec-Introduction-fire">
+    <title>Introduction</title>
+    <image source="/images/fire_alarm.jpg" width="40%"/>
+    <p>
+      Fire accidents are common disasters in India. According to the report of ADSI in 2019, 11,037 fire accidents have been reported across the nation. These kinds of disaster may lead to loss of lives. To avoid this kind of disaster, fire alarm is used as an effective system to prevent fire accidents. Nowadays there is enough security to save the people from Fire accidents. It is used in many countries to save the lives of the people from fire accidents.  It Monitors the environment and helps the people to know when there is a fire accident. Flame detector is the vast application to use in industries which are easily exposed to fire. Flame detector is used to prevent forest fire. Here a small prototype model is developed to detect the fire using flame sensor and alarm the people Table 4.2.1, illustrates the components required for the fire alarm is listed with its purpose
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-Components-required-fire">
+  <title>Components required</title>
+  <table>
+    <title>Componnents required</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs.(Refer Chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Flame sensor </cell>
+        <cell>1</cell>
+        <cell>Sensor used to detect presence of fire </cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Resistor</cell>
+        <cell>1</cell>
+        <cell>Reduces the flow of the current and divide the voltage (Refer Chapter 2.1)</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>LED</cell>
+        <cell>1</cell>
+        <cell>Visualizes the feedback of the current for any application (Refer Chapter 2.1)</cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Buzzer</cell>
+        <cell>1</cell>
+        <cell>It is mainly used as warning tone, will alert the people if there is an emergency. (Refer Chapter 2.2)</cell>
+      </row>
+      <row>
+        <cell>6</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement</cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <subsubsection xml:id="subsubsec-Flame-sensor">
+    <title>Flame sensor </title>
+    <p>
+      A flame-sensor is a kind of detector which is mainly designed for detecting as well as responding in occurrence with fire. This sensor is used mainly in industrial boilers.The speed of these sensor is faster and more accurate when compared with a smoke detector. Fig 4.2.2, displays the image of the flame sensor. Table 4.2.3 displays the pin configuration of the sensor with its following purpose.
+    </p>
+    <figure>
+      <image source="/images/flame_sensor.JPG" width="40%"/>
+      <caption>flame sensor </caption>
+    </figure>
+    <table>
+      <title>pin configuration for Flame Sensor</title>
+      <tabular left="minor" right="minor" top="major" bottom="major">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>AO</cell>
+          <cell>Analog pin detect the presence of fire in the environment  </cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+ </subsection>
+ <subsection xml:id="subsec-Experimental-Approach-flame">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/experiment_flame.JPG" width="40%"/>
+    <caption>Schematic diagram for Flame Detector </caption>
+  </figure>
+  <term>Connection Process</term>
+  <ol>
+    <li>
+      <p>
+        Analog pin of flame sensor is connected to A0 pin of Arduino (green Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5V of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Buzzer has two pins positive and negative pin. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Positive red wire is connected to 12th pin of the Arduino. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Black wire of the buzzer is connected to GND of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        Longer leg of the LED pin is connected with Arduino through a 10k resistor (pink wire)
+      </p>
+    </li>
+    <li>
+      <p>
+        Shorter leg of Arduino is connected to ground of the LED (black wire).
+      </p>
+    </li>
+    <li>
+      <p>
+        When the value exceeds threshold 100 it indicates there is a smoke/fire in the environment buzzer will trigger an alarm to alert people. 
+      </p>
+    </li>
+  </ol>
+  <term>Pin Block  </term>
+  <table>
+    <tabular left="minor" right="minor" top="major" bottom="major">
+      <row>
+        <cell><term>Arduino Pins</term></cell>
+        <cell><term>Component Pins</term></cell>
+      </row>
+      <row>
+        <cell>A0</cell>
+        <cell>A0 (Flame)</cell>
+      </row>
+      <row>
+        <cell>5V</cell>
+        <cell>VCC(+)(Flame)</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND(-)(Flame)</cell>
+      </row>
+      <row>
+        <cell>D12</cell>
+        <cell>+ (Buzzer)</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND (Buzzer)</cell>
+      </row>
+      <row>
+        <cell>D9</cell>
+        <cell>+ via 1k</cell>
+      </row>
+      <row>
+        <cell>GND</cell>
+        <cell>GND</cell>
+      </row>
+    </tabular>
+  </table>
+ </subsection>
+ <subsection xml:id="subsec-Code-flame">
+  <title>Code</title>
+  <term>Source Code</term>
+  <program>
+    int sensorPin = A0; // select the input pin for the flame
+    int sensorValue = 0; // variable to store the value coming from the sensor
+    int led = 9; // Output pin for LED
+    int buzzer = 12; // Output pin for Buzzer
+    void setup() {
+    // declare the ledPin and buzzer as an OUTPUT:
+    pinMode(led, OUTPUT);
+    pinMode(buzzer,OUTPUT);
+    Serial.begin(9600);
+}
+void loop()
+{
+Serial.println("Welcome");
+sensorValue = analogRead(sensorPin);
+Serial.println(sensorValue);
+if (sensorValue &gt; 100)
+{
+Serial.println("Fire Detected");
+Serial.println("LED on");
+digitalWrite(led,HIGH);
+digitalWrite(buzzer,HIGH);
+delay(1000);
+}
+digitalWrite(led,LOW);
+digitalWrite(buzzer,LOW);
+delay(sensorValue);
+}
+  </program>
+  <term>Code Explanation</term>
+  <ol>
+    <li>
+      <p>
+        Declaring variables of Flame sensor to sensor pin A0, Buzzer to 12th pin, LED to 9th  pin .
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup () declaring the output pins LED, Buzzer pin using Pin Mode function. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Be sure which of the following acts as input and output pin, For example, pinMode(led, OUTPUT);
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function, using analogRead function will convert the flame value generated from the sensor to analog value. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Generated analog value will be stored in an integer variable. 
+      </p>
+    </li>
+    <li>
+      <p>
+        This prototype will work according to the following condition, when the presence of the fire is less than 100 the LED remains in on state and buzzer will alert the people or else the LED, Buzzer remains in off state.
+      </p>
+    </li>
+  </ol>
+ </subsection>
+ <subsection xml:id="subsec-Experimental-Result-flame">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/flame_result.JPG" width="40%"/>
+    <caption>Wiring diagram of the experiment  </caption>
+  </figure>
+  <p>
+    When the value of the flame sensor is higher than the threshold, i.e., when the value is greater than 100, LED will blink in association with the buzzer to indicate the people in the surrounding. 
+  </p>
+ </subsection>
+</section>

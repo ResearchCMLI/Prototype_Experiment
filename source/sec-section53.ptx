@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section53" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Dust Monitoring using NodeMCU</title>
+  <subsection xml:id="subsec-Introduction-dust-monitoring">
+    <title>Introduction</title>
+    <image source="/images/dust_monitoring.jpg" width="40%"/>
+    <p>
+      Dust monitoring is one aspect of air quality that industrial hygienist uses to determine the amount of dust particles present in the workplace, cities or communities over a given period of time. Two types of dust monitoring include PM10 and Respirable dust, where the quantity and size of the particles are both measured. Here is the small prototype to monitor the dust in the air. Dust sensor is used in industries to monitor the dust surrounded in the air. 
+    </p>
+    </subsection>
+    <subsection xml:id="subsec-Components-Required-dust-monitoring">
+      <title>Components Required</title>
+      <table>
+        <title>components required for the experiment</title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S.No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>QTY</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>NODE MCU</cell>
+            <cell>1</cell>
+            <cell>Node MCU is an open-source development board targeted for IOT applications. (Refer chapter 1.2)</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>Dust sensor </cell>
+            <cell>1</cell>
+            <cell>To monitor the dust density present in the environment </cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>20 uf Capacitor </cell>
+            <cell>1</cell>
+            <cell>It stores the electrical energy in an electric field  </cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>Resistor </cell>
+            <cell>1</cell>
+            <cell>Reduces the flow of the current and divide the voltage Refer Chapter 2.1) </cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>Jumper wires</cell>
+            <cell>As per requirement </cell>
+            <cell>Jumper wires are used to connect the components with Arduino UNO Board. </cell>
+          </row>
+        </tabular>
+      </table>
+      <table>
+        <title>Pin configuration of the micro controller </title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S.No</term></cell>
+            <cell><term>Pin</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>VO</cell>
+            <cell>Produces analog output according to the dust present inn the air.</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>ILED</cell>
+            <cell>Used to toggle IRLED to emit IR light</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>S-GND</cell>
+            <cell>GND pin of sensor</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>LEG-GND</cell>
+            <cell>GND pin of sensor</cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>V-LED</cell>
+            <cell>Provides VCC to IRLED</cell>
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>VCC</cell>
+            <cell>Connect to the power supply ususaly 2.5 V to 5.5V</cell>
+          </row>
+        </tabular>
+      </table>
+      <subsubsection xml:id="subsubsec-Dust-Sensor">
+        <title>Dust Sensor</title>
+        <p>
+          Dust sensor is a small air monitoring module. It is able to detect fine particles larger than 0.16 radius. The module has embedded with voltage boost circuit to provide wide range of power supply. The operating voltage for the sensor is 2.5V to 5.5V. The size of the air hole is 9.0mm. Fig 5.3.2.2 displays the image of dust sensor.
+        </p>
+        <figure>
+          <image source="/images/dust_sensor.jpg" width="60%"/>
+          <caption>Dust Sensor</caption>
+        </figure>
+      </subsubsection>
+    </subsection>
+    <subsection xml:id="subsec-Experimental-Approach-dust">
+      <title>Experimental Approach</title>
+      <figure>
+        <image source="/images/experiment_dust.JPG" width="70%"/>
+        <caption>Schematic diagram of dust monitoring system</caption>
+      </figure>
+      <term><p>Pin Block</p></term>
+      <table>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>Node MCU Pins</term></cell>
+            <cell><term>Component Pins</term></cell>
+          </row>
+          <row>
+            <cell>Vin</cell>
+            <cell>VLED via 20UF capacitor and 100K resistor</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>-	Leg of the 20UF capacitor</cell>
+          </row>
+          <row>
+            <cell>A0</cell>
+            <cell>V0</cell>
+          </row>
+          <row>
+            <cell>3.3 V</cell>
+            <cell>VCC</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>S-GND</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>L-GND</cell>
+          </row>
+          <row>
+            <cell>ILED</cell>
+            <cell>D2</cell>
+          </row>
+        </tabular>
+      </table>
+      <term><p>Connection Process</p></term>
+      <ol>
+        <li>
+          <p>
+            Connect V-LED of the dust sensor (blue wire) to Vin of the NODE MCU through 20uf capacitor and a 100k resistor (green wire).
+          </p>
+        </li>
+        <li>
+          <p>
+            Connect shorter leg of the 20 micro-fahrenheit capacitor to GND of the NODEMCU (Black wire).
+          </p>
+        </li>
+        <li>
+          <p>
+            Connect VOUT of the dust sensor to A0 of the NODEMCU (blue wire)
+          </p>
+        </li>
+        <li>
+          <p>
+            Connect VCC of the sensor to 3.3V of the Arduino (Red Wire).
+          </p>
+        </li>
+        <li>
+          <p>
+            Connect S-GND, L-GND of the dust sensor to GND of the NODEMCU (Black wire)
+          </p>
+        </li>
+        <li>
+          <p>
+            Connect ILED of the dust sensor to D2 of the NODEMCU (violet wire)
+          </p>
+        </li>
+      </ol>
+    </subsection>
+    <subsection xml:id="subsec-code-dust-monitoring">
+      <title>Code</title>
+      <term><p>Source code</p></term>
+      <program>
+        #include &lt;ESP8266WiFi.h&gt;//declare header files
+          const int ledPower=2;//initialize ledpower to D2
+          const int  measurePin=A0;// initialize measurepin to A0
+          unsigned int samplingTime = 280;// initialize samplingTime = 280
+          unsigned int deltaTime = 40; ;// initialize deltaTime = 40
+          unsigned int sleepTime = 9680; //initialize sleeptime = 9680
+          float voMeasured = 0; //initialize Vomeasured = 0
+          float calcVoltage = 0; //initialize calcVoltage  = 0
+          float dustDensity = 0; //initialize dustDensity = 0
+          void setup() {
+            Serial.begin(115200);//initialize serial monitor with baud rate of 115200
+            pinMode(ledPower,OUTPUT);//mode declaration for LEDpower
+            pinMode(measurePin,INPUT); mode declaration for measurePin
+            }
+            void loop() {
+            // put your main code here, to run repeatedly:
+            digitalWrite(ledPower,LOW); // power on the LED
+            delayMicroseconds(samplingTime);
+            voMeasured = analogRead(measurePin); // read the dust value
+            delayMicroseconds(deltaTime);//pauses the program for 40 seconds
+            digitalWrite(ledPower,HIGH); // turn the LED off
+            delayMicroseconds(sleepTime);// pauses the program
+            // recover voltage
+            calcVoltage = voMeasured * (5.0 / 1024.0); // 0 - 5V mapped to 0 - 1023 integer values
+            // linear eqaution taken from http://www.howmuchsnow.com/arduino/airquality/
+            // Chris Nafis (c) 2012
+            dustDensity = 170 * calcVoltage - 0.1;
+            Serial.println("Dust Density"); // unit: ug/m3
+            Serial.println(dustDensity); // unit: ug/m3
+            delay(1000);//pauses the program
+}
+      </program>
+     <term><p>Code Explanation </p></term>
+     <ol>
+      <li>
+        <p>
+          Declare the following variables in the global part of the program  
+        </p>
+      </li>
+      <li>
+        <p>
+          In void setup declaring measurePin and LED power to A0 and D2 pin of the NODEMCU using PINMODE function. 
+        </p>
+      </li>
+      <li>
+        <p>
+          baud rate for NodeMCU is 115200 set the baud rate as Serial.begin(115200) 
+        </p>
+      </li>
+      <li>
+        <p>
+          Read the value of the dust sensor using analogRead function.  
+        </p>
+      </li>
+      <li>
+        <p>
+          VoMeasured is voltage calculated by the sensor. 
+        </p>
+      </li>
+      <li>
+        <p>
+          Voltage can be calculated by the following formula 7.0*(5.0 / 1024.0);   
+        </p>
+      </li>
+      <li>
+        <p>
+          dustDensity = 170 * calcVoltage - 0.1; value will be 5.68 dustDensity. 170*0-0.1. 
+        </p>
+      </li>
+     </ol> 
+    </subsection>
+    <subsection xml:id="subsec-Experimental-Result-dust-monitoring">
+      <title>Experimental Result </title>
+      <figure>
+        <image source="/images/dust_monitoring_experiment.JPG" width="60%"/>
+        <caption>Wiring diagram of dust monitoring  </caption>
+      </figure>
+      <figure>
+        <image source="/images/dust_monitoring_output.JPG" width="60%"/>
+        <caption>Output displayed in the serial monitor  </caption>
+      </figure>
+      <p>
+        The sensor detects the dust and displays the output in serial monitor
+      </p>
+    </subsection>
+</section>

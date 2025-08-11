@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section34" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Parking allotment using IR sensor  </title>
+<subsection xml:id="subsec-Introduction-parking">
+  <title>Introduction</title>
+  <p>
+    In this experiment leaners will learn about automatic parking system. India is the third largest country, emerging in automobile industry. Comparing with financial year of 2017-2018 the sales of passenger vehicles has increased from 2.70% for two-wheeler 4.80 % and for three-wheeler has increased to 10.27%. As the production of the vehicle gradually increases, the necessity for parking the vehicle becomes a chaos in our daily life. In abroad countries there are automated parking system and fine allotment for parking for more than the fixed time. In India, there is no such facility to automate our parking system. Here is the small prototype will help us to know the free slot to park our vehicles and it will notify us when there are no slots free. IR sensor is used to detect the presence of the vehicle and indicate the people, who are waiting to park their vehicle. Table 3.4.1:contains the components required for the experiment. Parking allotment reduces the man power to guard the parking system. It minimizes the waiting time. It also helps drivers to locate the parking spots easily. 
+  </p>
+  <image source="/images/parking.JPG" width="40%"/>
+  <p>
+    The above picture shows the project proposed by the government of Madhya Pradesh where the automatic car parking system displays the space available to park the car. A small prototype is developed with minimal components to test the prototype. 
+  </p>
+</subsection>
+<subsection xml:id="subsec-Components-Required-parking">
+  <title>Components Required </title>
+  <table>
+    <title>components required for the experiment</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S.No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>IR Sensor</cell>
+        <cell>1</cell>
+        <cell>IR sensor detects the presence of IR waves emitted by Human body. (Refer chapter 3.3)</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Resistor </cell>
+        <cell>1</cell>
+        <cell>Reduces the flow of the current and divide the voltage (Refer chapter 2.1)</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>LED</cell>
+        <cell>1</cell>
+        <cell>Visualizes the feedback of the current for any application 
+          (Refer chapter 2.1)
+          </cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement </cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-experimental-approach-parking">
+  <title>Experimental Approach </title>
+  <figure>
+    <image source="/images/parking_experiment.JPG" width="50%"/>
+    <caption>Schematic diagram of Automatic Parking system</caption>
+  </figure>
+  <term>Connection Process</term>
+  <ol> 
+    <li>
+      <p>
+        IR1 sensor has three pins OUT, VCC, GND. Out pin is connected to 3rd pin of the Arduino (Violet wire), and VCC of the IR sensor is connected to 5V of the Arduino (Red wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the IR1 sensor is connected to GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        LED associated with IR sensor is connected to 4th  pin of Arduino through a 10k resistor (blue wire)
+      </p>
+    </li>
+    <li>
+      <p>
+        Shorter leg (-) of LED is connected to IR1 sensor is connected to ground of the arduino (black wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        IR2 sensor out pin is connected to 2nd pin of the Arduino (green wire).
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the IR sensor is connected to GND of the Arduino (Black Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the IR sensor is connected to 5v of the Arduino (Red wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        LED is associated with IR2 is connected with LED is connected through 10k resistor to 5th pin of the Arduino (Red Wire)
+      </p>
+    </li>
+    <li>
+      <p>
+        Shorter leg (-) of LED is connected to IR2 sensor is connected to ground of the Arduino (black wire). 
+      </p>
+    </li>
+    </ol>
+    <term>Pin Connection</term>
+    <table>
+      <tabular left="major" right="major" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>D2</cell>
+          <cell>out (IR_1)</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D3</cell>
+          <cell>out(IR_2)</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D6</cell>
+          <cell>+(LED_1) via 1K</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D2</cell>
+          <cell>+(LED_2) via 1K</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+      </tabular>
+    </table>
+</subsection>
+<subsection xml:id="subsec-code-parking">
+  <title>Code</title>
+  <term>Source Code</term>
+  <program>
+    int IR1 = 2;//declare  IR1 sensor
+    int IR2 = 3; //declare  IR2 sensor
+    int LED1 = 5; //declare  LED1
+    int LED2 = 6; //declare  LED2
+    void setup()
+    {
+      Serial.begin(9600);//initialize the serial communication 
+      pinMode(LED1, OUTPUT);//mode declaration for LED1
+      pinMode(LED2, OUTPUT); //mode declaration for LED2
+      pinMode(IR1, INPUT); //mode declaration for IR1
+      pinMode(IR2, INPUT); //mode declaration for IR2
+    }
+    void loop() {
+      if (digitalRead(IR1) == HIGH)//when the state is high
+        {
+          digitalWrite(LED1, HIGH);//set led1 to high
+          Serial.println("Slot 2 is free");//print slot2 is free
+        }
+      if ( digitalRead(IR2) == HIGH) //when the IR2 state is high
+        {
+          digitalWrite(LED2, HIGH);// set led2 to high
+          Serial.println(" Slot 1 is free") //print slot1 is free
+        }
+      else
+        {
+          Serial.println(" Wait");
+        }
+    }    
+  </program>
+  <term>Code Explanation </term>
+  <ol> 
+<li>
+  <p>
+    In void setup function Declaring 2nd and 3rd pins of IR sensor respectively. 
+  </p>
+</li>
+<li>
+  <p>
+    Initializing the IR sensor as input using pinMode function 
+  </p>
+</li>
+<li>
+  <p>
+    Two Led is connected to the pin of 5th  and 6th  through 1K ohm resistor
+  </p>
+</li>
+<li>
+  <p>
+    In void loop function the value of IR sensor will be stored as digital data using digital Read function
+  </p>
+</li>
+<li>
+  <p>
+    When the sensor data is high, the LED will be high, message in the serial monitor will be displayed to indicate the user which slot is free.
+  </p>
+</li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-experiment-result-parking">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/parking_working.JPG" width="40%"/>
+    <caption>Wiring diagram of the parking allotment, blue LED indicates that slot1 is full and slot 2 is free</caption>
+  </figure>
+  <figure>
+    <image source="/images/parking_red.JPG" width="40%"/>
+    <caption>Red led indicates slot 2 is occupied and slot 1 is free  </caption>
+  </figure>
+  <p>
+    From the above fig 3.4.4, we can understand that LED blink is to indicate the slot 2 is full and slot 1 is free, and in fig 3.4.5, shows one of the LED blinks indicate the slot 1 is full and slot 2 is free.
+  </p>
+</subsection>
+</section>

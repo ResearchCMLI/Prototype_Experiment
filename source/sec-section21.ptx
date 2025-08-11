@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section21" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Led Blinking </title>
+<subsection xml:id="subsec-Introduction-led">
+  <title>Introduction</title>
+  <p>This experiment guides the learners to blink a 5mm LED, a simple experiment to test the software and hardware components to verify whether installation procedures are correct. This experiment acts as a visual indicator for many applications such as street light, dancing LED and so on. The output of this experiment can be physically seen. This establishes a solid foundation for learners to undertake complex problems in the future. This kind of concept is used in electronic devices like traffic lights. It acts as an indicator to know the state change when the current passes through it. Dancing LED in highways is one of the major applications, of turning on the LED. Dancing LED is a visual sign indicator in highways to prevent accidents between heavy load vehicles.</p>
+  <image source="/images/LED_2.JPG" width="30%"/>
+</subsection>
+<subsection xml:id="subsec-Components-Required-le">
+  <title>Components Required </title>
+  <table>
+    <title>List of components used</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S. No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino board is used to read the digital inputs and convert it as digital outputs. (Refer Chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Resistor</cell>
+        <cell>1</cell>
+        <cell>Reduces the flow of the current and divide the voltage</cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>LED</cell>
+        <cell>1</cell>
+        <cell>Visualizes the feedback of the current for any application</cell>
+      </row>
+    </tabular>
+  </table>
+  <p>The above table 1 shows the components for the experiment and description for each component</p>
+  <subsubsection xml:id="subsubsec-Resistor">
+    <title>Resistor</title>
+    <sidebyside valign="middle">
+      <figure>
+        <image source="/images/Resistor_2.jpg" width="40%"/>
+        <caption>Resistor </caption>
+      </figure>
+        <interactive iframe="https://amuselabs.com/pmm/jigsaw?id=9cdae7f2&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f"/>
+    </sidebyside>
+    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>
+    <p>Resistor is a passive two terminal electrical component which can be fixed in a hole. It is used to control the flow of the current, which divides the required voltage for each component. Behaviour of the resistor is based on Ohm’s Law V=IR. </p>
+    <p>There are different types of resistors, such as fixed resistor, variable resistor, thermistors and light dependent resistors that are used in industries.</p>
+    <p>LED is a small diode that can handle only 5V of the current. Therefore, to avoid failure of the LED, resistors are used. Fig 2.1.2 shows the image of a simple resistor.</p>
+  </subsubsection>
+  <subsubsection xml:id="subsubsec-LED">
+    <title>LED</title>
+    <figure>
+      <image source="/images/LED-circuit.jpg" width="40%"/>
+      <caption>LED </caption>
+    </figure>
+    <p>LED stands for Light Emitting Diode which emits light when current passes through it and it is a semiconductor device that conducts an electrical property. LED has two legs, longer leg is called as anode (positive) and shorter leg is called as (negative) cathode. LED is smaller in size, easy to handle and the cost of the LED is cheap. LED can be used in remote control devices to work   in a short range of frequency fig 2.1.3; LED image is given for understanding purpose.</p>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-approach">
+  <title>Experimental approach </title>
+  <figure>
+    <image source="/images/led_blink.jpg" width="50%"/>
+    <caption>Schematic diagram for LED blinking </caption>
+  </figure>
+  <term>Connection Block </term>
+  <p>The connections of components will be done with the help of the breadboard. A breadboard is a rectangular board with many mounting holes. It is used for connecting multiple electronic components with the single micro controller such as Arduino or Raspberry pi. </p>
+  <term>Connection process</term>
+  <ol>
+    <li>
+      <p>
+        Longer leg of the LED is connected to the D8 pin through 1K resistor.
+      </p>
+    </li>
+    <li>
+      <p>
+        Shorter leg of the LED is connected to ground of the Arduino. 
+      </p>
+    </li>
+  </ol>
+  <term>Pin Block</term>
+  <table>
+    <title></title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row header="yes">
+        <cell left="major" right="major" top="major" bottom="major"><term>Arduino Pins</term></cell>
+        <cell left="major" right="major" top="major" bottom="major"><term>LED</term></cell>
+      </row>
+      <row>
+        <cell left="major" right="major" top="major" bottom="major">D8</cell>
+        <cell left="major" right="major" top="major" bottom="major">VCC via 1K resistor</cell>
+      </row>
+      <row>
+        <cell left="major" right="major" top="major" bottom="major">GND (-)</cell>
+        <cell left="major" right="major" top="major" bottom="major">GND (-)</cell>
+      </row>
+    </tabular>
+  </table>
+</subsection>
+<subsection xml:id="subsec-Code">
+  <title>Code</title>
+  <program>
+    void setup() { 
+      LED=8; // initialize digital pin 8  as an output.
+      pinMode(8, OUTPUT);//mode declaration for D8
+      }
+      // the loop function runs over and over again forever
+      void loop() {
+      digitalWrite(8, HIGH); // turn the LED on (HIGH is the voltage level)
+      delay(1000); // wait for a second
+      digitalWrite(8, LOW); // turn the LED off by making the voltage LOW
+      delay(1000); // wait for a second
+      }      
+  </program>
+  <term>Code Explanation </term>
+  <ol>
+    <li>
+      <p>
+        Pin Mode function is used to configure a specific pin either for input or output purpose. 
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup(), LED will be declared as output  pin 13 .
+      </p>
+    </li>
+    <li>
+      <p>
+        In void Loop, digitalwrite is () used to set the pin as high or low. For example, digital Write (13, HIGH). 
+      </p>
+    </li>
+    <li>
+      <p>
+        Pin 13 is to set to high. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Delay is used to pause the program for a certain period of time.
+      </p>
+    </li>
+    <li>
+      <p>
+        Delay of 1000 micro second i.e. 1 second can be set 
+      </p>
+    </li>
+    <li>
+      <p>
+        Using (digital Write, LOW) function LED will turn off.
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-Resultwiring">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/experiment.png" width="50%"/>
+    <caption>wiring diagram for the experiment </caption>
+  </figure>
+</subsection>
+</section>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section54" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sun Tracking Solar System</title>
+  <subsection xml:id="subsec-Introduction-solar-panel">
+    <title>Introduction</title>
+    <image source="/images/solar_panel.jpg" width="40%"/>
+    <p>
+      Renewable resource is one of the best natural resources. The usage of renewable resources is increasing day by day. Solar power is the main source for energy. Solar panel is used to accelerate the energy directly from the sun. Solar panel absorbs the energy from the sun, converts the energy to electrical energy. India produces large amount of energy. As of Nov 2020, India has installed 38% of the solar panels for energy generation, Energy generation capacity for India is 136 GW out of 373 GW and Energy generated from the sun is stored in batteries and used for our domestic and commercial purposes. The sun may move from east to west so the fixed solar panel may not produce an optimum energy, but a tracking solar panel can produce maximum energy than fixed solar panel. More energy is produced when solar cell is aligned, directly right angle to sun. Table 5.4.2, explains requirement of hardware components.Solar panel is deployed in many places to use the renewable energy. Sun tracking solar panel draws more energy comparing a non -tracker solar panel. Trackers are collection system to maximize energy and minimize the electricity 
+    </p>
+    </subsection>
+    <subsection xml:id="subsec-Components-Required-solar-panel">
+      <title>Components Required </title>
+      <table>
+        <title>components required </title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>S.No</term></cell>
+            <cell><term>Name</term></cell>
+            <cell><term>QTY</term></cell>
+            <cell><term>Purpose</term></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>Arduino UNO</cell>
+            <cell>1</cell>
+            <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>LDR sensor</cell>
+            <cell>1</cell>
+            <cell>LDR is used to measure the Light intensity of the atmosphere(Refer chapter 3.5 )</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>Solar Cell</cell>
+            <cell>1</cell>
+            <cell>Convert the energy from the sun light to electricity. </cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>Servo Motor</cell>
+            <cell>1</cell>
+            <cell>Servo motor is used to rotate the panel based on position of sun (chapter 3.1) </cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>Jumper Wire</cell>
+            <cell>1</cell>
+            <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+          </row>
+        </tabular>
+      </table>
+      <subsubsection xml:id="subsubsec-Solar-cell">
+        <title>Solar cell</title>
+        <figure>
+          <image source="/images/solar_cell1.jpg" />
+          <caption>Solar Cell</caption>
+        </figure>
+          <p>
+            Solar cell is an electrical device which converts light energy to electrical energy. Solar cell is basically a p-n junction diode. It is type of photo electric cell which has electrical characteristics such as current and voltage that will vary according to the exposure of the light. A common single junction solar cell is small in size and produce electricity about 0.5 to 0. 6 Volts. By combining more than ten solar cells can form a solar panel. Solar panel can produce vast amount of renewable energy.  It has no maintenance cost and last for a longer time.  Image of the solar panel is displayed, Single solar cell size of 11*6cm.Operating voltage of the solar cell is 6V and output power of this cell is 1W. The size of the solar cell will vary according the electricity consumption. The larger the size, greater the electricity consumption. From the fig 5.4.2.3, Solar cell and combine solar panel is displayed.
+          </p>
+      </subsubsection>
+    </subsection>
+    <subsection xml:id="subsec-experimental-approach-solar-panel">
+      <title>Experimental Approach</title>
+      <figure>
+        <image source="/images/solar-panel-experiment.png" />
+        <caption>Schematic diagram of sun tracking solar panel</caption>
+      </figure>
+      <term><p>Connection Process</p></term>
+      <ol>
+        <li>
+          <p>
+            The solar cell is placed on the cardboard, LDR is placed on the west side of the cardboard. LDR_2 is placed on the east side of the cardboard.
+          </p>
+        </li>
+        <li>
+          <p>
+            Longer leg of LDR_1, LDR_2 is connected to A0, A1 pin of the Arduino via 10k resistors each. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Other leg of the LDR is connected to 5V of the Arduino. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Servo motor’s, power pin is connected to 3.3v of the Arduino.
+          </p>
+        </li>
+        <li>
+          <p>
+            PWM of servo motor is connected to 7th pin of the Arduino. 
+          </p>
+        </li>
+        <li>
+          <p>
+            GND of the servo is connected to GND of the Arduino.
+          </p>
+        </li>
+      </ol>
+      <term><p>Pin Block</p></term>
+      <table>
+        <tabular left="minor" right="minor" top="minor" bottom="minor">
+          <row>
+            <cell><term>Arduino Pins</term></cell>
+            <cell><term>Component Pins</term></cell>
+          </row>
+          <row>
+            <cell>D7</cell>
+            <cell>PWM(servo)</cell>
+          </row>
+          <row>
+            <cell>3.3V</cell>
+            <cell>VCC(+)(servo)</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>GND(-)(servo)</cell>
+          </row>
+          <row>
+            <cell>A0</cell>
+            <cell>+(LDR_1) via 1K resistor</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>GND (LDR)</cell>
+          </row>
+          <row>
+            <cell>A2</cell>
+            <cell>+(LDR_2) via 1K resistor</cell>
+          </row>
+          <row>
+            <cell>GND</cell>
+            <cell>GND(LDR)</cell>
+          </row>
+        </tabular>
+      </table>
+    </subsection>
+    <subsection xml:id="subsec-code-solar-panel">
+      <title>Code</title>
+      <term><p>Source  Code</p></term>
+      <program >
+        #include &lt;Servo.h&gt;     //including the library of servo motor 
+          Servo sg90;             //initializing a variable for servo named sg90
+          int initial_position = 90;   //Declaring the initial position at 90
+          int LDR1 = A0;          //Pin at which LDR1 is connected
+          int LDR2 = A1;          //Pin at which LDR2 is connected
+          int error = 5;          //initializing variable for error
+          int servopin=7; Pin at which servo is connected
+          void setup() 
+          { 
+          sg90.attach(servopin);  // attaches the servo on pin 7
+          pinMode(LDR1, INPUT);   //Mode declaration for the LDR1 pin as input
+          pinMode(LDR2, INPUT); //Mode declaration for the LDR2 pin as input
+          pinMode(7, OUTPUT); //Mode declaration for the servo pin as output
+          sg90.write(initial_position);   //Move servo at 90 degree
+          delay(2000);            // giving a delay of 2 seconds
+          }  
+          void loop() 
+          { 
+          int R1 = analogRead(LDR1); // reading value from LDR 1
+          int R2 = analogRead(LDR2); // reading value from LDR 2
+          int diff1= abs(R1 - R2);   // Calculating the difference between the LDR's
+          int diff2= abs(R2 - R1);
+          if((diff1 &lt;= error) || (diff2 &lt;= error)) {
+          //if the difference is under the error then do nothing
+          } else {    
+          if(R1 &gt;R2)
+          {
+          initial_position = --initial_position;//Move the servo towards 0 degree
+          digitalWrite(7, HIGH);
+          }
+          if(R1 &lt; R2) 
+          {
+          initial_position = ++initial_position;
+          //Move the servo towards 180 degree
+          }
+          }
+          sg90.write(initial_position); // write the position to servo
+          delay(100);
+          }
+        </program>
+          <term><p>Code Explanation</p></term>
+          <ol>
+            <li>
+              <p>
+                Declaring the int initial position to  90 degree.
+              </p>
+            </li>
+            <li>
+              <p>
+                Initializing LDR1=A0, LDR2 = A1, servo =7. 
+              </p>
+            </li>
+            <li>
+              <p>
+                In void setup Declaring A0,A1 as input pin using Pinmode function, 
+              </p>
+            </li>
+            <li>
+              <p>
+                In void loop function, converting the data generated from sensor to analog data using analogRead function and saving the value into int variable R1 and int R2 as example int R1 = analogRead(LDR1);  
+              </p>
+            </li>
+            <li>
+              <p>
+                Calculating the absolute value of value of R1-R2 and store it in int diff1 variable 
+              </p>
+            </li>
+            <li>
+              <p>
+                Now validating with the else if statement whether the diff1 &lt;=5 or diff2 &lt;=5 the servo motor will not do anything. 
+              </p>
+            </li>
+            <li>
+              <p>
+                It will remain in the idle state. If this above condition is false, it will check whether the value LDR1 i.e., R1 is greater than R2 the servo motor is set to high.  
+              </p>
+            </li>
+            <li>
+              <p>
+                On a simple note when the LDR_1 detects the intensity of the light and when the value of the R1 is greater than R2, The servo motor will move towards 90 degree from the initial position. 
+              </p>
+            </li>
+            <li>
+              <p>
+                When the resistor R1 is less than R2, the initial position is set to ++ initial position this will move servo motor towards 180 degree.
+              </p>
+            </li>
+            <li>
+              <p>
+                In figure 5.4.3 shows that the solar cell remains in the idle position. When R1&lt;=error, the servo motor will be in idle position so that it will not move anywhere.  
+              </p>
+            </li>
+            <li>
+              <p>
+                When the light intensity is higher, the solar panel will move towards 90 degrees, to test the solar panel the highest amount of light is emitted on solar cell so the solar cell will move towards the 90 degrees. It will move step by step towards the side of the light.
+              </p>
+            </li>
+          </ol>
+   
+    </subsection>
+    <subsection xml:id="subsec-Experimental-Result-solar">
+      <title>Experimental Result</title>
+      <figure>
+        <image source="/images/solar_experiment_1.png" width="60%"/>
+        <caption>wiring diagram of the solar panel</caption>
+      </figure>
+      <figure>
+        <image source="/images/solar_experiment_2.png" width="60%"/>
+        <caption>The solar cell  moved towards the light</caption>
+      </figure>
+      <figure>
+        <image source="/images/solar_experiment_3.png" width="60%"/>
+        <caption>The solar cell has moved towards 90 degree</caption>
+      </figure>
+    </subsection>
+</section>

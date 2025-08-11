@@ -28,7 +28,7 @@
       <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
 
     <!-- Style of fill-in-the-blanks: -->
-      <!--<fillin textstyle="underline" mathstyle="shade" />-->
+      <fillin textstyle="underline" mathstyle="shade" />
 
     <!-- You can set a watermark: -->
       <!-- <watermark scale="0.5">DRAFT</watermark> -->
@@ -117,7 +117,9 @@
 
     <!-- Whether to knowl a particular elements is set here    -->
     <!-- Lots of elements have this possibility; see the guide -->
-      <!--<knowl
+      
+
+      <!--  <knowl
         theorem="no"
         proof="yes"
         definition="no"
@@ -138,19 +140,20 @@
         exercise-readingquestion="no"
       />-->
 
+
     <!-- Specify the style of the html by giving names to      -->
     <!-- override defaults.  Ex: to use "style_oscarlevin.css" -->
     <!-- put <css style="oscarlevin"/>                         -->
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-      <!--<css
+      <css
           style="oscarlevin"
-          colors="blue_red"
+          colors="pastel_blue_orange.css"
           knowls="crc"
           toc="crc"
           banner="crc"
           navbar="crc"
-      />-->
+      />
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
@@ -207,7 +210,7 @@
 
   <epub>
     <!-- The cover tag can have a @front attribute to specify a cover image. -->
-      <!-- <cover front="cover.jpg"> -->
+       <cover front="images/prototype_front.JPG" /> 
   </epub>
 
 

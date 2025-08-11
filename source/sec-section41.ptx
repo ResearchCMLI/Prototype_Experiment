@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-section41" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Air Quality Monitoring System </title>
+<subsection xml:id="subsec-Introduction-air">
+  <title>Introduction</title>
+  <image source="/images/air_quality.jpg" width="40%"/>
+  <p>
+    Air is one of the important natural resources that helps human to live on the earth. It comprises of mixture of components combined together in the presence of the atmosphere. The air is polluted with various gases like carbon dioxide, Lead (PB), Nitrogen Oxide, Ozone (O3), sulphur dioxide, ethanol and other pollutants.  
+  </p>
+  <p>
+    when there is no adequate forest resource in the earth, and there will be insufficient air for human and other living organisms to live on the earth. Air quality has to be properly monitored in order to control the air pollution and control the fumes due to forest fire. 
+Therefore, in order to monitor the air quality this small prototype model will be helpful. This prototype will monitor the air quality and alert the user when the quality of the air reaches certain level. The sensor used here to monitor the air quality is MQ135 sensor. In gas industries MQ3 is used widely to prevent leakage of gas and also it monitors the level of gas to save the people form accidents which is caused in industries. Gas sensor is widely used in oil industries to prevent the gas leakage 
+  </p>
+</subsection>
+<subsection xml:id="subsec-Components-required-air">
+  <title>Components required</title>
+  <table>
+    <title>Components required</title>
+    <tabular left="minor" right="minor" top="minor" bottom="minor">
+      <row>
+        <cell><term>S.No</term></cell>
+        <cell><term>Name</term></cell>
+        <cell><term>QTY</term></cell>
+        <cell><term>Purpose</term></cell>
+      </row>
+      <row>
+        <cell>1</cell>
+        <cell>Arduino UNO</cell>
+        <cell>1</cell>
+        <cell>Arduino Board is used to read the digital inputs and convert it as digital outputs. (Refer chapter 1.3)</cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell>Gas Sensor</cell>
+        <cell>1</cell>
+        <cell>Detect the presence of Methane, Nitrogen, Carbon di-oxide in air </cell>
+      </row>
+      <row>
+        <cell>3</cell>
+        <cell>Buzzer</cell>
+        <cell>1</cell>
+        <cell>It is mainly used as warning tone, will alert the people if there is an emergency.</cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell>LED</cell>
+        <cell>1</cell>
+        <cell>Visualizes the feedback of the current for any application.</cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell>Jumper Wire</cell>
+        <cell>As per requirement </cell>
+        <cell>Jumper wires are used to connect the components with Arduino UNO Board.</cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    The above table 4.1.1 explains the components required for the air quality monitoring system listed with its purpose.
+  </p>
+  <subsubsection xml:id="subsubsec-gas-sensor">
+    <title>Gas sensor</title>
+    <p>
+      Gas sensor detects the gas which is present in the atmosphere.  There are four different types of gas sensor. Each sensor has its own unique feature. In this experiment MQ135 is used to detect the air quality. This type of gas sensor will work based on the sensing material which is present inside the sensor. There will be comparator for adjusting the particular value of gas, when the gas concentration exceeds the threshold, the digital pin will be set to high. Analog pin will be used for measuring the concentration of the gas. Each sensor detects different types of gas. The table 4.1.4 explains each sensor and its own characteristics. Here MQ135 is used to detect the air quality. The sensor has three pins 5V, GND and A0 pin. Operating voltage for the sensor is 2.5V to 5V. The figure depicts the picture of MQ135 sensor and table 4.1.3 explains the pin configuration about the sensor which is described with its purpose. Fig 4.1.2 displays the image.
+    </p>
+    <figure>
+      <image source="/images/air_quality_sensor.jpg" width="40%"/>
+      <caption>Air quality sensor</caption>
+    </figure>
+    <table>
+      <title>pin configuration of MQ135 sensor</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name</term></cell>
+          <cell><term>Purpose</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>A0</cell>
+          <cell>Analog pin detect the presence of gas in the environment</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>GND (-)</cell>
+          <cell>GND of the Power supply</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>VCC (+)</cell>
+          <cell>Power pin is usually connected to 5V</cell>
+        </row>
+      </tabular>
+    </table>
+    <table>
+      <title>Types of gas sensor</title>
+      <tabular left="minor" right="minor" top="minor" bottom="minor">
+        <row>
+          <cell><term>S. No</term></cell>
+          <cell><term>Name of the sensor</term></cell>
+          <cell><term>Name of the Gas</term></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>MQ2</cell>
+          <cell>It detects methane, butane,LPG and smoke</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>MQ3</cell>
+          <cell>It detects alcohol, ethanol smoke</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>MQ131</cell>
+          <cell>It detects ozone gas</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>MQ135</cell>
+          <cell>It detects the air quality </cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>MQ9</cell>
+          <cell>It detects carbon di-oxide and flammable gas</cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+</subsection>
+<subsection xml:id="subsec-Experimental-Approach-air">
+  <title>Experimental Approach</title>
+  <figure>
+    <image source="/images/air_experiment.JPG" width="40%"/>
+    <caption>Schematic diagram for air quality monitoring system </caption>
+  </figure>
+  <term>Connection Process</term>
+  <ol> 
+    <li>
+      <p>
+        Analog pin of MQ3 is connected to A0 pin of Arduino (blue Wire).
+      </p>
+    </li>
+    <li>
+      <p>
+        VCC of the sensor is connected to 5v of the Arduino (Red Wire). 
+      </p>
+    </li>
+    <li>
+      <p>
+        GND of the sensor is connected to GND of the Arduino (Black Wire) 
+      </p>
+    </li>
+    <li>
+      <p>
+        Red LED is used to indicate the abnormal level of air quality. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Blue Led indicates the normal level of air quality. 
+      </p>
+    </li>
+    <li>
+      <p>
+        When the value exceeds 150 it indicates there is a pollutant present in the air.
+      </p>
+    </li>
+    <li>
+      <p>
+        A buzzer will trigger an alarm to alert people. 
+      </p>
+    </li>
+    <li>
+      <p>
+        LED longer leg of the Blue LED is connected to 8th pin of the Arduino and shorter leg is connected to GND of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        Red Led is connected to 13th pin of Arduino and shorter leg is connected to GND of Arduino. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Buzzer has two pins positive and negative pin.  
+      </p>
+    </li>
+    <li>
+      <p>
+        Positive red wire is connected to 10th pin of Arduino and negative pin of buzzer is connected to   GND of the Arduino.
+      </p>
+    </li>
+    </ol>
+    <term>Pin connection</term>
+    <table>
+      <tabular left="minor" right="minor" top="major" bottom="major">
+        <row>
+          <cell><term>Arduino Pins</term></cell>
+          <cell><term>Component Pins</term></cell>
+        </row>
+        <row>
+          <cell>A0</cell>
+          <cell>A0</cell>
+        </row>
+        <row>
+          <cell>5V</cell>
+          <cell>+</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>D11</cell>
+          <cell>+ (buzzer)</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>- ( buzzer)</cell>
+        </row>
+        <row>
+          <cell>D8</cell>
+          <cell>+ via 1k(led1)</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-(led1)</cell>
+        </row>
+        <row>
+          <cell>D10</cell>
+          <cell>+ via 1k(led2)</cell>
+        </row>
+        <row>
+          <cell>GND</cell>
+          <cell>-(led2)</cell>
+        </row>
+      </tabular>
+    </table>
+</subsection>
+<subsection xml:id="subsec-code-air">
+  <title>Code</title>
+  <term>Source code</term>
+  <program>
+    int redLed = 8;//declaring led1
+int greenLed = 12;//declaring led2
+int buzzer = 10; //declaring buzzer
+int smokeA0 = A0; //declaring MQ135
+int sensorThres = 150; // Your threshold value
+void setup() {
+pinMode(redLed, OUTPUT);//mode declaration for led1
+pinMode(greenLed, OUTPUT); //mode declaration for led2
+pinMode(buzzer, OUTPUT);// mode declaration for buzzer
+pinMode(smokeA0, INPUT);// mode declaration for MQ135
+Serial.begin(9600);// Initializing serial monitor 
+}
+void loop() {
+int analogSensor = analogRead(smokeA0);//
+Serial.print("Pin A0: ");//print the value of A0
+Serial.println(analogSensor);
+if (analogSensor > sensorThres)// Checks if it has reached the threshold value
+{
+digitalWrite(redLed, HIGH);//set the Led1 to HIGH
+digitalWrite(greenLed, LOW);// set the Led2 to LOW
+tone(buzzer, 1000, 300);// set the buzzer to HIGH
+}
+else
+{
+  digitalWrite(redLed, LOW); set the Led1 to LOW
+  digitalWrite(greenLed, HIGH); set the Led1 to HIGH
+  noTone(buzzer); set the buzzer to LOW
+  delay(1000);
+  }
+  delay(100);
+  }  
+  </program>
+  <term>Code Explanation </term>
+  <ol> 
+    <li>
+      <p>
+        The variable A0 is declared as an int variable smoke.
+      </p>
+    </li>
+    <li>
+      <p>
+        The int variable greenled is assigned to the 12th pin of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        The int variable red led is assigned to 8th pin of the Arduino.
+      </p>
+    </li>
+    <li>
+      <p>
+        The int variable buzzer is connected to 10th  pin of the of the Arduino is assigned to 
+      </p>
+    </li>
+    <li>
+      <p>
+        The certain threshold is fixed as 150 int threshold =150 globally.  
+      </p>
+    </li>
+    <li>
+      <p>
+        In void setup() the input and output pins are declared respectively using PinMode() function.
+      </p>
+    </li>
+    <li>
+      <p>
+        The redLED ,greenLED and buzzer is declared as input, value from the smoke sensor is declared as smokeA0 which is considered as output variable. 
+      </p>
+    </li>
+    <li>
+      <p>
+        Serial. Begin(9600)  function will initialize the serial monitor in ready state to send and receive the data from the Arduino to computer.
+      </p>
+    </li>
+    <li>
+      <p>
+        In void loop function, analogread function is used to convert the digital value from the smoke sensor to analog value, to int analog sensor variable.
+      </p>
+    </li>
+    <li>
+      <p>
+        Using if statement when the value obtained from the sensor is greater than 150 , the redLED will set to high , buzzer will be set at tone(buzzer, 1000, 300), to indicate the risk in the quality of air.
+      </p>
+    </li>
+    <li>
+      <p>
+        The green LED will be set to low when the obtained value is lower than the threshold value. The output will also be displayed in the figure.
+      </p>
+    </li>
+  </ol>
+</subsection>
+<subsection xml:id="subsec-Experimental-air">
+  <title>Experimental Result</title>
+  <figure>
+    <image source="/images/air_experiment_1.JPG" width="40%"/>
+    <caption>wiring diagram of the experiment.</caption>
+  </figure>
+  <p>
+    The fumes emitted from the lighter will emit an ethanol gas and when the gas level reaches above the certain level red LED will blink. From the fig 4.1.8, when there is ethanol gas present in the atmosphere the blue LED is set to high. 
+  </p>
+  <figure>
+    <image source="/images/air_experiment_2.JPG" width="40%"/>
+    <caption>The air quality is lower than the threshold.</caption>
+  </figure>
+</subsection>
+</section>
