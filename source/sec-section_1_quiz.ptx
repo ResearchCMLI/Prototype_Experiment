@@ -5,7 +5,8 @@
 
   <task>
     <title>What is the primary purpose of software in embedded systems?</title>
-    <statement></statement>
+    <statement>
+      </statement>
     <choices>
       <choice correct="no"><statement>
         <p>To manufacture hardware</p>
@@ -38,7 +39,7 @@
     </choices>
   </task>
 
-  <task>
+   <task>
     <title>What programming languages form the basis of Arduino IDE coding?</title>
     <statement></statement>
     <choices>
@@ -335,34 +336,6 @@
   </areas>
 </exercise>
 
-
-
-
-
-
-
-
-
-
-<exercise numbered="left">
-  <statement>
-    Arrange the following code blocks to create a function `add` that takes two numbers and returns their sum.
-  </statement>
-  <blocks>
-    <block order="3" correct="yes">
-       <p><image source="images/smart_watering.jpg" width="30%"/></p>
-  <p>Step 1: Define the function</p>
-    </block>
-    <block order="1" correct="yes">
-      <p><image source ="images/smart_watering.jpg" width="30%"/></p>
-      <p>Step 1: Define the function</p>
-    </block>
-    <block order="2" correct="yes">
-     <p><image source ="images/port.JPG" width="30%"/></p>
-     <p>Step 1: Define the function</p>
-    </block>
-  </blocks>
-</exercise>
 
 
 

@@ -21,11 +21,11 @@
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project).                                                           -->
-      <!--<exercise-inline statement="yes" hint="no" answer="no" solution="no" />-->
-      <!--<exercise-divisional statement="yes" hint="no" answer="no" solution="no" />-->
-      <!--<exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
-      <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
+    <exercise-inline statement="yes" hint="no" answer="no" solution="no" />
+      <exercise-divisional statement="yes" hint="no" answer="no" solution="no" />
+     <exercise-worksheet statement="yes" hint="no" answer="no" solution="no" />
+      <exercise-reading statement="yes" hint="no" answer="no" solution="no" />
+      <exercise-project statement="yes" hint="no" answer="no" solution="no" />
 
     <!-- Style of fill-in-the-blanks: -->
       <fillin textstyle="underline" mathstyle="shade" />
@@ -105,15 +105,15 @@
     <!-- Covers: provide paths to pdfs for front and back covers: -->
       <!--<covers front="cover-front.pdf" back="cover-back.pdf" />-->
     <!-- Set @formatted to "no" to remove formatting on worksheets: -->
-      <worksheets formatted="yes" />
+      <!--<worksheets formatted="yes" />-->
   </latex>
 
- <html short-answer-responses="always"> 
+<html short-answer-responses="always">
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 
     <!--The platform host can be "web" or "runestone"-->
-     <platform host="runestone"/>
+    <platform host="runestone"/>
 
     <!-- Whether to knowl a particular elements is set here    -->
     <!-- Lots of elements have this possibility; see the guide -->
@@ -128,7 +128,6 @@
         project="no"
         task="no"
         remark="no"
-        aside="no"
         objectives="no"
         outcomes="yes"
         figure="no"
@@ -156,7 +155,6 @@
           banner="crc"
           navbar="crc"
       />
-     <!--style="oscarlevin"-->
     
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
@@ -197,7 +195,7 @@
       <!--<video privacy="yes"/>-->
 
     <!-- Asymptote Click to Enlarge links -->
-   <asymptote links="yes"/>
+   <!--<asymptote links="yes"/>-->
 
     <!-- Feedback button can be added with a link to an email or form -->
       <feedback href="mailto:cmli_services@avinuty.ac.in"/>
