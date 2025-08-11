@@ -157,8 +157,9 @@
       </p>
     </li>
   </ol>
-  <term>Pin connection</term>
+
   <table>
+      <title>Pin connection</title>
     <tabular left="major" right="major" top="major" bottom="major">
       <row>
         <cell><term>Arduino Pins</term></cell>

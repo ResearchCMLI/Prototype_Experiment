@@ -66,7 +66,7 @@
     <!-- numbering should appear.                                     -->
     <!-- For use with a book organized by part, you can set the -->
     <!--  @part-structure to "decorative" or "structural" -->
-      <!--<divisions part-structure="decorative" chapter-start="0" level="2"/>-->
+    <!--<divisions part-structure="decorative" chapter-start="0" level="2"/>-->
 
     <!-- The next elements say how the levels deep to break up the    -->
     <!-- numbering of the respective elements. Can't be more than the -->
@@ -105,15 +105,15 @@
     <!-- Covers: provide paths to pdfs for front and back covers: -->
       <!--<covers front="cover-front.pdf" back="cover-back.pdf" />-->
     <!-- Set @formatted to "no" to remove formatting on worksheets: -->
-      <!--<worksheets formatted="yes" />-->
+      <worksheets formatted="yes" />
   </latex>
 
-  <html>
+ <html short-answer-responses="always"> 
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->
     <!--<html short-answer-responses="always">-->
 
     <!--The platform host can be "web" or "runestone"-->
-      <platform host="runestone"/>
+     <platform host="runestone"/>
 
     <!-- Whether to knowl a particular elements is set here    -->
     <!-- Lots of elements have this possibility; see the guide -->
@@ -124,10 +124,11 @@
         proof="no"
         definition="no"
         example="no"
-        example-solution="yes"
+        example-solution="no"
         project="no"
         task="no"
         remark="no"
+        aside="no"
         objectives="no"
         outcomes="yes"
         figure="no"
@@ -148,14 +149,15 @@
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
       <css
          
-          style="oscarlevin"
+          theme="boulder"
           colors="colors_pastel_blue_orange.css"
           knowls="crc"
           toc="crc"
           banner="crc"
           navbar="crc"
       />
-
+     <!--style="oscarlevin"-->
+    
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
       <!--<search variant="default" />-->
@@ -166,10 +168,10 @@
       <toc focused="yes" preexpanded-levels="1" />
 
     <!-- Navigation options: linear or tree, and whether there is an "up" button -->
-     <navigation logic="tree" upbutton="no" />
+    <!-- <navigation logic="tree" upbutton="no" />-->
 
     <!-- xref options: control whether cross-references are knowls or links -->
-      <cross-references knowled="cross-page" />
+      <!--<cross-references knowled="cross-page" />-->
 
     <!-- Embedded calculators.  For math, this could be geogebra-classic, geogebra-graphing,
     geogebra-geometry, and geogebra-3d.  For ActiveCode, you can specify a language (python,
@@ -180,25 +182,25 @@
       <!-- <baseurl href="changetomywebsite.org"/> -->
 
     <!-- Control behavior of online WeBWorK, per type: -->
-      <!--<webwork
+     <webwork
         inline="dynamic"
         divisional="dynamic"
         reading="static"
         worksheet="static"
         project="dynamic"
-      />-->
+      />
 
     <!-- Use the tabbed viewer for tasks in exercises. "project" and "reading" can be added to the list of types in the @tabbed-tasks attribute (but not worksheet). -->
-     <exercises tabbed-tasks="inline divisional"/>
+     <exercises tabbed-tasks="inline divisional project reading"/>
 
     <!-- Video privacy: the default value of "yes" disables certain tracking cookies for embedded videos. -->
       <!--<video privacy="yes"/>-->
 
     <!-- Asymptote Click to Enlarge links -->
-      <asymptote links="yes"/>
+   <asymptote links="yes"/>
 
     <!-- Feedback button can be added with a link to an email or form -->
-      <!--<feedback href="mailto:youraddress@yourUni.edu"/>-->
+      <feedback href="mailto:cmli_services@avinuty.ac.in"/>
 
     <!-- Magic IDs identify HTML pages to analytics services   -->
     <!-- Presence implies relevant Javascript will be added    -->

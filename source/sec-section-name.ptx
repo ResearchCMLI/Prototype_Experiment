@@ -100,14 +100,15 @@
   <p> Once installed, simply scan the corresponding images in this textbook to view the interactive AR content.</p>
  <image source ="images/qr-code.png" width="40%" decorative="yes"/>
 </remark>
-<aside>
-    <p>You can also view the Arduino UNO interactively by downloading the app on your mobile phone and scanning the Arduino UNO image in the textbook. </p>
-    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
-  </aside>
+
   <figure>
     <image source ="/images/board.png" width="70%" decorative="yes"/>
     <caption><term>Pin configuration of Arduino UNO</term></caption>
   </figure>
+  <aside>
+    <p>You can also view the Arduino UNO interactively by downloading the app on your mobile phone and scanning the Arduino UNO image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
     <interactive iframe="https://researchcmli.github.io/3D_Objects/ardiuno.html"/>
   <p><term>NODE MCU </term></p>
   <p>NodeMCU is an open-source and development board specially made especially for IoT based Applications.  The NodeMCU ESP8266 development board has an inbuilt ESP-12E module. ESP8266 chip has Tensilica xtensa 32-bit LX106 RISC microprocessor.  It has a built in WIFI and Bluetooth module for higher end IOT applications. Node MCU supports real time operating system. It operates from 80 to 160 MHz clock frequency. Memory capacity up to 128 KB RAM and 4 MB of flash memory to store the data and program. It has 16 digital input and output pin (GPIO1- GPIO16) and has one Analog to Digital converter pin. Node MCU can be powered by VIN pin as external power supply and also by a micro-USB jack. It also supports UART, SPI and I2C interface.  There are two control pins EN, RST to reset the micro controller. Analog pin A0 to measure the voltage from 0-3.3V. Node MCU enables SPI serial peripheral interface communication between two controllers based on Master and slave protocol, SD1, CMD,SD0,CLK four pins are used for this purpose. The UART interface is to provide asynchronous communication. It communicates up to 4.5 Mbps speed and 4 pins for this purpose TXD0, RXD0, TXD2, RXD2.  From the below diagram clearly explains the pictorial representation of the NodeMCU. </p>
@@ -124,15 +125,15 @@
   <p>$ sudo apt -get install python -rpi.gpio python3 -rpi.gpio</p><p>after installing the python library, code the program in Thonny Python IDE.</p>
   <p><em><term>Raspberry Pi</term></em></p>
   <p>It is actually a small computer .It has 40 GPIO pins, for input and output purpose, HDMI adapter to connect to the monitor, 4 USB ports used to connect peripherals like keyboard, mouse. It also consists of ethernet port, to connect the board to internet. Operating voltage for the board is 5V and audio output is powered by 3.5mm audio jack port. It is typically used by computer and electronic hobbyists. SD card slot is used to insert the SD card.Camera port is used to connect camera with Raspberry Pi to work with image and video processing applications.  Although the usages of raspberry pi is less comparing to other micro controllers. It is widely used in many areas, such as for industries due to its, modularity and open design. </p>
-   <aside>
-    <p>You can also view the Raspberry Pi interactively by downloading the app on your mobile phone and scanning the Raspberry Pi image in the textbook. </p>
-    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
-  </aside>
+   
   <figure>
   <image source ="images/Raspberry_Pi_3_Large.jpg" width="60%" decorative="yes"/>
     <caption><term>Pin Configuration of Raspberry Pi</term></caption>
   </figure>
-  
+  <aside>
+    <p>You can also view the Raspberry Pi interactively by downloading the app on your mobile phone and scanning the Raspberry Pi image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
   <!--<interactive iframe="https://amuselabs.com/pmm/jigsaw?id=eeff6227&amp;set=0fe0be9744080445d61f37b469710fb93478a1a400647520c7a111fb1910024f" width="80%" />-->
   <!--<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Click <em><term>"start game"</term></em> to start puzzle</p>-->
   <interactive iframe="https://researchcmli.github.io/3D_Objects/raspberry.html"/>

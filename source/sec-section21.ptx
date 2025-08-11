@@ -88,9 +88,9 @@
       </p>
     </li>
   </ol>
-  <term>Pin Block</term>
+ 
   <table>
-    <title></title>
+    <title>Pin Block</title>
     <tabular left="minor" right="minor" top="minor" bottom="minor">
       <row header="yes">
         <cell left="major" right="major" top="major" bottom="major"><term>Arduino Pins</term></cell>

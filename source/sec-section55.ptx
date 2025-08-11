@@ -72,6 +72,7 @@
       </li>
     </ol>
     <table>
+      <title>Pin connection</title>
       <tabular left="minor" right="minor" top="minor" bottom="minor">
         <row>
           <cell><term>Raspberry PI</term></cell>

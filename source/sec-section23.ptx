@@ -100,18 +100,16 @@
   </subsection>
   <subsection xml:id="subsec-Experimental-Approach-sound">
     <title>Experimental Approach</title>
-    <aside>
-    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
-    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
-  </aside>
-
     <figure>
       <image source="/images/soundexperiment.jpg" width="80%"/>
       <caption>Schematic diagram </caption>
     </figure>
-     
+      <aside>
+    <p>You can also view the Experiment interactively by downloading the app on your mobile phone and scanning the experiment image in the textbook. </p>
+    <p><url href ="https://drive.google.com/file/d/13ygiRVQeiYZS6NoCNUuYGCu_yQgWLgNs/view?usp=drive_link">click to download app</url></p>
+  </aside>
    <interactive iframe="https://researchcmli.github.io/3D_Objects/exp3.html"/>
- 
+ <term>Connection process</term>
    <ol>
     <li>
       <p>
@@ -139,8 +137,8 @@
       </p>
     </li>
   </ol>
-    <term>Pin Connection</term>
     <table >
+      <title>Pin Connection</title>
       <tabular left="major" right="major" top="major" bottom="major">
         <row>
           <cell><term>Arduino Pins</term></cell>

@@ -335,4 +335,35 @@
   </areas>
 </exercise>
 
+
+
+
+
+
+
+
+
+
+<exercise numbered="left">
+  <statement>
+    Arrange the following code blocks to create a function `add` that takes two numbers and returns their sum.
+  </statement>
+  <blocks>
+    <block order="3" correct="yes">
+       <p><image source="images/smart_watering.jpg" width="30%"/></p>
+  <p>Step 1: Define the function</p>
+    </block>
+    <block order="1" correct="yes">
+      <p><image source ="images/smart_watering.jpg" width="30%"/></p>
+      <p>Step 1: Define the function</p>
+    </block>
+    <block order="2" correct="yes">
+     <p><image source ="images/port.JPG" width="30%"/></p>
+     <p>Step 1: Define the function</p>
+    </block>
+  </blocks>
+</exercise>
+
+
+
 </section>
