@@ -5,7 +5,7 @@
 <!-- settings. -->
 <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- A unique name for the book in a catalog; for example, see https://pretextbook.org/catalog.html and https://runestone.academy/ns/books/index. It contains a simple lowercase string with no dashes or other special characters. See https://pretextbook.org/doc/guide/html/sec-publishing-to-runestone-academy.html for more information. -->
-  <document-id>Prototype Experiments for Beginners</document-id>
+  <document-id>Prototype_Experiments_for_Beginners</document-id>
   <!-- A brief description for the book in a catalog; see the links above. The @shelf is used only when publishing to Runestone; see https://runestone.academy/ns/books/index for a list of valid values. You must copy these @shelf names exactly, including capitalization. -->
   <blurb shelf="Internet of Things"> This book is purely for beginners, those who want to create innovative products using hardware and software. Main objective of the book is to promote readers into product developers after completing the book. Outcome of the book is to eradicate the fear of taking up a project, especially among the beginners. This book provides information about the software, hardware and experimental setup with step-by-step guidelines, so that they can complete the product development with the ease.  The book contains 20 experiments from simple concepts to advance concepts. Every experiment in this book will be illustrated in an easy and understandable fashion so that all readers can explore the experiments. The book contains experiments from embedded system to IOT applications. </blurb>
 
